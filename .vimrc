@@ -1,22 +1,38 @@
+" command-line mode history
 set history=200
+
+" numero de ligne
 set number
+
+" numero relatif pour jump rapidement a la vertical
 set relativenumber
+
+" curseur au meme niveau de la ligne ou je viens
 set autoindent
-set hlsearch
-set incsearch
+
+" pas de recherche highlight
+set nohlsearch
+
+" auto-save des fichiers cache
 set hidden
+
+" pas de .swp 
 set noswapfile
+
+" autosave
 set autowrite
 
+" 42 header norm
 let g:user42 = 'fbesson'
 let g:mail42 = 'fbesson@student.42.fr'
 
+" debugger built-in vim
 if version >= 801
 	packadd termdebug
 endif
 
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+" open quickfix list pour debug
+noremap <leader>cw :botright :cw<cr>
 
+" run make en mode silence
+noremap <leader>m :silent! :make! \| :redraw!<cr>
