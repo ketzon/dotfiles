@@ -36,3 +36,16 @@ noremap <leader>cw :botright :cw<cr>
 
 " run make en mode silence
 noremap <leader>m :silent! :make! \| :redraw!<cr>
+
+" J'utilise quickfix mapping a la place de ack
+let g:ack_apply_qmappings = 0
+let g:ack_apply_lmappings = 0
+let g:qf_mapping_ack_style = 1
+
+" J'utilise quickfixmapping a la place de unimpaired
+let g:nremap = {"[q": "", "]q": "", "[l": "", "]l": ""}
+nmap [q <Plug>(qf_qf_previous)
+nmap ]q <Plug>(qf_qf_next)
+nmap [l <Plug>(qf_loc_previous)
+nmap ]l <Plug>(qf_loc_next)
+
