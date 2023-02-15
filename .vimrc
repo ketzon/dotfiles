@@ -1,4 +1,3 @@
-
 " command-line mode history
 set history=200
 
@@ -40,3 +39,6 @@ noremap <leader>m :silent! :make! \| :redraw!<cr>
 
 " Mon package manager
 execute pathogen#infect()
+
+" tags-location
+set tags=~/42/pathing/tags
