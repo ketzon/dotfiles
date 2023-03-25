@@ -1,3 +1,6 @@
+" tab a 4 espace
+set ts=4
+
 " command-line mode history
 set history=200
 
