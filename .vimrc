@@ -1,3 +1,12 @@
+" custom snippet pour ecrire printf
+nnoremap ,p :-1read $HOME/.vim/.skeleton<CR>f";;a
+
+" update mon path pour jump dans chaque file, sans me deplacer avec des cd partout
+set path+=**
+
+" affiche le nom des fichiers quand j'utilise tab, combine avec :find
+set wildmenu
+
 " tab a 4 espace
 set ts=4
 
@@ -40,8 +49,11 @@ noremap <leader>cw :botright :cw<cr>
 " run make en mode silence
 noremap <leader>m :silent! :make! \| :redraw!<cr>
 
-" Mon package manager
-execute pathogen#infect()
+" ajoute zz a la fin d'un jump pour centrer l'ecran
+nnoremap <C-U> <C-U>zz
+nnoremap <C-D> <C-D>zz
+nnoremap <C-]> <C-]>zz
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
 
-" tags-location
-set tags=~/42/pathing/tags
+execute pathogen#infect()
