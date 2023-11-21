@@ -81,7 +81,8 @@ return packer.startup(function(use)
       {'rafamadriz/friendly-snippets'}, -- Optional
     }
   }
-  use "preservim/nerdcommenter"
+  use 'tpope/vim-commentary'
+  use 'tpope/vim-repeat'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

@@ -2,6 +2,7 @@ lua require('config')
 lua require('remap')
 set clipboard=unnamedplus
 set mouse=a
+set wildmenu
 " syntax on
 set background=dark
 set ts=4
@@ -13,6 +14,7 @@ set nohlsearch
 set inccommand=split
 set hidden
 set completeopt=noinsert,menuone,noselect
+set ttimeoutlen=0
 set noswapfile
 set title
 set autowrite
@@ -20,7 +22,6 @@ let g:user42 = 'fbesson'
 let g:mail42 = 'fbesson@student.42.fr'
 noremap <leader>cw :botright :cw<cr>
 noremap <leader>m :silent! :make! \| :redraw!<cr>
-set t_Co=256
 nnoremap <C-U> <C-U>zz
 nnoremap <C-D> <C-D>zz
 nnoremap <C-]> <C-]>zz

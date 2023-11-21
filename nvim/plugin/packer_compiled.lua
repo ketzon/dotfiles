@@ -129,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  nerdcommenter = {
-    loaded = true,
-    path = "/home/florian/.local/share/nvim/site/pack/packer/start/nerdcommenter",
-    url = "https://github.com/preservim/nerdcommenter"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -185,10 +180,20 @@ _G.packer_plugins = {
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
   }
 }
 
