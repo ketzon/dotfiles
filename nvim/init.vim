@@ -29,4 +29,5 @@ nnoremap <C-o> <C-o>zz
 nnoremap <C-i> <C-i>zz
 filetype plugin indent on
 " packloadall
+set grepprg=rg\ --vimgrep\ --no-heading
 silent! helptags ALL

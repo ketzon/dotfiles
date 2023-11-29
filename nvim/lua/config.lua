@@ -81,10 +81,46 @@ return packer.startup(function(use)
       {'rafamadriz/friendly-snippets'}, -- Optional
     }
   }
+  use 'mfussenegger/nvim-dap'
+  use 'rcarriga/nvim-dap-ui'
+  use 'romainl/vim-qf'
+  use 'ludovicchabant/vim-gutentags'
+  use '42Paris/42header'
+  use 'tpope/vim-unimpaired'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-vinegar'
   use 'tpope/vim-commentary'
   use 'tpope/vim-repeat'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
+
+
+
+local dap = require('dap')
+
+dap.adapters.lldb = {
+  type = 'executable',
+  command = '/usr/lib/llvm-14/bin/lldb-vscode',
+  name = "lldb"
+}
+
+dap.configurations.c = {
+  {
+    name = "Launch",
+    type = "lldb",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = '${workspaceFolder}',
+    -- Continuez immédiatement lorsque le débogueur démarre
+    stopOnEntry = false,
+    args = {},
+  },
+}
+
+require('dapui').setup()
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end

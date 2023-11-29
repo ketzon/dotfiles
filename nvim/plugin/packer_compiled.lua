@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["42header"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/42header",
+    url = "https://github.com/42Paris/42header"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -185,15 +190,40 @@ _G.packer_plugins = {
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-gutentags"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-gutentags",
+    url = "https://github.com/ludovicchabant/vim-gutentags"
+  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
   },
+  ["vim-qf"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-qf",
+    url = "https://github.com/romainl/vim-qf"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
+  },
+  ["vim-unimpaired"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
+    url = "https://github.com/tpope/vim-unimpaired"
+  },
+  ["vim-vinegar"] = {
+    loaded = true,
+    path = "/home/florian/.local/share/nvim/site/pack/packer/start/vim-vinegar",
+    url = "https://github.com/tpope/vim-vinegar"
   }
 }
 
