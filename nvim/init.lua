@@ -23,8 +23,17 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 vim.opt.hidden = true
-vim.opt.autowrite = true
+
+
+vim.o.autowrite = true
+vim.api.nvim_create_autocmd({"TextChanged", "TextChangedI"}, {
+  pattern = "*",
+  command = "silent! write"
+})
+		
 
 -- Correcting the nnoremap statements
 vim.api.nvim_set_keymap('n', '<C-U>', '<C-U>zz', { noremap = true })

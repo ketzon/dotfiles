@@ -50,6 +50,8 @@ return {
         sources = {
           {name = 'nvim_lsp'},
           {name = 'luasnip'},
+          {name = 'buffer'},
+          {name = 'path'},
           },
         mapping = cmp.mapping.preset.insert({
           ['<CR>'] = cmp.mapping.confirm({select = false}),
@@ -91,7 +93,12 @@ return {
       end)
 
       require('mason-lspconfig').setup({
-        ensure_installed = {},
+        ensure_installed = {
+		'html',
+		'cssls',
+		'emmet_ls',
+		'ts_ls',
+								},
         handlers = {
           -- this first function is the "default handler"
           -- it applies to every language server without a "custom handler"

@@ -263,7 +263,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl s +5%
 exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/firefox'
 
 exec_always --no-startup-id picom --config /home/k/.config/i3/picom.conf
-exec_always --no-startup-id twmnd 
+# exec_always --no-startup-id twmnd 
 
 # media keys
 # bindsym F7 exec playerctl play-pause
