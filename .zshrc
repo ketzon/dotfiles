@@ -115,7 +115,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242"alias son='pavucontrol'
 bindkey '^ ' autosuggest-accept
 
 alias v='nvim'
-alias conf='nvim ~/.config/nvim/'
+alias vconf='nvim ~/.config/nvim/'
+alias conf='cd /home/florian/.config/'
 alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
+alias dotf='cd /home/florian/dotfiles'
 export PATH="$PATH:/opt/platform-tools"

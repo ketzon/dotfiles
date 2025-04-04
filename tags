@@ -19,6 +19,10 @@
 <leader>m	.vimrc	/^noremap <leader>m :silent! :make! \\| :redraw!<cr>$/;"	m
 LuaSnip	nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	o
 alpha-nvim	nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	o
+argb	picom/picom.conf	/^no-fading-destroyed-argb = true;$/;"	k
+backend	picom/picom.conf	/^backend = "glx";$/;"	k
+background	picom/picom.conf	/^blur-background = false;$/;"	k
+blur	picom/picom.conf	/^blur: {$/;"	k
 branch	nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	s	object:LuaSnip
 branch	nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	s	object:alpha-nvim
 branch	nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },$/;"	s	object:cmp-nvim-lsp
@@ -47,8 +51,10 @@ branch	nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "
 branch	nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "6d44a6dc2ec34607c41ec78acf81657248580bf1" }/;"	s	object:vim-unimpaired
 branch	nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	s	object:vim-vinegar
 branch	nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }$/;"	s	object:which-key.nvim
+clipping	picom/picom.conf	/^transparent-clipping = false;$/;"	k
 cmp-nvim-lsp	nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },$/;"	o
 cmp_luasnip	nvim/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },$/;"	o
+color	picom/picom.conf	/^shadow-color = "#000000";$/;"	k
 commit	nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	s	object:LuaSnip
 commit	nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	s	object:alpha-nvim
 commit	nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },$/;"	s	object:cmp-nvim-lsp
@@ -83,16 +89,35 @@ config	nvim/lua/k/plugins/lsp-zero.lua	/^    config = function()$/;"	f
 config	nvim/lua/k/plugins/lualine.lua	/^  config = function()$/;"	f
 config	nvim/lua/k/plugins/nvim-tree.lua	/^	config = function()$/;"	f
 config	nvim/lua/k/plugins/nvim-treesitter.lua	/^	config = function () $/;"	f
+corners	picom/picom.conf	/^detect-rounded-corners = true;$/;"	k
 css_fn	nvim/lua/k/plugins/colorizer.lua	/^        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn$/;"	f
+daemon	picom/picom.conf	/^daemon = false;$/;"	k
+damage	picom/picom.conf	/^resize-damage = 1;$/;"	k
+damage	picom/picom.conf	/^use-damage = true;$/;"	k
+dbus	picom/picom.conf	/^dbus = false;$/;"	k
+delta	picom/picom.conf	/^fade-delta = 3;$/;"	k
+dim	picom/picom.conf	/^inactive-dim = 0.0;$/;"	k
+exclude	picom/picom.conf	/^blur-background-exclude = [$/;"	k
+exclude	picom/picom.conf	/^fade-exclude = [];$/;"	k
+exclude	picom/picom.conf	/^focus-exclude = [$/;"	k
+exclude	picom/picom.conf	/^shadow-exclude = [$/;"	k
+exclude	picom/picom.conf	/^unredir-if-possible-exclude = [];$/;"	k
 expand	nvim/lua/k/plugins/lsp-zero.lua	/^          expand = function(args)$/;"	f
+fading	picom/picom.conf	/^fading = false;$/;"	k
+fixed	picom/picom.conf	/^blur-background-fixed = true;$/;"	k
+focused	picom/picom.conf	/^mark-ovredir-focused = true;$/;"	k
+focused	picom/picom.conf	/^mark-wmwin-focused = true;$/;"	k
+frame	picom/picom.conf	/^blur-background-frame = true;$/;"	k
 friendly-snippets	nvim/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" /;"	o
 g:mail42	.vimrc	/^let g:mail42 = 'fbesson@student.42.fr'$/;"	v
 g:user42	.vimrc	/^let g:user42 = 'fbesson'$/;"	v
 gruvbox.nvim	nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "c6f42890551b4827253387e93b035568826a9cb7" },$/;"	o
 hsl_fn	nvim/lua/k/plugins/colorizer.lua	/^        hsl_fn = true,     -- CSS hsl() and hsla() functions$/;"	f
+include	picom/picom.conf	/^invert-color-include = [];$/;"	k
 init	nvim/lua/k/plugins/lsp-zero.lua	/^    init = function()$/;"	f
 init	nvim/lua/k/plugins/which-key.lua	/^  init = function()$/;"	f
 lazy.nvim	nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	o
+leader	picom/picom.conf	/^detect-client-leader = true;$/;"	k
 lsp-zero.nvim	nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "ab2a3413646fedd77aa0eab4214a6473e62f6a64" },$/;"	o
 lua_ls	nvim/lua/k/plugins/lsp-zero.lua	/^          lua_ls = function()$/;"	f
 lualine.nvim	nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "1517caa8fff05e4b4999857319d3b0609a7f57fa" },$/;"	o
@@ -105,9 +130,26 @@ nvim-lspconfig	nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "
 nvim-tree.lua	nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "44d9b58f11d5a426c297aafd0be1c9d45617a849" },$/;"	o
 nvim-treesitter	nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "da5825bf70cc2ea7eacd1e60c32c07baf19adeba" /;"	o
 nvim-web-devicons	nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "4c3a5848ee0b09ecdea73adcd2a689190aeb728c/;"	o
+opacity	picom/picom.conf	/^active-opacity = 0.8;$/;"	k
+opacity	picom/picom.conf	/^detect-client-opacity = true;$/;"	k
+opacity	picom/picom.conf	/^frame-opacity = 1.0;$/;"	k
+opacity	picom/picom.conf	/^inactive-opacity = 0.8;$/;"	k
+opacity	picom/picom.conf	/^inactive-opacity = 1;$/;"	k
+opacity	picom/picom.conf	/^shadow-opacity = 0.85;$/;"	k
+openclose	picom/picom.conf	/^no-fading-openclose = false;$/;"	k
+override	picom/picom.conf	/^inactive-opacity-override = false;$/;"	k
 plenary.nvim	nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	o
+radius	picom/picom.conf	/^shadow-radius = 20;$/;"	k
+rate	picom/picom.conf	/^refresh-rate = 0;$/;"	k
 rgb_fn	nvim/lua/k/plugins/colorizer.lua	/^        rgb_fn = true,     -- CSS rgb() and rgba() functions$/;"	f
+rule	picom/picom.conf	/^opacity-rule = [ $/;"	k
+shadow	picom/picom.conf	/^shadow = true;$/;"	k
+shaped	picom/picom.conf	/^shadow-ignore-shaped = false$/;"	k
+stencil	picom/picom.conf	/^glx-no-stencil = true;$/;"	k
+step	picom/picom.conf	/^fade-in-step = 0.03;$/;"	k
+step	picom/picom.conf	/^fade-out-step = 0.03;$/;"	k
 telescope.nvim	nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	o
+transient	picom/picom.conf	/^detect-transient = true;$/;"	k
 vim-commentary	nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	o
 vim-gutentags	nvim/lazy-lock.json	/^  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" },$/;"	o
 vim-qf	nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "1dcedfc42c017fd99477bcf36fb1f41e95809800" },$/;"	o
@@ -115,4 +157,9 @@ vim-repeat	nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit":
 vim-surround	nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	o
 vim-unimpaired	nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "6d44a6dc2ec34607c41ec78acf81657248580bf1" }/;"	o
 vim-vinegar	nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	o
+vsync	picom/picom.conf	/^vsync = true;$/;"	k
 which-key.nvim	nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }$/;"	o
+wintypes	picom/picom.conf	/^wintypes:$/;"	k
+x	picom/picom.conf	/^shadow-offset-x = -20;$/;"	k
+xerrors	picom/picom.conf	/^show-all-xerrors = true;$/;"	k
+y	picom/picom.conf	/^shadow-offset-y = -20;$/;"	k
