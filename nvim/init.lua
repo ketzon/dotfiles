@@ -47,7 +47,12 @@ vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = tru
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = true })
+
+-- Pour naviguer vers les fonctions/symboles dans le fichier actuel
+vim.keymap.set('n', '<leader>fs', '<cmd>Telescope lsp_document_symbols<CR>', { noremap = true, silent = true })
+
+-- Pour chercher des fonctions dans tout le projet
+vim.keymap.set('n', '<leader>fS', '<cmd>Telescope lsp_workspace_symbols<CR>', { noremap = true, silent = true })
 
 -- telescope binds
 local builtin = require('telescope.builtin')
@@ -55,4 +60,13 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "html",
+  callback = function()
+    vim.opt_local.autoindent = false
+    vim.opt_local.smartindent = false
+    vim.opt_local.indentexpr = ""
+  end
+})
 
