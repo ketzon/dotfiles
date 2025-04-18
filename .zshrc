@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # color auto-suggestion
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242"alias son='pavucontrol'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=green"
 
 # ctl-espace pour une suggest
 bindkey '^ ' autosuggest-accept
