@@ -107,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Dans .zshrc, vous pouvez configurer la couleur
 
+export PATH="$HOME/.local/bin:$PATH"
+
 
 # color auto-suggestion
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=green"
@@ -121,3 +123,6 @@ alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
 alias dotf='cd /home/florian/dotfiles'
 export PATH="$PATH:/opt/platform-tools"
+alias tgpt=terminalgpt
+alias tgpto=terminalgpt one-shot
+alias tgptn=terminalgpt new

@@ -9,7 +9,18 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
+#TabsToolbar	firefox/userChrome.css	/^#TabsToolbar {$/;"	i
+#identity-icon-label	firefox/userChrome.css	/^#identity-icon-label {$/;"	i
+#nav-bar	firefox/userChrome.css	/^#nav-bar {$/;"	i
+#nav-bar > .nav-bar-inner	firefox/userChrome.css	/^#nav-bar > .nav-bar-inner {$/;"	c
+#urlbar	firefox/userChrome.css	/^#urlbar {$/;"	i
+#urlbar:not([breakout-extend] ) #urlbar-background	firefox/userChrome.css	/^#urlbar:not([breakout-extend]) #urlbar-background {$/;"	i
 ,p	.vimrc	/^nnoremap ,p :-1read $HOME\/.vim\/.skeleton<CR>f";;a$/;"	m
+.titlebar-button	firefox/userChrome.css	/^.titlebar-button {$/;"	c
+0	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	array:sidebar.nav
+1	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	array:sidebar.nav
+2	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	array:sidebar.nav
+3	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	array:sidebar.nav
 <C-D>	.vimrc	/^nnoremap <C-D> <C-D>zz$/;"	m
 <C-U>	.vimrc	/^nnoremap <C-U> <C-U>zz$/;"	m
 <C-]>	.vimrc	/^nnoremap <C-]> <C-]>zz$/;"	m
@@ -17,13 +28,50 @@
 <C-o>	.vimrc	/^nnoremap <C-o> <C-o>zz$/;"	m
 <leader>cw	.vimrc	/^noremap <leader>cw :botright :cw<cr>$/;"	m
 <leader>m	.vimrc	/^noremap <leader>m :silent! :make! \\| :redraw!<cr>$/;"	m
+HZ_K3jetYaFU	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o	object:sidebar.panels
+KmQml-NZB8EU	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o	object:sidebar.panels
 LuaSnip	nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	o
+activateAfterClosing	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+activateAfterClosingGlobal	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateAfterClosingNoDiscarded	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateAfterClosingNoFolded	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateAfterClosingStayInPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateLastTabOnPanelSwitching	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateLastTabOnPanelSwitchingLoadedOnly	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateOnMouseUp	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+activateOpenBookmarkTab	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 alpha-nvim	nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	o
+animationSpeed	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+animations	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 argb	picom.conf	/^no-fading-destroyed-argb = true;$/;"	k
+askNewBookmarkPlace	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoCloseBookmarks	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoExpandTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoExpandTabsOnNew	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoFoldTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoFoldTabsExcept	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+autoGroupOnClose	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoGroupOnClose0Lvl	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoGroupOnCloseMouseOnly	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoMenuMultiSel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+autoRemoveOther	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 backend	picom.conf	/^backend = "glx";$/;"	k
 backend	picom/picom.conf	/^backend = "glx";$/;"	k
 background	picom.conf	/^blur-background = false;$/;"	k
 blur	picom.conf	/^blur = {$/;"	k
+body	firefox/userChrome.css	/^body {$/;"	s
+bookmarksFolderId	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.HZ_K3jetYaFU
+bookmarksFolderId	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.KmQml-NZB8EU
+bookmarksFolderId	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.qVvTK4LSIrFU
+bookmarksFolderId	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+bookmarksLeftClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+bookmarksLeftClickActivate	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+bookmarksLeftClickPos	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+bookmarksMidClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+bookmarksMidClickActivate	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+bookmarksMidClickPos	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+bookmarksMidClickRemove	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+bookmarksRmUndoNote	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 branch	nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	s	object:LuaSnip
 branch	nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	s	object:alpha-nvim
 branch	nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },$/;"	s	object:cmp-nvim-lsp
@@ -57,7 +105,16 @@ callback	nvim/init.lua	/^  callback = function()$/;"	f
 clipping	picom.conf	/^transparent-clipping = false;$/;"	k
 cmp-nvim-lsp	nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },$/;"	o
 cmp_luasnip	nvim/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },$/;"	o
+color	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+color	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+color	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+color	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
 color	picom.conf	/^shadow-color = "#000000";$/;"	k
+colorScheme	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+colorizeTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+colorizeTabsBranches	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+colorizeTabsBranchesSrc	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+colorizeTabsSrc	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 commit	nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	s	object:LuaSnip
 commit	nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	s	object:alpha-nvim
 commit	nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },$/;"	s	object:cmp-nvim-lsp
@@ -95,9 +152,14 @@ config	nvim/lua/k/plugins/lsp-zero.lua	/^  config = function()$/;"	f
 config	nvim/lua/k/plugins/lualine.lua	/^  config = function()$/;"	f
 config	nvim/lua/k/plugins/nvim-tree.lua	/^	config = function()$/;"	f
 config	nvim/lua/k/plugins/nvim-treesitter.lua	/^	config = function () $/;"	f
+containersSortByName	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 corners	picom.conf	/^detect-rounded-corners = true;$/;"	k
 corners	picom/picom.conf	/^detect-rounded-corners = true;$/;"	k
 css_fn	nvim/lua/k/plugins/colorizer.lua	/^        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn$/;"	f
+ctxMenuIgnoreContainers	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+ctxMenuNative	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+ctxMenuRenderIcons	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+ctxMenuRenderInact	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 daemon	picom.conf	/^daemon = false;$/;"	k
 damage	picom.conf	/^resize-damage = 1;$/;"	k
 damage	picom.conf	/^use-damage = true;$/;"	k
@@ -105,7 +167,26 @@ damage	picom/picom.conf	/^use-damage = true;$/;"	k
 dbus	picom.conf	/^dbus = false;$/;"	k
 delta	picom.conf	/^fade-delta = 3;$/;"	k
 delta	picom/picom.conf	/^fade-delta = 5;$/;"	k
+density	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 dim	picom.conf	/^inactive-dim = 0.0;$/;"	k
+discardFolded	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+discardFoldedDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+discardFoldedDelayUnit	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+dndActSearchTab	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+dndActTabFromLink	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+dndExp	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+dndExpDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+dndExpMod	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+dndMoveBookmarks	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+dndMoveTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+dndOutside	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+dndTabAct	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+dndTabActDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+dndTabActMod	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+dropTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+dropTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+dropTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+dropTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
 exclude	picom.conf	/^blur-background-exclude = [$/;"	k
 exclude	picom.conf	/^fade-exclude = [];$/;"	k
 exclude	picom.conf	/^focus-exclude = [$/;"	k
@@ -118,23 +199,129 @@ fading	picom/picom.conf	/^fading = true;$/;"	k
 fixed	picom.conf	/^blur-background-fixed = true;$/;"	k
 focused	picom.conf	/^mark-ovredir-focused = true;$/;"	k
 focused	picom.conf	/^mark-wmwin-focused = true;$/;"	k
+fontSize	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 frame	picom.conf	/^blur-background-frame = true;$/;"	k
 friendly-snippets	nvim/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "31f2a2657b6261724313281fe0d8ba6f43f4a4fa" /;"	o
 g:mail42	.vimrc	/^let g:mail42 = 'fbesson@student.42.fr'$/;"	v
 g:user42	.vimrc	/^let g:user42 = 'fbesson'$/;"	v
+groupCSS	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+groupLayout	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+groupOnOpen	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 gruvbox.nvim	nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a933d8666dad9363dc6908ae72cfc832299c2f59" },$/;"	o
+hScrollAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 harpoon	nvim/lazy-lock.json	/^  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },$/;"	o
+hideAddBtn	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+hideDiscardedTabPanels	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+hideEmptyPanels	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+hideFoldedParent	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+hideFoldedTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+hideInact	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+hideSettingsBtn	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+highlightOpenBookmarks	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+historyLeftClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+historyLeftClickActivate	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+historyLeftClickPos	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+historyMidClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+historyMidClickActivate	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+historyMidClickPos	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 hsl_fn	nvim/lua/k/plugins/colorizer.lua	/^        hsl_fn = true,     -- CSS hsl() and hsla() functions$/;"	f
+html	firefox/userChrome.css	/^html {$/;"	s
+html:not([privatebrowsingmode="temporary"] ) #TabsToolbar	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #TabsToolbar {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #main-window[sizemode="fullscreen"] #sidebar-box	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #main-window[sizemode="fullscreen"] #sidebar-box {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #navigator-toolbox	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #navigator-toolbox {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #sidebar	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #sidebar {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #sidebar-box	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #sidebar-box {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #sidebar-box:hover > #sidebar	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #sidebar-box:hover > #sidebar {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #sidebar-header	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #sidebar-header {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) #sidebar-splitter	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) #sidebar-splitter {$/;"	i
+html:not([privatebrowsingmode="temporary"] ) .sidebar-panel	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) .sidebar-panel {$/;"	c
+html:not([privatebrowsingmode="temporary"] ) .titlebar-buttonbox-container	firefox/userChrome.css	/^html:not([privatebrowsingmode="temporary"]) .titlebar-buttonbox-container {$/;"	c
+iconIMG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+iconIMG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+iconIMG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+iconIMG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
+iconIMGSrc	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+iconIMGSrc	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+iconIMGSrc	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+iconIMGSrc	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
+iconSVG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+iconSVG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+iconSVG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+iconSVG	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
+id	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+id	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+id	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+id	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
+ignoreFoldedParent	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 include	picom.conf	/^invert-color-include = [];$/;"	k
+inheritCustomColor	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 init	nvim/lua/k/plugins/lsp-zero.lua	/^    init = function()$/;"	f
 init	nvim/lua/k/plugins/which-key.lua	/^  init = function()$/;"	f
+jt0CCkXv_mFU	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o	object:sidebar.panels
 lazy.nvim	nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	o
 leader	picom.conf	/^detect-client-leader = true;$/;"	k
+loadBookmarksOnDemand	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+loadHistoryOnDemand	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+lockedPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.HZ_K3jetYaFU
+lockedPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.KmQml-NZB8EU
+lockedPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.jt0CCkXv_mFU
+lockedPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.qVvTK4LSIrFU
+longClickDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
 lsp-zero.nvim	nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	o
 lua_ls	nvim/lua/k/plugins/lsp-zero.lua	/^        lua_ls = function()$/;"	f
 lualine.nvim	nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	o
+markWindow	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+markWindowPreface	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 mason-lspconfig.nvim	nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af24/;"	o
 mason.nvim	nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },$/;"	o
+moveExcludedTo	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.HZ_K3jetYaFU
+moveExcludedTo	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.KmQml-NZB8EU
+moveExcludedTo	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.jt0CCkXv_mFU
+moveExcludedTo	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.qVvTK4LSIrFU
+moveNewTab	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+moveNewTabActivePin	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+moveNewTabParent	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+moveNewTabParentActPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+moveNewTabPin	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+moveRules	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.HZ_K3jetYaFU
+moveRules	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.KmQml-NZB8EU
+moveRules	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.jt0CCkXv_mFU
+moveRules	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.qVvTK4LSIrFU
+multipleMiddleClose	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+name	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+name	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+name	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+name	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
+nativeHighlight	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+nativeScrollbars	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+nativeScrollbarsLeft	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+nativeScrollbarsThin	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+nav	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar
+navActBookmarksPanelLeftClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+navActTabsPanelLeftClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+navBarInline	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+navBarLayout	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+navBarSide	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+navBookmarksPanelMidClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+navBtnCount	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+navSwitchPanelsDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+navSwitchPanelsWheel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+navTabsPanelMidClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+newTabBarPosition	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+newTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.HZ_K3jetYaFU
+newTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.KmQml-NZB8EU
+newTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.jt0CCkXv_mFU
+newTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.qVvTK4LSIrFU
+newTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.HZ_K3jetYaFU
+newTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.KmQml-NZB8EU
+newTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.jt0CCkXv_mFU
+newTabCtx	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:sidebar.panels.qVvTK4LSIrFU
+newTabCtxReopen	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+newTabMiddleClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.HZ_K3jetYaFU
+noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.KmQml-NZB8EU
+noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.jt0CCkXv_mFU
+noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.qVvTK4LSIrFU
 nvim-autopairs	nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	o
 nvim-cmp	nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	o
 nvim-colorizer.lua	nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	o
@@ -142,6 +329,8 @@ nvim-lspconfig	nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "
 nvim-tree.lua	nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	o
 nvim-treesitter	nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	o
 nvim-web-devicons	nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	o
+oldBookmarksAfterSave	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+onePanelSwitchPerScroll	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 opacity	picom.conf	/^active-opacity = 0.8;$/;"	k
 opacity	picom.conf	/^detect-client-opacity = true;$/;"	k
 opacity	picom.conf	/^frame-opacity = 1.0;$/;"	k
@@ -154,22 +343,130 @@ opacity	picom/picom.conf	/^inactive-opacity = 0.9;$/;"	k
 opacity	picom/picom.conf	/^shadow-opacity = 0.5;$/;"	k
 openclose	picom.conf	/^no-fading-openclose = false;$/;"	k
 override	picom.conf	/^inactive-opacity-override = false;$/;"	k
+panels	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o	object:sidebar
+pinOpenedBookmarksFolder	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+pinnedAutoGroup	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+pinnedForcedDiscard	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+pinnedNoUnload	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+pinnedTabsList	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+pinnedTabsPosition	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 plenary.nvim	nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	o
+previewTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+previewTabsCropRight	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsFollowMouse	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+previewTabsInPageOffsetX	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsInPageOffsetY	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsInlineHeight	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsMode	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+previewTabsPageModeFallback	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+previewTabsPopupWidth	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsSide	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+previewTabsWinOffsetX	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+previewTabsWinOffsetY	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+qVvTK4LSIrFU	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o	object:sidebar.panels
 radius	picom.conf	/^shadow-radius = 20;$/;"	k
 radius	picom/picom.conf	/^shadow-radius = 10;$/;"	k
 rgb_fn	nvim/lua/k/plugins/colorizer.lua	/^        rgb_fn = true,     -- CSS rgb() and rgba() functions$/;"	f
+rmChildTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 rule	picom.conf	/^opacity-rule = [ $/;"	k
 rule	picom/picom.conf	/^opacity-rule = [$/;"	k
+scrollThroughTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+scrollThroughTabsCyclic	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+scrollThroughTabsExceptOverflow	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+scrollThroughTabsScrollArea	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+scrollThroughTabsSkipDiscarded	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+scrollThroughVisibleTabs	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+searchBarMode	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+searchBookmarksShortcut	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+searchHistoryShortcut	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+searchPanelSwitch	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+selWinScreenshots	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+selectActiveTabFirst	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+settings	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o
 shadow	picom.conf	/^shadow = true;$/;"	k
 shadow	picom/picom.conf	/^shadow = true;$/;"	k
 shaped	picom.conf	/^shadow-ignore-shaped = false;$/;"	k
+shiftSelAct	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+showBookmarkLen	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+showNewGroupConf	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+showNewTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+sidebar	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o
+sidebarCSS	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+sidebarCSS	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s
+skipEmptyPanels	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+skipOnSwitching	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.HZ_K3jetYaFU
+skipOnSwitching	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.KmQml-NZB8EU
+skipOnSwitching	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.jt0CCkXv_mFU
+skipOnSwitching	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.qVvTK4LSIrFU
+snapAutoExport	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+snapAutoExportPath	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+snapAutoExportType	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+snapExcludePrivate	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+snapInterval	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+snapIntervalUnit	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+snapLimit	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+snapLimitUnit	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+snapMdFullTree	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+snapNotify	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+sortGroupsFirst	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+srcPanelConfig	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	z	object:sidebar.panels.HZ_K3jetYaFU
+srcPanelConfig	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	z	object:sidebar.panels.KmQml-NZB8EU
+srcPanelConfig	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	z	object:sidebar.panels.jt0CCkXv_mFU
+srcPanelConfig	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	z	object:sidebar.panels.qVvTK4LSIrFU
 stencil	picom.conf	/^glx-no-stencil = true;$/;"	k
 step	picom.conf	/^fade-in-step = 0.03;$/;"	k
 step	picom.conf	/^fade-out-step = 0.03;$/;"	k
 step	picom/picom.conf	/^fade-in-step = 0.03;$/;"	k
 step	picom/picom.conf	/^fade-out-step = 0.03;$/;"	k
+subPanelBookmarks	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+subPanelHistory	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+subPanelRecentlyClosedBar	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+switchPanelAfterSwitchingTab	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+syncName	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+syncSaveCtxMenu	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+syncSaveKeybindings	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+syncSaveSettings	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+syncSaveStyles	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabCloseMiddleClick	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabDoubleClick	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabLongLeftClick	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabLongRightClick	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabMiddleClick	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabMiddleClickCtrl	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabMiddleClickShift	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabRmBtn	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabSwitchDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+tabWarmupOnHover	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsLvlDots	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsPanelDoubleClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabsPanelLeftClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabsPanelMiddleClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabsPanelRightClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabsPanelSwitchActMove	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsPanelSwitchActMoveAuto	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsReloadLimit	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+tabsReloadLimitNotif	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsRmUndoNote	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsSecondClickActPrev	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsSecondClickActPrevPanelOnly	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsTree	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsTreeBookmarks	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsTreeLimit	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+tabsUnreadMark	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsUpdateMark	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+tabsUpdateMarkFirst	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+tabsUrlInTooltip	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 telescope.nvim	nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	o
+theme	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 transient	picom.conf	/^detect-transient = true;$/;"	k
+treeRmOutdent	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+type	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.HZ_K3jetYaFU
+type	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.KmQml-NZB8EU
+type	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.jt0CCkXv_mFU
+type	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:sidebar.panels.qVvTK4LSIrFU
+updateSidebarTitle	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+ver	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s
 vim-commentary	nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	o
 vim-gutentags	nvim/lazy-lock.json	/^  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" },$/;"	o
 vim-qf	nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "1dcedfc42c017fd99477bcf36fb1f41e95809800" },$/;"	o
@@ -179,6 +476,13 @@ vim-unimpaired	nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "
 vim-vinegar	nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	o
 vsync	picom.conf	/^vsync = true;$/;"	k
 vsync	picom/picom.conf	/^vsync = true;$/;"	k
+warnOnMultiBookmarkDelete	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+warnOnMultiTabClose	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+wheelAccumulationX	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+wheelAccumulationY	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+wheelThreshold	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
+wheelThresholdX	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
+wheelThresholdY	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
 which-key.nvim	nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }$/;"	o
 wintypes	picom.conf	/^wintypes = {$/;"	k
 wintypes	picom/picom.conf	/^wintypes: {$/;"	k
