@@ -123,6 +123,7 @@ alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
 alias dotf='cd /home/florian/dotfiles'
 export PATH="$PATH:/opt/platform-tools"
-alias tgpt=terminalgpt
-alias tgpto=terminalgpt one-shot
-alias tgptn=terminalgpt new
+
+alias tgpt='terminalgpt'
+alias tgpto='terminalgpt one-shot'
+alias tgptn='terminalgpt new'
