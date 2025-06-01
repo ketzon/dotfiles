@@ -81,16 +81,21 @@ branch	nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a9
 branch	nvim/lazy-lock.json	/^  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },$/;"	s	object:harpoon
 branch	nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	s	object:lazy.nvim
 branch	nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	s	object:lsp-zero.nvim
+branch	nvim/lazy-lock.json	/^  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },$/;"	s	object:lua-utils.nvim
 branch	nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	s	object:lualine.nvim
 branch	nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af24/;"	s	object:mason-lspconfig.nvim
 branch	nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },$/;"	s	object:mason.nvim
+branch	nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "e206c9642f4a115cd836e76c98ef785623d335bc" },$/;"	s	object:neorg
+branch	nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "7cd18e73cfbd70e1546931b7268b3eebaeff9391" },$/;"	s	object:nui.nvim
 branch	nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	s	object:nvim-autopairs
 branch	nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	s	object:nvim-cmp
 branch	nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	s	object:nvim-colorizer.lua
 branch	nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "1a3a429efec62af632dfd8fa9b52fa226f655ec2" }/;"	s	object:nvim-lspconfig
+branch	nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	s	object:nvim-nio
 branch	nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	s	object:nvim-tree.lua
 branch	nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	s	object:nvim-treesitter
 branch	nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	s	object:nvim-web-devicons
+branch	nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	s	object:pathlib.nvim
 branch	nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	s	object:plenary.nvim
 branch	nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	s	object:telescope.nvim
 branch	nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	s	object:vim-commentary
@@ -124,16 +129,21 @@ commit	nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a9
 commit	nvim/lazy-lock.json	/^  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },$/;"	s	object:harpoon
 commit	nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	s	object:lazy.nvim
 commit	nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	s	object:lsp-zero.nvim
+commit	nvim/lazy-lock.json	/^  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },$/;"	s	object:lua-utils.nvim
 commit	nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	s	object:lualine.nvim
 commit	nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af24/;"	s	object:mason-lspconfig.nvim
 commit	nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },$/;"	s	object:mason.nvim
+commit	nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "e206c9642f4a115cd836e76c98ef785623d335bc" },$/;"	s	object:neorg
+commit	nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "7cd18e73cfbd70e1546931b7268b3eebaeff9391" },$/;"	s	object:nui.nvim
 commit	nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	s	object:nvim-autopairs
 commit	nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	s	object:nvim-cmp
 commit	nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	s	object:nvim-colorizer.lua
 commit	nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "1a3a429efec62af632dfd8fa9b52fa226f655ec2" }/;"	s	object:nvim-lspconfig
+commit	nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	s	object:nvim-nio
 commit	nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	s	object:nvim-tree.lua
 commit	nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	s	object:nvim-treesitter
 commit	nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	s	object:nvim-web-devicons
+commit	nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	s	object:pathlib.nvim
 commit	nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	s	object:plenary.nvim
 commit	nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	s	object:telescope.nvim
 commit	nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	s	object:vim-commentary
@@ -150,6 +160,7 @@ config	nvim/lua/k/plugins/harpoon.lua	/^  config = function()$/;"	f
 config	nvim/lua/k/plugins/lsp-zero.lua	/^    config = function()$/;"	f
 config	nvim/lua/k/plugins/lsp-zero.lua	/^  config = function()$/;"	f
 config	nvim/lua/k/plugins/lualine.lua	/^  config = function()$/;"	f
+config	nvim/lua/k/plugins/neorg.lua	/^  config = function()$/;"	f
 config	nvim/lua/k/plugins/nvim-tree.lua	/^	config = function()$/;"	f
 config	nvim/lua/k/plugins/nvim-treesitter.lua	/^	config = function () $/;"	f
 containersSortByName	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
@@ -268,6 +279,7 @@ lockedPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"native
 lockedPanel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.qVvTK4LSIrFU
 longClickDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
 lsp-zero.nvim	nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	o
+lua-utils.nvim	nvim/lazy-lock.json	/^  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },$/;"	o
 lua_ls	nvim/lua/k/plugins/lsp-zero.lua	/^        lua_ls = function()$/;"	f
 lualine.nvim	nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	o
 markWindow	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
@@ -307,6 +319,7 @@ navBtnCount	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"native
 navSwitchPanelsDelay	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	n	object:settings
 navSwitchPanelsWheel	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 navTabsPanelMidClickAction	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
+neorg	nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "e206c9642f4a115cd836e76c98ef785623d335bc" },$/;"	o
 newTabBarPosition	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	s	object:settings
 newTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.HZ_K3jetYaFU
 newTabBtns	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	a	object:sidebar.panels.KmQml-NZB8EU
@@ -322,10 +335,12 @@ noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScro
 noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.KmQml-NZB8EU
 noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.jt0CCkXv_mFU
 noEmpty	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:sidebar.panels.qVvTK4LSIrFU
+nui.nvim	nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "7cd18e73cfbd70e1546931b7268b3eebaeff9391" },$/;"	o
 nvim-autopairs	nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	o
 nvim-cmp	nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	o
 nvim-colorizer.lua	nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	o
 nvim-lspconfig	nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "1a3a429efec62af632dfd8fa9b52fa226f655ec2" }/;"	o
+nvim-nio	nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	o
 nvim-tree.lua	nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	o
 nvim-treesitter	nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	o
 nvim-web-devicons	nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	o
@@ -344,6 +359,7 @@ opacity	picom/picom.conf	/^shadow-opacity = 0.5;$/;"	k
 openclose	picom.conf	/^no-fading-openclose = false;$/;"	k
 override	picom.conf	/^inactive-opacity-override = false;$/;"	k
 panels	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	o	object:sidebar
+pathlib.nvim	nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	o
 pinOpenedBookmarksFolder	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 pinnedAutoGroup	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
 pinnedForcedDiscard	firefox/sidebery.json	/^{"settings":{"nativeScrollbars":true,"nativeScrollbarsThin":true,"nativeScrollbarsLeft":false,"s/;"	b	object:settings
