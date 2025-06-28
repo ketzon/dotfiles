@@ -117,6 +117,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=green"
 bindkey '^ ' autosuggest-accept
 
 alias v='nvim'
+alias e='emacs -nw'
 alias vconf='nvim ~/.config/nvim/'
 alias conf='cd /home/florian/.config/'
 alias vimrc='nvim ~/.vimrc'

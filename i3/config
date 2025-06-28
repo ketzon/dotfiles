@@ -304,6 +304,7 @@ exec --no-startup-id google-chrome-stable
 # exec_always --no-startup-id ~/.config/i3-resurrect/restore_layout.sh
 # ~/.config/i3/config
 bindsym $mod+Shift+m exec sudo systemctl hibernate
+exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 300.00
 
 
 
