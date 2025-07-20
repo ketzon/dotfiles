@@ -70,6 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
     git
     zsh-autosuggestions
@@ -111,7 +112,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 
 # color auto-suggestion
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=green"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#555555"
 
 # ctl-espace pour une suggest
 bindkey '^ ' autosuggest-accept
@@ -128,3 +129,6 @@ export PATH="$PATH:/opt/platform-tools"
 alias tgpt='terminalgpt'
 alias tgpto='terminalgpt one-shot'
 alias tgptn='terminalgpt new'
+
+# custom bind for completion on macOS
+bindkey '^ ' autosuggest-accept  
