@@ -59,6 +59,11 @@
 ;;          (file-relative-name (org-roam-node-file node) org-roam-directory))))
 ;;     (error "")))
 ;;
+
+;; Ne pas montrer les tâches répétitives tous les jours
+(setq org-agenda-repeating-timestamp-show-all nil)
+(setq org-agenda-skip-scheduled-if-done t)
+
 (setq org-roam-node-display-template
       (concat "${type:15} ${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
 
