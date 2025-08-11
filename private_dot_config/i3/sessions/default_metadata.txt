@@ -1,0 +1,6 @@
+SESSION_NAME=default
+TIMESTAMP=20250528_093436
+DATE=mer. 28 mai 2025 09:34:37 CEST
+USER=florian
+HOSTNAME=florian-System-Product-Name
+I3_VERSION=i3 version 4.21.1-39-g9f3e4157 © 2009 Michael Stapelberg and contributors
