@@ -1,0 +1,13 @@
+[user]
+	email = bessonflorian42@yahoo.fr
+	name = florian
+[pull]
+	rebase = false
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[core]
+    hooksPath = "/home/florian/.hooks"

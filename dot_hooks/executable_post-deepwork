@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+
+dijo -c "track-up deepwork"
