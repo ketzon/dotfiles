@@ -1,0 +1,838 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/florian/.local/share/chezmoi/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.0.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.0.nodes.0.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.nodes.1.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.nodes.1.nodes.0.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.nodes.1.nodes.1.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.nodes.2.focus
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.0.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.0.nodes.0.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.0.swallows
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes.0.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes.1.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.2.nodes
+0	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.2.swallows
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:focus
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.focus
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.nodes.1.focus
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.nodes.1.nodes.1.focus
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes
+1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes.1.nodes
+2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.focus
+2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
+LuaSnip	private_dot_config/nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	o
+alpha-nvim	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	o
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+bottom	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
+bottom	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
+bottom	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+branch	private_dot_config/nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	s	object:LuaSnip
+branch	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	s	object:alpha-nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },$/;"	s	object:cmp-nvim-lsp
+branch	private_dot_config/nvim/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },$/;"	s	object:cmp_luasnip
+branch	private_dot_config/nvim/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "31f2a2657b6261724313281fe0d8ba6f43f4a4fa" /;"	s	object:friendly-snippets
+branch	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a933d8666dad9363dc6908ae72cfc832299c2f59" },$/;"	s	object:gruvbox.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },$/;"	s	object:harpoon
+branch	private_dot_config/nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	s	object:lazy.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	s	object:lsp-zero.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },$/;"	s	object:lua-utils.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	s	object:lualine.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af24/;"	s	object:mason-lspconfig.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },$/;"	s	object:mason.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "e206c9642f4a115cd836e76c98ef785623d335bc" },$/;"	s	object:neorg
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },$/;"	s	object:nui.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	s	object:nvim-autopairs
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	s	object:nvim-cmp
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	s	object:nvim-colorizer.lua
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "1a3a429efec62af632dfd8fa9b52fa226f655ec2" }/;"	s	object:nvim-lspconfig
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	s	object:nvim-nio
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	s	object:nvim-tree.lua
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	s	object:nvim-treesitter
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	s	object:nvim-web-devicons
+branch	private_dot_config/nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	s	object:pathlib.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	s	object:plenary.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	s	object:telescope.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	s	object:vim-commentary
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" },$/;"	s	object:vim-gutentags
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "1dcedfc42c017fd99477bcf36fb1f41e95809800" },$/;"	s	object:vim-qf
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },$/;"	s	object:vim-repeat
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	s	object:vim-surround
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "6d44a6dc2ec34607c41ec78acf81657248580bf1" }/;"	s	object:vim-unimpaired
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	s	object:vim-vinegar
+branch	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }$/;"	s	object:which-key.nvim
+callback	private_dot_config/nvim/init.lua	/^  callback = function()$/;"	f
+class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
+class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
+class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
+class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0.window_properties
+cmp-nvim-lsp	private_dot_config/nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },$/;"	o
+cmp_luasnip	private_dot_config/nvim/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },$/;"	o
+commit	private_dot_config/nvim/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },$/;"	s	object:LuaSnip
+commit	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },$/;"	s	object:alpha-nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },$/;"	s	object:cmp-nvim-lsp
+commit	private_dot_config/nvim/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },$/;"	s	object:cmp_luasnip
+commit	private_dot_config/nvim/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "31f2a2657b6261724313281fe0d8ba6f43f4a4fa" /;"	s	object:friendly-snippets
+commit	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a933d8666dad9363dc6908ae72cfc832299c2f59" },$/;"	s	object:gruvbox.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },$/;"	s	object:harpoon
+commit	private_dot_config/nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	s	object:lazy.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	s	object:lsp-zero.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },$/;"	s	object:lua-utils.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	s	object:lualine.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af24/;"	s	object:mason-lspconfig.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },$/;"	s	object:mason.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "e206c9642f4a115cd836e76c98ef785623d335bc" },$/;"	s	object:neorg
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },$/;"	s	object:nui.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	s	object:nvim-autopairs
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	s	object:nvim-cmp
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	s	object:nvim-colorizer.lua
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "1a3a429efec62af632dfd8fa9b52fa226f655ec2" }/;"	s	object:nvim-lspconfig
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	s	object:nvim-nio
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	s	object:nvim-tree.lua
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	s	object:nvim-treesitter
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	s	object:nvim-web-devicons
+commit	private_dot_config/nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	s	object:pathlib.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	s	object:plenary.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	s	object:telescope.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	s	object:vim-commentary
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" },$/;"	s	object:vim-gutentags
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "1dcedfc42c017fd99477bcf36fb1f41e95809800" },$/;"	s	object:vim-qf
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },$/;"	s	object:vim-repeat
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	s	object:vim-surround
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "6d44a6dc2ec34607c41ec78acf81657248580bf1" }/;"	s	object:vim-unimpaired
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	s	object:vim-vinegar
+commit	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }$/;"	s	object:which-key.nvim
+config	private_dot_config/nvim/lua/k/plugins/alpha.lua	/^    config = function ()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/harpoon.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^    config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/lualine.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/neorg.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/nvim-tree.lua	/^	config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/nvim-treesitter.lua	/^	config = function () $/;"	f
+css_fn	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn$/;"	f
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2
+current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.0
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2
+deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+dock	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.swallows.0
+dock	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.swallows.0
+expand	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^          expand = function(args)$/;"	f
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.0
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
+floating_nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.0
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
+focus	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0.nodes.0.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.0.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.0
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.1
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2
+focused	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2.nodes.0
+friendly-snippets	private_dot_config/nvim/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "31f2a2657b6261724313281fe0d8ba6f43f4a4fa" /;"	o
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2
+fullscreen_mode	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
+gaps	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0.nodes.0
+gaps	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0
+gaps	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0.nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0.nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.0
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2
+geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+gruvbox.nvim	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a933d8666dad9363dc6908ae72cfc832299c2f59" },$/;"	o
+harpoon	private_dot_config/nvim/lazy-lock.json	/^  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },$/;"	o
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.deco_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.geometry
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.window_rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:rect
+height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:window_rect
+hsl_fn	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^        hsl_fn = true,     -- CSS hsl() and hsla() functions$/;"	f
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2
+id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
+init	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^    init = function()$/;"	f
+init	private_dot_config/nvim/lua/k/plugins/which-key.lua	/^  init = function()$/;"	f
+inner	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
+inner	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
+inner	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+insert_where	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.swallows.0
+insert_where	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.swallows.0
+instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
+instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
+instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
+instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0.window_properties
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+lazy.nvim	private_dot_config/nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },$/;"	o
+left	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
+left	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
+left	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+lsp-zero.nvim	private_dot_config/nvim/lazy-lock.json	/^  "lsp-zero.nvim": { "branch": "v3.x", "commit": "77550f2f6cbf0959ef1583d845661af075f3442b" },$/;"	o
+lua-utils.nvim	private_dot_config/nvim/lazy-lock.json	/^  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },$/;"	o
+lua_ls	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^        lua_ls = function()$/;"	f
+lualine.nvim	private_dot_config/nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },$/;"	o
+machine	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
+machine	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
+machine	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0.nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0.nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.0
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
+marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+mason-lspconfig.nvim	private_dot_config/nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af24/;"	o
+mason.nvim	private_dot_config/nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },$/;"	o
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+neorg	private_dot_config/nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "e206c9642f4a115cd836e76c98ef785623d335bc" },$/;"	o
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0.nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0.nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.0
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
+nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+nui.nvim	private_dot_config/nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },$/;"	o
+num	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0
+num	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0
+num	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+nvim-autopairs	private_dot_config/nvim/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" }/;"	o
+nvim-cmp	private_dot_config/nvim/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },$/;"	o
+nvim-colorizer.lua	private_dot_config/nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "517df88cf2afb36652830df2c655df2da416a0a/;"	o
+nvim-lspconfig	private_dot_config/nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "1a3a429efec62af632dfd8fa9b52fa226f655ec2" }/;"	o
+nvim-nio	private_dot_config/nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	o
+nvim-tree.lua	private_dot_config/nvim/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "5bea2b37523a31288e0fcab42f3be5c1bd4516bb" },$/;"	o
+nvim-treesitter	private_dot_config/nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" /;"	o
+nvim-web-devicons	private_dot_config/nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "c90dee4e930ab9f49fa6d77f289bff335b49e972/;"	o
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+outer	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
+outer	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
+outer	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+pathlib.nvim	private_dot_config/nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	o
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0.nodes.0.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.0
+percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.2
+plenary.nvim	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },$/;"	o
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0.nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0.nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.0
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2
+rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+rgb_fn	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^        rgb_fn = true,     -- CSS rgb() and rgba() functions$/;"	f
+right	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
+right	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
+right	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+scratchpad_state	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0.nodes.0.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.0.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.0
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.1
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2
+sticky	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.0.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.0
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
+swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+telescope.nvim	private_dot_config/nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	o
+title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
+title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
+title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
+title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0.window_properties
+top	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
+top	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
+top	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+transient_for	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
+transient_for	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
+transient_for	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
+transient_for	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.2.nodes.0.window_properties
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.0.nodes.0.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.0.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.0
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.1
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2
+urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2.nodes.0
+vim-commentary	private_dot_config/nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	o
+vim-gutentags	private_dot_config/nvim/lazy-lock.json	/^  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" },$/;"	o
+vim-qf	private_dot_config/nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "1dcedfc42c017fd99477bcf36fb1f41e95809800" },$/;"	o
+vim-repeat	private_dot_config/nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },$/;"	o
+vim-surround	private_dot_config/nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	o
+vim-unimpaired	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "6d44a6dc2ec34607c41ec78acf81657248580bf1" }/;"	o
+vim-vinegar	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	o
+which-key.nvim	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }$/;"	o
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.deco_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.geometry
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.window_rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:rect
+width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:window_rect
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0.nodes.0.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.0
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.1
+window	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.2
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2
+window_icon_padding	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
+window_properties	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0.nodes.0
+window_properties	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.0
+window_properties	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
+window_properties	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.0.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.0
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2
+window_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+window_role	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
+window_role	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.0.nodes.0.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.0
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.1
+window_type	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.2
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0.nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
+workspace_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.deco_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.geometry
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.window_rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:rect
+x	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.deco_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.geometry
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.window_rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:rect
+y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:window_rect
