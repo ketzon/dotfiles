@@ -1,168 +1,139 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
-;; Place your private configuration here! Remember, you do not need to run 'doom
-;; sync' after modifying this file!
+;; ===== OPTIMISATIONS PERFORMANCE =====
+(setq gc-cons-threshold (* 50 1000 1000))
+(setq read-process-output-max (* 1024 1024))
+(setq doom-modeline-persp-name nil)
+(setq doom-modeline-buffer-file-name-style 'truncate-except-project)
 
+;; ===== TON CONFIG EXISTANTE =====
+(setq auto-save-timeout 3)
+(setq org-todo-repeat-to-state "LOOP")
 
-;; Some functionality uses this to identify you, e.g. GPG configuration, email
-;; clients, file templates and snippets. It is optional.
-(setq user-full-name "fbesson"
-      user-mail-address "fbesson.student.42.fr")
+;; ===== CONFIG ORG COMPLÈTE (UN SEUL BLOC!) =====
+(after! org
+  ;; FICHIERS AGENDA - ajoute tes vrais chemins ici
+  (setq org-agenda-files '("~/org/"
+                           ;; "~/Documents/org/"  ; décommente si tu as ça
+                            "~/notes/org"          ; décommente si tu as ça
+                           ;; ajoute tes vrais chemins de fichiers org
+                           ))
 
-;; Doom exposes five (optional) variables for controlling fonts in Doom:
-;;
-;; - `doom-font' -- the primary font to use
-;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
-;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;; - `doom-unicode-font' -- for unicode glyphs
-;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-;;
-;; See 'C-h v doom-font' for documentation and more examples of what they
-;; accept. For example:
-;;
-;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
-;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
-;;
-;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
-;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
-;; refresh your font settings. If Emacs still can't find your font, it likely
-;; wasn't installed correctly. Font issues are rarely Doom issues!
+  ;; TODO KEYWORDS
+  (setq org-todo-keywords
+        '((sequence "TODO(t)" "NEXT(n)" "IN-PROGRESS(i)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")
+          (sequence "OBJECTIF(o)" "MILESTONE(m)" "|" "ACHIEVED(a)" "DROPPED(x)")))
 
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-gruvbox)
+  ;; COULEURS TODO
+  (setq org-todo-keyword-faces
+        '(("OBJECTIF" . "#ff6c6b")
+          ("MILESTONE" . "#ECBE7B") 
+          ("IN-PROGRESS" . "#51afef")
+          ("ACHIEVED" . "#98be65")))
 
-;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+  ;; TAGS
+  (setq org-tag-alist
+        '(("@sport" . ?s)
+          ("@code" . ?c) 
+          ("@japanese" . ?j)
+          ("@learning" . ?l)
+          ("@health" . ?h)
+          ("@priority_high" . ?1)
+          ("@priority_med" . ?2)
+          ("@priority_low" . ?3)))
 
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/notes/org/")
-(setq org-roam-directory (file-truename "~/notes/roam/"))
+  ;; PROGRESS TRACKING
+  (setq org-hierarchical-todo-statistics nil)
+  (setq org-checkbox-hierarchical-statistics nil)
 
-(setq org-roam-file-extensions '("org"))
+  ;; TEMPLATES CAPTURE
+  (setq org-capture-templates
+        '(("o" "Objectif" entry
+           (file+headline "~/org/goals.org" "Objectifs")
+           "* OBJECTIF %^{Nom objectif} [0%%] :%^{Tag}:
+DEADLINE: %^{Deadline}t
+:PROPERTIES:
+:EFFORT: %^{Estimation effort total}
+:PRIORITY: %^{A|B|C}
+:RESOURCES: %^{Ressources/semaine}
+:WHY: %^{Pourquoi cet objectif}
+:SUCCESS: %^{Critères de succès}
+:END:
 
-;; (use-package! pangu-spacing
-;;   :ensure t
-;;   :config
-;;   (global-pangu-spacing-mode 1))
+%^{Description détaillée}
 
-;; (cl-defmethod org-roam-node-type ((node org-roam-node))
-;;   "Return the TYPE of NODE."
-;;   (condition-case nil
-;;       (file-name-nondirectory
-;;        (directory-file-name
-;;         (file-name-directory
-;;          (file-relative-name (org-roam-node-file node) org-roam-directory))))
-;;     (error "")))
-;;
+** MILESTONE %^{Première étape} [0%%]
+** MILESTONE %^{Deuxième étape} [0%%]  
+** MILESTONE %^{Troisième étape} [0%%]")
 
-;; Ne pas montrer les tâches répétitives tous les jours
-(setq org-agenda-repeating-timestamp-show-all nil)
-(setq org-agenda-skip-scheduled-if-done t)
+          ("m" "Milestone" entry
+           (file+headline "~/org/goals.org" "Objectifs")
+           "** MILESTONE %^{Nom milestone} [0%%]
+DEADLINE: %^{Deadline}t
+:PROPERTIES:
+:EFFORT: %^{Estimation effort}
+:END:
 
-(setq org-roam-node-display-template
-      (concat "${type:15} ${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
+%^{Description}
 
-(setq org-roam-capture-templates
-      '(("m" "main" plain "%?"
-         :if-new (file+head "main/${slug}.org"
-                            "#+title: ${title}\n")
-         :immediate-finish t
-         :unnarrowed t)
-        ("r" "reference" plain "%?"
-         :if-new (file+head "reference/${title}.org"
-                            "#+title: ${title}\n")
-         :immediate-finish t
-         :unnarrowed t)
-        ("a" "article" plain "%?"
-         :if-new (file+head "articles/${title}.org"
-                            "#+title: ${title}\n#+filetags: :article:\n")
-         :immediate-finish t
-         :unnarrowed t)
-        ("d" "default" plain "%?"
-         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n")
-         :unnarrowed t)
-        ("g" "General Note" plain "%?"
-         :if-new (file+head "reference/General{slug}.org"
-                            "#+title: ${title}\n#+date: %U\n")
-         :unnarrowed t)
-        ("k" "French learning" plain "%?"
-         :if-new (file+head "reference/french{slug}.org"
-                            "#+title: ${title}\n#+date: %U\n")
-         :unnarrowed t)))
+*** TODO %^{Sous-tâche 1}
+*** TODO %^{Sous-tâche 2}")
 
-(use-package org-roam
-  :ensure t
-  :custom
-  (org-roam-directory (file-truename "~/notes/roam/"))
-  :bind (("C-c n l" . org-roam-buffer-toggle)
-         ("C-c n f" . org-roam-node-find)
-         ("C-c n g" . org-roam-graph)
-         ("C-c n i" . org-roam-node-insert)
-         ("C-c n c" . org-roam-capture)
-         ;; Dailies
-         ("C-c n j" . org-roam-dailies-capture-today))
-  :config
-  ;; If you're using a vertical completion framework, you might want a more informative completion interface
-  (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
-  (org-roam-db-autosync-mode)
-  ;; If using org-roam-protocol
-  (require 'org-roam-protocol))
+          ("r" "Revue Goals" entry
+           (file+headline "~/org/goals.org" "Revues")
+           "* Revue Goals - Semaine %<%Y-W%U>
+:PROPERTIES:
+:CREATED: %U
+:END:
 
-(use-package! org-roam-ui
-  :after org-roam
-  :hook (org-roam-mode . org-roam-ui-mode)
-  :config
-  (setq org-roam-ui-sync-theme t
-        org-roam-ui-follow t
-        org-roam-ui-update-on-save t
-        org-roam-ui-open-on-start t))
+** Progrès cette semaine
+- [ ] Japonais: %^{Progrès Japonais}
+- [ ] Sport: %^{Progrès Sport}  
+- [ ] Code: %^{Progrès Code}
 
-(use-package vterm
-  :ensure t
-  :commands vterm)
+** Blocages rencontrés
+%^{Blocages}
 
-(setq default-input-method "french")
+** Ajustements pour la semaine prochaine
+%^{Ajustements}
 
-(general-define-key
- :states 'insert
- "q" (general-key-dispatch 'self-insert-command
-       :timeout 0.25
-       "q" 'toggle-input-method))
+** Priorisation ressources
+| Objectif | Temps alloué | Justification |
+|----------+--------------+---------------|
+| %^{Obj1} | %^{Temps1}   | %^{Just1}     |
+| %^{Obj2} | %^{Temps2}   | %^{Just2}     |")))
 
-;; Whenever you reconfigure a package, make sure to wrap your config in an
-;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
-;;
-;;   (after! PACKAGE
-;;     (setq x y))
-;;
-;; The exceptions to this rule:
-;;
-;;   - Setting file/directory variables (like `org-directory')
-;;   - Setting variables which explicitly tell you to set them before their
-;;     package is loaded (see 'C-h v VARIABLE' to look up their documentation).
-;;   - Setting doom variables (which start with 'doom-' or '+').
-;;
-;; Here are some additional functions/macros that will help you configure Doom.
-;;
-;; - `load!' for loading external *.el files relative to this one
-;; - `use-package!' for configuring packages
-;; - `after!' for running code after a package has loaded
-;; - `add-load-path!' for adding directories to the `load-path', relative to
-;;   this file. Emacs searches the `load-path' when you load packages with
-;;   `require' or `use-package'.
-;; - `map!' for binding new keys
-;;
-;; To get information about any of these functions/macros, move the cursor over
-;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
-;; This will open documentation for it, including demos of how they are used.
-;; Alternatively, use `C-h o' to look up a symbol (functions, variables, faces,
-;; etc).
-;;
-;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
-;; they are implemented.
+  ;; COLUMN VIEW
+  (setq org-columns-default-format 
+        "%40ITEM(Task) %10TODO %10EFFORT(Effort){:} %10CLOCKSUM(Clocked) %16TAGS(Tags)")
+        
+  ;; PROPRIÉTÉS GLOBALES
+  (setq org-global-properties
+        '(("EFFORT_ALL" . "0:15 0:30 0:45 1:00 2:00 3:00 4:00 5:00 6:00 8:00")
+          ("PRIORITY_ALL" . "A B C")
+          ("RESOURCES_ALL" . "1h/semaine 2h/semaine 5h/semaine 10h/semaine 15h/semaine"))))
+
+;; ===== CLOCKING AMÉLIORÉ =====
+(after! org-clock
+  (setq org-clock-continuously t)
+  (setq org-clock-idle-time 10)
+  (setq org-clock-auto-clock-resolution 'when-no-clock-is-running)
+  
+  (setq org-clocktable-defaults
+        '(:maxlevel 3 :lang "fr" :scope agenda-with-archives 
+          :wstart 1 :mstart 1 :step week :stepskip0 t :fileskip0 t
+          :tags "OBJECTIF|MILESTONE")))
+
+;; ===== KEYBINDINGS RAPIDES =====
+(map! :leader
+      (:prefix-map ("n g" . "goals")
+       :desc "Goals dashboard"    "g" #'(lambda () (interactive) (org-agenda nil "g"))
+       :desc "Weekly review"      "w" #'(lambda () (interactive) (org-agenda nil "w"))
+       :desc "Clock in goal"      "i" #'org-clock-in
+       :desc "Clock out"          "o" #'org-clock-out
+       :desc "New objectif"       "n" #'(lambda () (interactive) (org-capture nil "o"))
+       :desc "New milestone"      "m" #'(lambda () (interactive) (org-capture nil "m"))
+       :desc "Review"             "r" #'(lambda () (interactive) (org-capture nil "r"))))
+
+;; Auto-save quand tu clock
+(add-hook 'org-clock-in-hook 'org-save-all-org-buffers)
