@@ -1,18 +1,17 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
-;; ===== OPTIMISATIONS PERFORMANCE =====
+;;pour perf
 (setq gc-cons-threshold (* 50 1000 1000))
 (setq read-process-output-max (* 1024 1024))
 (setq doom-modeline-persp-name nil)
 (setq doom-modeline-buffer-file-name-style 'truncate-except-project)
 
-;; ===== TON CONFIG EXISTANTE =====
+;; loop pour tache repetitive
 (setq auto-save-timeout 3)
 (setq org-todo-repeat-to-state "LOOP")
 
-;; ===== CONFIG ORG COMPLÈTE (UN SEUL BLOC!) =====
+;; config org
 (after! org
-  ;; FICHIERS AGENDA - ajoute tes vrais chemins ici
   (setq org-agenda-files '("~/org/"
                            ;; "~/Documents/org/"  ; décommente si tu as ça
                             "~/notes/org"          ; décommente si tu as ça
@@ -24,7 +23,7 @@
         '((sequence "TODO(t)" "NEXT(n)" "IN-PROGRESS(i)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")
           (sequence "OBJECTIF(o)" "MILESTONE(m)" "|" "ACHIEVED(a)" "DROPPED(x)")))
 
-  ;; COULEURS TODO
+  ;; color TODO
   (setq org-todo-keyword-faces
         '(("OBJECTIF" . "#ff6c6b")
           ("MILESTONE" . "#ECBE7B") 
@@ -37,6 +36,7 @@
           ("@code" . ?c) 
           ("@japanese" . ?j)
           ("@learning" . ?l)
+          ("@fortnite" . ?l)
           ("@health" . ?h)
           ("@priority_high" . ?1)
           ("@priority_med" . ?2)
@@ -46,7 +46,7 @@
   (setq org-hierarchical-todo-statistics nil)
   (setq org-checkbox-hierarchical-statistics nil)
 
-  ;; TEMPLATES CAPTURE
+  ;; MA TEMPLATES CAPTURE (peut etre opti)
   (setq org-capture-templates
         '(("o" "Objectif" entry
            (file+headline "~/org/goals.org" "Objectifs")
@@ -113,7 +113,7 @@ DEADLINE: %^{Deadline}t
           ("PRIORITY_ALL" . "A B C")
           ("RESOURCES_ALL" . "1h/semaine 2h/semaine 5h/semaine 10h/semaine 15h/semaine"))))
 
-;; ===== CLOCKING AMÉLIORÉ =====
+;; voir comment gerer le clocking, si utile ou non ?
 (after! org-clock
   (setq org-clock-continuously t)
   (setq org-clock-idle-time 10)
@@ -135,5 +135,5 @@ DEADLINE: %^{Deadline}t
        :desc "New milestone"      "m" #'(lambda () (interactive) (org-capture nil "m"))
        :desc "Review"             "r" #'(lambda () (interactive) (org-capture nil "r"))))
 
-;; Auto-save quand tu clock
+;; Auto-save quand si je clock
 (add-hook 'org-clock-in-hook 'org-save-all-org-buffers)
