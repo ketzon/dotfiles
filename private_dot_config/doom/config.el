@@ -6,7 +6,7 @@
 
 ;; loop pour tache repetitive
 (setq auto-save-timeout 3)
-(setq org-todo-repeat-to-state "LOOP")
+(setq org-todo-repeat-to-state "loop")
 
 (after! org-roam
   (setq org-roam-directory "~/org-roam/")
@@ -14,21 +14,21 @@
 
   ;; templates pour les notes quotidiennes
   (setq org-roam-dailies-capture-templates
-        '(("d" "default" entry "* TODO %?"
-           :target (file+head "%<%Y-%m-%d>.org"
-                             "#+title: %<%A %d %B %Y>\n#+filetags: :daily:\n\n* 🎯 Priorités du jour\n\n* 📋 TODOs\n** À faire aujourd'hui\n** En cours\n\n* 📅 Agenda\n\n* 📝 Notes\n"))
-          ("t" "todo rapide" entry "* TODO %?"
-           :target (file+head "%<%Y-%m-%d>.org"
-                             "#+title: %<%Y-%m-%d>\n#+filetags: :daily:\n")
+        '(("d" "default" entry "* todo %?"
+           :target (file+head "%<%y-%m-%d>.org"
+                             "#+title: %<%a %d %b %y>\n#+filetags: :daily:\n\n* 🎯 priorités du jour\n\n* 📋 todos\n** à faire aujourd'hui\n** en cours\n\n* 📅 agenda\n\n* 📝 notes\n"))
+          ("t" "todo rapide" entry "* todo %?"
+           :target (file+head "%<%y-%m-%d>.org"
+                             "#+title: %<%y-%m-%d>\n#+filetags: :daily:\n")
            :prepend t)))
 
-  ;; Fonction pour TODO rapide
+  ;; fonction pour todo rapide
   (defun my/quick-daily-todo ()
-    "Ajoute un TODO à la note du jour"
+    "ajoute un todo à la note du jour"
     (interactive)
     (org-roam-dailies-goto-today)
     (goto-char (point-max))
-    (insert "\n* TODO ")
+    (insert "\n* todo ")
     (save-buffer)))
 
 ;; org config
@@ -45,24 +45,23 @@
   ;; set default
   (setq org-duration-format '((special . h:mm)))
 
-  ;; AGENDA FILES - INCLUT org-roam dailies
-  (setq org-agenda-files (append '("~/org/"
-                                   "~/notes/org/"
-                                   "~/org-roam/daily/"))
+  (setq org-agenda-files '("~/org/"
+                          "~/notes/org/"
+                          "~/org-roam/daily/"))
 
-  ;; TODO KEYWORDS
+  ;; todo keywords
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "NEXT(n)" "IN-PROGRESS(i)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")
-          (sequence "OBJECTIF(o)" "MILESTONE(m)" "|" "ACHIEVED(a)" "DROPPED(x)")))
+        '((sequence "todo(t)" "next(n)" "in-progress(i)" "waiting(w)" "|" "done(d)" "cancelled(c)")
+          (sequence "objectif(o)" "milestone(m)" "|" "achieved(a)" "dropped(x)")))
 
-  ;; color TODO
+  ;; color todo
   (setq org-todo-keyword-faces
-        '(("OBJECTIF" . "#ff6c6b")
-          ("MILESTONE" . "#ECBE7B") 
-          ("IN-PROGRESS" . "#51afef")
-          ("ACHIEVED" . "#98be65")))
+        '(("objectif" . "#ff6c6b")
+          ("milestone" . "#ecbe7b") 
+          ("in-progress" . "#51afef")
+          ("achieved" . "#98be65")))
 
-  ;; TAGS
+  ;; tags
   (setq org-tag-alist
         '(("@sport" . ?s)
           ("@code" . ?c) 
@@ -74,78 +73,78 @@
           ("@priority_med" . ?2)
           ("@priority_low" . ?3)))
 
-  ;; PROGRESS TRACKING
+  ;; progress tracking
   (setq org-hierarchical-todo-statistics nil)
   (setq org-checkbox-hierarchical-statistics nil)
 
-  ;; TEMPLATES CAPTURE
+  ;; templates capture
   (setq org-capture-templates
-        '(("o" "Objectif" entry
-           (file+headline "~/org/goals.org" "Objectifs")
-           "* OBJECTIF %^{Nom objectif} [0%%] :%^{Tag}:
-DEADLINE: %^{Deadline}t
-:PROPERTIES:
-:EFFORT: %^{Estimation effort total}
-:PRIORITY: %^{A|B|C}
-:RESOURCES: %^{Ressources/semaine}
-:WHY: %^{Pourquoi cet objectif}
-:SUCCESS: %^{Critères de succès}
-:END:
+        '(("o" "objectif" entry
+           (file+headline "~/org/goals.org" "objectifs")
+           "* objectif %^{nom objectif} [0%%] :%^{tag}:
+deadline: %^{deadline}t
+:properties:
+:effort: %^{estimation effort total}
+:priority: %^{a|b|c}
+:resources: %^{ressources/semaine}
+:why: %^{pourquoi cet objectif}
+:success: %^{critères de succès}
+:end:
 
-%^{Description détaillée}
+%^{description détaillée}
 
-** MILESTONE %^{Première étape} [0%%]
-** MILESTONE %^{Deuxième étape} [0%%]  
-** MILESTONE %^{Troisième étape} [0%%]")
+** milestone %^{première étape} [0%%]
+** milestone %^{deuxième étape} [0%%]  
+** milestone %^{troisième étape} [0%%]")
 
-          ("m" "Milestone" entry
-           (file+headline "~/org/goals.org" "Objectifs")
-           "** MILESTONE %^{Nom milestone} [0%%]
-DEADLINE: %^{Deadline}t
-:PROPERTIES:
-:EFFORT: %^{Estimation effort}
-:END:
+          ("m" "milestone" entry
+           (file+headline "~/org/goals.org" "objectifs")
+           "** milestone %^{nom milestone} [0%%]
+deadline: %^{deadline}t
+:properties:
+:effort: %^{estimation effort}
+:end:
 
-%^{Description}
+%^{description}
 
-*** TODO %^{Sous-tâche 1}
-*** TODO %^{Sous-tâche 2}")
+*** todo %^{sous-tâche 1}
+*** todo %^{sous-tâche 2}")
 
-          ("r" "Revue Goals" entry
-           (file+headline "~/org/goals.org" "Revues")
-           "* Revue Goals - Semaine %<%Y-W%U>
-:PROPERTIES:
-:CREATED: %U
-:END:
+          ("r" "revue goals" entry
+           (file+headline "~/org/goals.org" "revues")
+           "* revue goals - semaine %<%y-w%u>
+:properties:
+:created: %u
+:end:
 
-** Progrès cette semaine
-- [ ] Japonais: %^{Progrès Japonais}
-- [ ] Sport: %^{Progrès Sport}  
-- [ ] Code: %^{Progrès Code}
+** progrès cette semaine
+- [ ] japonais: %^{progrès japonais}
+- [ ] sport: %^{progrès sport}  
+- [ ] code: %^{progrès code}
 
-** Blocages rencontrés
-%^{Blocages}
+** blocages rencontrés
+%^{blocages}
 
-** Ajustements pour la semaine prochaine
-%^{Ajustements}
+** ajustements pour la semaine prochaine
+%^{ajustements}
 
-** Priorisation ressources
-| Objectif | Temps alloué | Justification |
+** priorisation ressources
+| objectif | temps alloué | justification |
 |----------+--------------+---------------|
-| %^{Obj1} | %^{Temps1}   | %^{Just1}     |
-| %^{Obj2} | %^{Temps2}   | %^{Just2}     |")))
+| %^{obj1} | %^{temps1}   | %^{just1}     |
+| %^{obj2} | %^{temps2}   | %^{just2}     |")))
 
-  ;; COLUMN VIEW
+  ;; column view
   (setq org-columns-default-format 
-        "%40ITEM(Task) %10TODO %10EFFORT(Effort){:} %10CLOCKSUM(Clocked) %16TAGS(Tags)")
+        "%40item(task) %10todo %10effort(effort){:} %10clocksum(clocked) %16tags(tags)")
         
-  ;; PROPRIÉTÉS GLOBALES
+  ;; propriétés globales
   (setq org-global-properties
-        '(("EFFORT_ALL" . "0:15 0:30 0:45 1:00 2:00 3:00 4:00 5:00 6:00 8:00")
-          ("PRIORITY_ALL" . "A B C")
-          ("RESOURCES_ALL" . "1h/semaine 2h/semaine 5h/semaine 10h/semaine 15h/semaine"))))
+        '(("effort_all" . "0:15 0:30 0:45 1:00 2:00 3:00 4:00 5:00 6:00 8:00")
+          ("priority_all" . "a b c")
+          ("resources_all" . "1h/semaine 2h/semaine 5h/semaine 10h/semaine 15h/semaine"))))
 
-;; CLOCKING
+;; clocking
 (after! org-clock
   (setq org-clock-continuously t)
   (setq org-clock-idle-time 10)
@@ -154,29 +153,29 @@ DEADLINE: %^{Deadline}t
   (setq org-clocktable-defaults
         '(:maxlevel 3 :lang "fr" :scope agenda-with-archives 
           :wstart 1 :mstart 1 :step week :stepskip0 t :fileskip0 t
-          :tags "OBJECTIF|MILESTONE"))
+          :tags "objectif|milestone"))
   (add-hook 'org-clock-in-hook 'org-save-all-org-buffers))
 
 (map! :leader
-      ;; Goals existants
+      ;; goals existants
       (:prefix-map ("n g" . "goals")
-       :desc "Goals dashboard"    "g" #'(lambda () (interactive) (org-agenda nil "g"))
-       :desc "Weekly review"      "w" #'(lambda () (interactive) (org-agenda nil "w"))
-       :desc "Clock in goal"      "i" #'org-clock-in
-       :desc "Clock out"          "o" #'org-clock-out
-       :desc "New objectif"       "n" #'(lambda () (interactive) (org-capture nil "o"))
-       :desc "New milestone"      "m" #'(lambda () (interactive) (org-capture nil "m"))
-       :desc "Review"             "r" #'(lambda () (interactive) (org-capture nil "r")))
+       :desc "goals dashboard"    "g" #'(lambda () (interactive) (org-agenda nil "g"))
+       :desc "weekly review"      "w" #'(lambda () (interactive) (org-agenda nil "w"))
+       :desc "clock in goal"      "i" #'org-clock-in
+       :desc "clock out"          "o" #'org-clock-out
+       :desc "new objectif"       "n" #'(lambda () (interactive) (org-capture nil "o"))
+       :desc "new milestone"      "m" #'(lambda () (interactive) (org-capture nil "m"))
+       :desc "review"             "r" #'(lambda () (interactive) (org-capture nil "r")))
 
       ;; shesh
       (:prefix-map ("n d" . "daily notes")
-       :desc "Capture today"      "d" #'org-roam-dailies-capture-today
-       :desc "Goto today"         "t" #'org-roam-dailies-goto-today
-       :desc "Previous note"      "p" #'org-roam-dailies-goto-previous-note
-       :desc "Next note"          "n" #'org-roam-dailies-goto-next-note
-       :desc "Quick TODO"         "q" #'my/quick-daily-todo))
+       :desc "capture today"      "d" #'org-roam-dailies-capture-today
+       :desc "goto today"         "t" #'org-roam-dailies-goto-today
+       :desc "previous note"      "p" #'org-roam-dailies-goto-previous-note
+       :desc "next note"          "n" #'org-roam-dailies-goto-next-note
+       :desc "quick todo"         "q" #'my/quick-daily-todo))
 
 ;; shortcut globaux compatibles doom
-(map! "C-c n d" #'org-roam-dailies-capture-today
-      "C-c n t" #'org-roam-dailies-goto-today
-      "C-c n q" #'my/quick-daily-todo)
+(map! "c-c n d" #'org-roam-dailies-capture-today
+      "c-c n t" #'org-roam-dailies-goto-today
+      "c-c n q" #'my/quick-daily-todo)
