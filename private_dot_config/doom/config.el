@@ -1,5 +1,3 @@
-;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
-
 ;;pour perf
 (setq gc-cons-threshold (* 50 1000 1000))
 (setq read-process-output-max (* 1024 1024))
@@ -10,13 +8,47 @@
 (setq auto-save-timeout 3)
 (setq org-todo-repeat-to-state "LOOP")
 
-;; config org
+(after! org-roam
+  (setq org-roam-directory "~/org-roam/")
+  (setq org-roam-dailies-directory "~/org-roam/daily/")
+
+  ;; templates pour les notes quotidiennes
+  (setq org-roam-dailies-capture-templates
+        '(("d" "default" entry "* TODO %?"
+           :target (file+head "%<%Y-%m-%d>.org"
+                             "#+title: %<%A %d %B %Y>\n#+filetags: :daily:\n\n* 🎯 Priorités du jour\n\n* 📋 TODOs\n** À faire aujourd'hui\n** En cours\n\n* 📅 Agenda\n\n* 📝 Notes\n"))
+          ("t" "todo rapide" entry "* TODO %?"
+           :target (file+head "%<%Y-%m-%d>.org"
+                             "#+title: %<%Y-%m-%d>\n#+filetags: :daily:\n")
+           :prepend t)))
+
+  ;; Fonction pour TODO rapide
+  (defun my/quick-daily-todo ()
+    "Ajoute un TODO à la note du jour"
+    (interactive)
+    (org-roam-dailies-goto-today)
+    (goto-char (point-max))
+    (insert "\n* TODO ")
+    (save-buffer)))
+
+;; org config
 (after! org
-  (setq org-agenda-files '("~/org/"
-                           ;; "~/Documents/org/"  ; décommente si tu as ça
-                            "~/notes/org"          ; décommente si tu as ça
-                           ;; ajoute tes vrais chemins de fichiers org
-                           ))
+  ;; duration modulable
+  (setq org-effort-durations
+        '(("min" . 1)
+          ("h" . 60)
+          ("d" . 480)  ; 8h par jour
+          ("w" . 2400) ; 5 jours par semaine
+          ("m" . 9600) ; 4 semaines par mois
+          ("y" . 115200))) ; 12 mois par an
+  
+  ;; set default
+  (setq org-duration-format '((special . h:mm)))
+
+  ;; AGENDA FILES - INCLUT org-roam dailies
+  (setq org-agenda-files (append '("~/org/"
+                                   "~/notes/org/"
+                                   "~/org-roam/daily/"))
 
   ;; TODO KEYWORDS
   (setq org-todo-keywords
@@ -36,7 +68,7 @@
           ("@code" . ?c) 
           ("@japanese" . ?j)
           ("@learning" . ?l)
-          ("@fortnite" . ?l)
+          ("@fortnite" . ?f)
           ("@health" . ?h)
           ("@priority_high" . ?1)
           ("@priority_med" . ?2)
@@ -46,7 +78,7 @@
   (setq org-hierarchical-todo-statistics nil)
   (setq org-checkbox-hierarchical-statistics nil)
 
-  ;; MA TEMPLATES CAPTURE (peut etre opti)
+  ;; TEMPLATES CAPTURE
   (setq org-capture-templates
         '(("o" "Objectif" entry
            (file+headline "~/org/goals.org" "Objectifs")
@@ -113,7 +145,7 @@ DEADLINE: %^{Deadline}t
           ("PRIORITY_ALL" . "A B C")
           ("RESOURCES_ALL" . "1h/semaine 2h/semaine 5h/semaine 10h/semaine 15h/semaine"))))
 
-;; voir comment gerer le clocking, si utile ou non ?
+;; CLOCKING
 (after! org-clock
   (setq org-clock-continuously t)
   (setq org-clock-idle-time 10)
@@ -122,10 +154,11 @@ DEADLINE: %^{Deadline}t
   (setq org-clocktable-defaults
         '(:maxlevel 3 :lang "fr" :scope agenda-with-archives 
           :wstart 1 :mstart 1 :step week :stepskip0 t :fileskip0 t
-          :tags "OBJECTIF|MILESTONE")))
+          :tags "OBJECTIF|MILESTONE"))
+  (add-hook 'org-clock-in-hook 'org-save-all-org-buffers))
 
-;; ===== KEYBINDINGS RAPIDES =====
 (map! :leader
+      ;; Goals existants
       (:prefix-map ("n g" . "goals")
        :desc "Goals dashboard"    "g" #'(lambda () (interactive) (org-agenda nil "g"))
        :desc "Weekly review"      "w" #'(lambda () (interactive) (org-agenda nil "w"))
@@ -133,7 +166,17 @@ DEADLINE: %^{Deadline}t
        :desc "Clock out"          "o" #'org-clock-out
        :desc "New objectif"       "n" #'(lambda () (interactive) (org-capture nil "o"))
        :desc "New milestone"      "m" #'(lambda () (interactive) (org-capture nil "m"))
-       :desc "Review"             "r" #'(lambda () (interactive) (org-capture nil "r"))))
+       :desc "Review"             "r" #'(lambda () (interactive) (org-capture nil "r")))
 
-;; Auto-save quand si je clock
-(add-hook 'org-clock-in-hook 'org-save-all-org-buffers)
+      ;; shesh
+      (:prefix-map ("n d" . "daily notes")
+       :desc "Capture today"      "d" #'org-roam-dailies-capture-today
+       :desc "Goto today"         "t" #'org-roam-dailies-goto-today
+       :desc "Previous note"      "p" #'org-roam-dailies-goto-previous-note
+       :desc "Next note"          "n" #'org-roam-dailies-goto-next-note
+       :desc "Quick TODO"         "q" #'my/quick-daily-todo))
+
+;; shortcut globaux compatibles doom
+(map! "C-c n d" #'org-roam-dailies-capture-today
+      "C-c n t" #'org-roam-dailies-goto-today
+      "C-c n q" #'my/quick-daily-todo)
