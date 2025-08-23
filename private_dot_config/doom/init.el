@@ -1,60 +1,53 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
-;; This file controls what Doom modules are enabled and what order they load
-;; in. Remember to run 'doom sync' after modifying it!
-
-(setq auto-save-timeout 3)
-
 (doom! :input
 
        :completion
-       company           ; the ultimate code completion backend
-       vertico           ; the search engine of the future
+       company
+       vertico
 
        :ui
-       doom              ; what makes DOOM look the way it does
-       ;;doom-dashboard    ; COMMENTÉ pour plus de vitesse
-       hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
-       modeline          ; snazzy, Atom-inspired modeline, plus API
-       ;;neotree           ; COMMENTÉ pour plus de vitesse
-       ophints           ; highlight the region an operation acts on
-       (popup +defaults)   ; tame sudden yet inevitable temporary windows
-       ;;(vc-gutter +pretty) ; COMMENTÉ pour plus de vitesse
-       vi-tilde-fringe   ; fringe tildes to mark beyond EOB
-       ;;workspaces        ; COMMENTÉ pour plus de vitesse
+       doom
+       doom-dashboard
+       hl-todo
+       modeline
+       (popup +defaults)
+       vi-tilde-fringe
+       ;;workspaces
 
        :editor
-       (evil +everywhere); come to the dark side, we have cookies
-       file-templates    ; auto-snippets for empty files
-       fold              ; (nigh) universal code folding
-       snippets          ; my elves. They type so I don't have to
+       (evil +everywhere)
+       file-templates
+       fold
+       snippets
 
        :emacs
-       dired             ; making dired pretty [functional]
-       electric          ; smarter, keyword-based electric-indent
-       undo              ; persistent, smarter undo for your inevitable mistakes
-       vc                ; version-control and Emacs, sitting in a tree
+       dired
+       electric
+       undo
+       vc
 
        :term
-       vterm             ; the best terminal emulation in Emacs
+       vterm
 
        :checkers
-       syntax              ; tasing you for every semicolon you forget
-       ;; (spell +flyspell) ; tasing you for misspelling mispelling
+       syntax
+       ;; (spell +flyspell)
 
        :tools
-       (eval +overlay)     ; run code, run (also, repls)
-       lookup              ; navigate your code and its documentation
-       magit             ; a git porcelain for Emacs
+       (eval +overlay)
+       lookup
+       magit
 
        :os
-       (:if IS-MAC macos)  ; improve compatibility with macOS
+       (:if IS-MAC macos)
 
        :lang
-       emacs-lisp        ; drown in parentheses
-       markdown          ; writing docs for people to ignore
-       (org +roam2)              ; organize your plain life in plain text
-       sh                ; she sells {ba,z,fi}sh shells on the C xor
+       emacs-lisp
+       markdown
+       (org +roam2)
+       sh
 
        :config
        (default +bindings +smartparens))
+

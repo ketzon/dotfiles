@@ -1,10 +1,15 @@
-;; -*- no-byte-compile: t; -*-
-;;; $DOOMDIR/packages.el
+;; packages.el -*- no-byte-compile: t; -*-
 
-;; mes package pour notes, goals et visibilite (work sur mon mira aussi)
+;; orgroam
 (package! pangu-spacing)
 (package! org-roam-ui
   :recipe (:host github :repo "org-roam/org-roam-ui"))
+
+;; term
 (package! vterm)
+
+;; advanced agenda + query
 (package! org-super-agenda)
 (package! org-ql)
+
+
