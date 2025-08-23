@@ -4,6 +4,12 @@
 (setq doom-modeline-persp-name nil)
 (setq doom-modeline-buffer-file-name-style 'truncate-except-project)
 
+; (use-package org-habit-stats
+;   :after org-habit
+;   :config
+;   (setq org-habit-stats-graph-output-file "~/notes/org/habit-stats.svg")  
+;   (setq org-habit-stats-calendar-output-file "~/notes/org/habit-calendar.svg"))
+
 ;; loop pour tache repetitive
 (setq auto-save-timeout 3)
 (setq org-todo-repeat-to-state "loop")
@@ -34,6 +40,7 @@
 ;; org config
 (after! org
   ;; duration modulable
+ (add-to-list 'org-modules 'org-habit t)
   (setq org-effort-durations
         '(("min" . 1)
           ("h" . 60)
@@ -179,3 +186,4 @@ deadline: %^{deadline}t
 (map! "c-c n d" #'org-roam-dailies-capture-today
       "c-c n t" #'org-roam-dailies-goto-today
       "c-c n q" #'my/quick-daily-todo)
+
