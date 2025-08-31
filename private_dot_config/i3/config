@@ -260,9 +260,9 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl s +5%
 
 
-exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace number 1; exec /usr/bin/firefox'
 
-exec_always --no-startup-id picom --config /home/florian/.config/picom.conf
+# exec_always --no-startup-id picom --config /home/florian/.config/picom.conf
 # exec_always --no-startup-id twmnd 
 
 # media keys
