@@ -1,111 +1,116 @@
+-- lua/k/plugins/lsp-zero.lua
 return {
+  -- lsp-zero (glue)
   {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
     lazy = true,
     config = false,
     init = function()
-      -- Disable automatic setup, we are doing it manually
+      -- on gère cmp & lspconfig nous-mêmes
       vim.g.lsp_zero_extend_cmp = 0
       vim.g.lsp_zero_extend_lspconfig = 0
     end,
   },
+
+  -- Mason (gestionnaire d'outils LSP/DAP/formatters)
+  { 'williamboman/mason.nvim', version = '^1', lazy = false, config = true },
+
+  -- Snippets
   {
-    'williamboman/mason.nvim',
-    lazy = false,
-    opts = {
-      auto_install = true,
-    },
-    config = true,
-  },
-  -- snippets
-  {
-  	"L3MON4D3/LuaSnip",
+    'L3MON4D3/LuaSnip',
     dependencies = {
       'saadparwaiz1/cmp_luasnip',
-      'rafamadriz/friendly-snippets' },
+      'rafamadriz/friendly-snippets',
+    },
   },
-  -- Autocompletion
+
+  -- Autocomplétion
   {
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
-    dependencies = {
-      {'L3MON4D3/LuaSnip'},
-    },
+    dependencies = { 'L3MON4D3/LuaSnip' },
     config = function()
-      -- Here is where you configure the autocompletion settings.
       local lsp_zero = require('lsp-zero')
       lsp_zero.extend_cmp()
-      -- And you can configure cmp even more, if you want to.
+
       local cmp = require('cmp')
       local cmp_action = lsp_zero.cmp_action()
-      require("luasnip.loaders.from_vscode").lazy_load()
+
+      require('luasnip.loaders.from_vscode').lazy_load()
+
       cmp.setup({
-        formatting = lsp_zero.cmp_format({details = true}),
+        formatting = lsp_zero.cmp_format({ details = true }),
         sources = {
-          {name = 'nvim_lsp'},
-          {name = 'luasnip'},
-          {name = 'buffer'},
-          {name = 'path'},
-          },
+          { name = 'nvim_lsp' },
+          { name = 'luasnip' },
+          { name = 'buffer' },
+          { name = 'path' },
+        },
         mapping = cmp.mapping.preset.insert({
-          ['<CR>'] = cmp.mapping.confirm({select = false}),
+          ['<CR>']     = cmp.mapping.confirm({ select = false }),
           ['<C-Space>'] = cmp.mapping.complete(),
-          ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-          ['<C-d>'] = cmp.mapping.scroll_docs(4),
-          ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-          ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+          ['<C-u>']    = cmp.mapping.scroll_docs(-4),
+          ['<C-d>']    = cmp.mapping.scroll_docs(4),
+          ['<C-f>']    = cmp_action.luasnip_jump_forward(),
+          ['<C-b>']    = cmp_action.luasnip_jump_backward(),
         }),
         snippet = {
-          expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-          end,
+          expand = function(args) require('luasnip').lsp_expand(args.body) end,
         },
       })
-    end
+    end,
   },
--- LSP
-{
-  'neovim/nvim-lspconfig',
-  cmd = {'LspInfo', 'LspInstall', 'LspStart'},
-  event = {'BufReadPre', 'BufNewFile'},
-  dependencies = {
-    {'hrsh7th/cmp-nvim-lsp'},
-    {'williamboman/mason-lspconfig.nvim'},
-  },
-  config = function()
-    -- This is where all the LSP shenanigans will live
-    local lsp_zero = require('lsp-zero')
-    lsp_zero.extend_lspconfig()
-    --- if you want to know more about lsp-zero and mason.nvim
-    --- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
-    lsp_zero.on_attach(function(client, bufnr)
-      -- see :help lsp-zero-keybindings
-      -- to learn the available actions
-      lsp_zero.default_keymaps({buffer = bufnr})
-    end)
-    require('mason-lspconfig').setup({
-      ensure_installed = {
-	'html',
-	'cssls',
-	'emmet_ls',
-	'ts_ls',
-	'tailwindcss',
-                            },
-      handlers = {
-        -- this first function is the "default handler"
-        -- it applies to every language server without a "custom handler"
+
+  -- LSP (API mason-lspconfig v2)
+  {
+    'neovim/nvim-lspconfig',
+    cmd   = { 'LspInfo', 'LspInstall', 'LspStart' },
+    event = { 'BufReadPre', 'BufNewFile' },
+    dependencies = {
+      'hrsh7th/cmp-nvim-lsp',
+      { 'williamboman/mason.nvim', version = '^1' },
+      { 'williamboman/mason-lspconfig.nvim', version = '^2' },
+    },
+    config = function()
+      local lsp_zero = require('lsp-zero')
+
+      -- keymaps par défaut quand un LSP s’attache
+      lsp_zero.on_attach(function(_, bufnr)
+        lsp_zero.default_keymaps({ buffer = bufnr })
+      end)
+
+      -- Mason
+      require('mason').setup({})
+
+      -- Serveurs à installer (mason-lspconfig v2)
+      require('mason-lspconfig').setup({
+        ensure_installed = {
+          'lua_ls',
+          'html',
+          'cssls',
+          'emmet_ls',
+          'ts_ls',      -- nouveau nom de tsserver
+          'tailwindcss',
+        },
+      })
+
+      -- Capacités pour nvim-cmp
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+      -- Handlers: config par défaut + override pour lua_ls
+      require('mason-lspconfig').setup_handlers({
         function(server_name)
-          require('lspconfig')[server_name].setup({})
+          require('lspconfig')[server_name].setup({
+            capabilities = capabilities,
+          })
         end,
-        -- this is the "custom handler" for `lua_ls`
         lua_ls = function()
-          -- (Optional) Configure lua language server for neovim
           local lua_opts = lsp_zero.nvim_lua_ls()
+          lua_opts.capabilities = capabilities
           require('lspconfig').lua_ls.setup(lua_opts)
         end,
-      }
-    })
-  end
-}
+      })
+    end,
+  },
 }
