@@ -16,3 +16,7 @@
 (package! calfw)
 (package! calfw-org)
 (package! calfw-ical)
+
+;; better calfw view
+(package! calfw-blocks
+  :recipe (:host github :repo "ml729/calfw-blocks"))
