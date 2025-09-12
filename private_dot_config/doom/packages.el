@@ -12,4 +12,7 @@
 (package! org-super-agenda)
 (package! org-ql)
 
-
+;; calendar google
+(package! calfw)
+(package! calfw-org)
+(package! calfw-ical)

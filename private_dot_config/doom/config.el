@@ -180,3 +180,16 @@
 (map! "C-c n d" #'org-roam-dailies-capture-today
       "C-c n t" #'org-roam-dailies-goto-today
       "C-c n q" #'my/quick-daily-todo)
+
+;; ------- Vue calendrier (mois/semaine) -------
+(use-package! calfw
+  :commands (cfw:open-org-calendar))
+
+(use-package! calfw-org
+  :after (calfw org)
+  :config
+  (setq cfw:org-overwrite-default-keybinding t))
+
+(map! :leader
+      :desc "Agenda visuel (calfw)"
+      "o c" #'cfw:open-org-calendar)
