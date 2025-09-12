@@ -194,21 +194,92 @@
       :desc "Agenda visuel (calfw)"
       "o c" #'cfw:open-org-calendar)
 
-;; opti calfw view
+;;; === calfw blocks ===
+
+(use-package! calfw :defer t)
+(use-package! calfw-org :after calfw)
 (use-package! calfw-blocks
   :after calfw-org
-  :commands (cfw:open-org-calendar))
+  :commands (my/open-org-calendar-blocks))
 
 (defun my/open-org-calendar-blocks ()
-  "Ouvrir calfw en vue bloc semaine."
+  "Ouvrir Calfw en vue hebdo 'block-week' avec les sources Org."
   (interactive)
-  (require 'calfw)
-  (require 'calfw-org)
-  (require 'calfw-blocks)
-  (cfw:open-calendar-buffer
-   :view 'block-week
-   :contents-sources (list (cfw:org-create-source "Org"))))
+  (require 'calfw) (require 'calfw-org) (require 'calfw-blocks)
+  (let ((src (cfw:org-create-source "SteelBlue")))
+    (cfw:open-calendar-buffer
+     :view 'block-week
+     :contents-sources (list src))))
 
 (map! :leader
       :desc "Agenda en blocs"
       "o b" #'my/open-org-calendar-blocks)
+
+;; toujours en state emacs (pas d'interception par evil)
+(with-eval-after-load 'calfw
+  (evil-set-initial-state 'cfw:calendar-mode 'emacs))
+
+(defun my/cfw--call (sym)
+  (cond
+   ((and (fboundp sym) (commandp sym)) (call-interactively sym))
+   ((fboundp sym) (funcall sym))
+   (t (message "Function %s not found" sym))))
+
+(defun my/cfw-left  () (interactive)
+  (if (fboundp 'cfw:navi-previous-day-command)
+      (my/cfw--call 'cfw:navi-previous-day-command)
+    (my/cfw--call 'cfw:navi-previous-day)))
+
+(defun my/cfw-right () (interactive)
+  (if (fboundp 'cfw:navi-next-day-command)
+      (my/cfw--call 'cfw:navi-next-day-command)
+    (my/cfw--call 'cfw:navi-next-day)))
+
+(defun my/cfw-down () (interactive)
+  (if (fboundp 'cfw:navi-next-week-command)
+      (my/cfw--call 'cfw:navi-next-week-command)
+    (my/cfw--call 'cfw:navi-next-week)))
+
+(defun my/cfw-up   () (interactive)
+  (if (fboundp 'cfw:navi-previous-week-command)
+      (my/cfw--call 'cfw:navi-previous-week-command)
+    (my/cfw--call 'cfw:navi-previous-week)))
+
+(defun my/cfw-today () (interactive)
+  (if (fboundp 'cfw:navi-goto-today-command)
+      (my/cfw--call 'cfw:navi-goto-today-command)
+    (my/cfw--call 'cfw:navi-goto-today)))
+
+(defun my/cfw-change-view (view)
+  "changer la vue de calfw à view et rafraîchir."
+  (interactive)
+  (let ((cp (cfw:cp-get-component)))
+    (cfw:cp-set-view cp view)
+    (cfw:refresh-calendar-buffer)))
+
+;; ----------------- keymaps dans le calendrier -----------------
+(with-eval-after-load 'calfw-blocks
+  (let ((m cfw:calendar-mode-map))
+    ;; vues
+    (define-key m (kbd "d") #'cfw:change-view-day)
+    (define-key m (kbd "w") #'cfw:change-view-week)
+    (define-key m (kbd "m") #'cfw:change-view-month)
+    (define-key m (kbd "b") (lambda () (interactive) (my/cfw-change-view 'block-week)))
+    (define-key m (kbd "3") (lambda () (interactive) (my/cfw-change-view 'block-3-day)))
+    (define-key m (kbd "5") (lambda () (interactive) (my/cfw-change-view 'block-5-day)))
+
+    ;; navigation (robuste)
+    (define-key m (kbd "h") #'my/cfw-left)
+    (define-key m (kbd "l") #'my/cfw-right)
+    (define-key m (kbd "j") #'my/cfw-down)
+    (define-key m (kbd "k") #'my/cfw-up)
+
+    ;; actions
+    (define-key m (kbd "t") #'my/cfw-today)
+    (define-key m (kbd "q") (lambda () (interactive) (quit-window t))) ; fermer
+    (define-key m (kbd "g") #'cfw:refresh-calendar-buffer)
+    (define-key m (kbd "r") #'cfw:refresh-calendar-buffer)
+    (define-key m (kbd "RET") #'cfw:show-details)
+    (define-key m (kbd "SPC") #'cfw:show-details)
+    (define-key m (kbd "TAB") #'cfw:navi-next-item)
+    (define-key m (kbd "<backtab>") #'cfw:navi-prev-item)))
