@@ -196,13 +196,19 @@
 
 ;; opti calfw view
 (use-package! calfw-blocks
-  :after calfw-org    ;; ne se charge que si calfw-org est là
-  :commands (cfw:open-org-calendar)  ;; lazy
-  :init
-  ;; Raccourci: charge le paquet au moment d'ouvrir la vue
-  (map! :leader
-        :desc "Agenda blocs (week)"
-        "o b"
-        (cmd! (require 'calfw-blocks)
-              (let ((cfw:display-mode 'block-week))
-                (cfw:open-org-calendar)))))
+  :after calfw-org
+  :commands (cfw:open-org-calendar))
+
+(defun my/open-org-calendar-blocks ()
+  "Ouvrir calfw en vue bloc semaine."
+  (interactive)
+  (require 'calfw)
+  (require 'calfw-org)
+  (require 'calfw-blocks)
+  (cfw:open-calendar-buffer
+   :view 'block-week
+   :contents-sources (list (cfw:org-create-source "Org"))))
+
+(map! :leader
+      :desc "Agenda en blocs"
+      "o b" #'my/open-org-calendar-blocks)
