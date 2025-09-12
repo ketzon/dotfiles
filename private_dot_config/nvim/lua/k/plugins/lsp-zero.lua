@@ -14,7 +14,7 @@ return {
   },
 
   -- Mason (gestionnaire d'outils LSP/DAP/formatters)
-  { 'williamboman/mason.nvim', version = '^1', lazy = false, config = true },
+  { 'williamboman/mason.nvim', lazy = false, config = true },
 
   -- Snippets
   {
@@ -69,8 +69,8 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
       'hrsh7th/cmp-nvim-lsp',
-      { 'williamboman/mason.nvim', version = '^1' },
-      { 'williamboman/mason-lspconfig.nvim', version = '^2' },
+      { 'williamboman/mason.nvim'},
+      { 'williamboman/mason-lspconfig.nvim'},
     },
     config = function()
       local lsp_zero = require('lsp-zero')
