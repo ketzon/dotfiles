@@ -194,7 +194,7 @@
       :desc "Agenda visuel (calfw)"
       "o c" #'cfw:open-org-calendar)
 
-;;; === calfw blocks ===
+;;; === Calfw Blocks — config finale (avec delete) ===
 
 (use-package! calfw :defer t)
 (use-package! calfw-org :after calfw)
@@ -206,7 +206,7 @@
   "Ouvrir Calfw en vue hebdo 'block-week' avec les sources Org."
   (interactive)
   (require 'calfw) (require 'calfw-org) (require 'calfw-blocks)
-  (let ((src (cfw:org-create-source "SteelBlue")))
+  (let ((src (cfw:org-create-source "SteelBlue")))    ;; couleur valide
     (cfw:open-calendar-buffer
      :view 'block-week
      :contents-sources (list src))))
@@ -215,7 +215,6 @@
       :desc "Agenda en blocs"
       "o b" #'my/open-org-calendar-blocks)
 
-;; toujours en state emacs (pas d'interception par evil)
 (with-eval-after-load 'calfw
   (evil-set-initial-state 'cfw:calendar-mode 'emacs))
 
@@ -251,35 +250,106 @@
     (my/cfw--call 'cfw:navi-goto-today)))
 
 (defun my/cfw-change-view (view)
-  "changer la vue de calfw à view et rafraîchir."
+  "Changer la vue de calfw à VIEW et rafraîchir."
   (interactive)
   (let ((cp (cfw:cp-get-component)))
     (cfw:cp-set-view cp view)
     (cfw:refresh-calendar-buffer)))
 
-;; ----------------- keymaps dans le calendrier -----------------
+(defun my/cfw-details () (interactive)
+  (if (fboundp 'cfw:show-details-command)
+      (call-interactively 'cfw:show-details-command)
+    (when (fboundp 'cfw:show-details)
+      (funcall 'cfw:show-details))))
+
+(defun my/cfw-next-item () (interactive)
+  (if (fboundp 'cfw:navi-next-item-command)
+      (call-interactively 'cfw:navi-next-item-command)
+    (when (fboundp 'cfw:navi-next-item)
+      (funcall 'cfw:navi-next-item))))
+
+(defun my/cfw-prev-item () (interactive)
+  (if (fboundp 'cfw:navi-prev-item-command)
+      (call-interactively 'cfw:navi-prev-item-command)
+    (when (fboundp 'cfw:navi-prev-item)
+      (funcall 'cfw:navi-prev-item))))
+
+(defun my/cfw--get-marker-at (pos)
+  (or (get-text-property pos 'org-hd-marker)
+      (get-text-property pos 'org-marker)
+      (get-text-property pos 'cfw:org-hd-marker)
+      (get-text-property pos 'cfw:org-marker)))
+
+(defun my/cfw-find-org-marker ()
+  "Retourne le marker Org de l’item sous/près du curseur, si dispo."
+  (let* ((pos (point))
+         (mk  (my/cfw--get-marker-at pos)))
+    (or mk
+        (let ((start (max (point-min) (- pos 200)))
+              (end   (min (point-max) (+ pos 200)))
+              found)
+          (save-excursion
+            (goto-char start)
+            (while (and (< (point) end) (not found))
+              (when-let ((m (my/cfw--get-marker-at (point))))
+                (setq found m))
+              (goto-char (next-property-change (point) nil end)))
+            found)))))
+
+(defun my/cfw-delete-entry ()
+  "Supprime le heading Org de l’item sous le curseur (avec confirmation)."
+  (interactive)
+  (let ((mk (my/cfw-find-org-marker)))
+    (if (and mk (markerp mk))
+        (when (y-or-n-p "Supprimer cette entrée Org ? ")
+          (with-current-buffer (marker-buffer mk)
+            (goto-char mk)
+            (org-back-to-heading t)
+            (org-cut-subtree)     ;; supprime le heading
+            (save-buffer))
+          (cfw:refresh-calendar-buffer))
+      (message "Aucun évènement Org détecté ici : place le curseur sur l’item (TAB pour le sélectionner)."))))
+
+;;; ----------------- Keymaps dans le calendrier -----------------
 (with-eval-after-load 'calfw-blocks
   (let ((m cfw:calendar-mode-map))
     ;; vues
-    (define-key m (kbd "d") #'cfw:change-view-day)
-    (define-key m (kbd "w") #'cfw:change-view-week)
-    (define-key m (kbd "m") #'cfw:change-view-month)
+    (define-key m (kbd "d") #'cfw:change-view-day)     ;; jour
+    (define-key m (kbd "w") #'cfw:change-view-week)    ;; semaine
+    (define-key m (kbd "m") #'cfw:change-view-month)   ;; mois
     (define-key m (kbd "b") (lambda () (interactive) (my/cfw-change-view 'block-week)))
     (define-key m (kbd "3") (lambda () (interactive) (my/cfw-change-view 'block-3-day)))
     (define-key m (kbd "5") (lambda () (interactive) (my/cfw-change-view 'block-5-day)))
 
-    ;; navigation (robuste)
+    ;; navigation (hjkl)
     (define-key m (kbd "h") #'my/cfw-left)
     (define-key m (kbd "l") #'my/cfw-right)
     (define-key m (kbd "j") #'my/cfw-down)
     (define-key m (kbd "k") #'my/cfw-up)
 
     ;; actions
-    (define-key m (kbd "t") #'my/cfw-today)
-    (define-key m (kbd "q") (lambda () (interactive) (quit-window t))) ; fermer
+    (define-key m (kbd "t") #'my/cfw-today)                  ;; aujourd’hui
+    (define-key m (kbd "q") (lambda () (interactive) (quit-window t))) ;; fermer
     (define-key m (kbd "g") #'cfw:refresh-calendar-buffer)
     (define-key m (kbd "r") #'cfw:refresh-calendar-buffer)
-    (define-key m (kbd "RET") #'cfw:show-details)
-    (define-key m (kbd "SPC") #'cfw:show-details)
-    (define-key m (kbd "TAB") #'cfw:navi-next-item)
-    (define-key m (kbd "<backtab>") #'cfw:navi-prev-item)))
+
+    ;; détails + items
+    (define-key m (kbd "RET")      #'my/cfw-details)
+    (define-key m (kbd "<return>") #'my/cfw-details)
+    (define-key m (kbd "SPC")      #'my/cfw-details)
+    (define-key m (kbd "TAB")       #'my/cfw-next-item)
+    (define-key m (kbd "<backtab>") #'my/cfw-prev-item)
+
+    ;; delete (x / del / c-d)
+    (define-key m (kbd "x")        #'my/cfw-delete-entry)
+    (define-key m (kbd "<delete>") #'my/cfw-delete-entry)
+    (define-key m (kbd "C-d")      #'my/cfw-delete-entry)))
+
+;; garantit que ret/spc/tab 
+(defun my/cfw-local-keys ()
+  (local-set-key (kbd "RET")      #'my/cfw-details)
+  (local-set-key (kbd "<return>") #'my/cfw-details)
+  (local-set-key (kbd "SPC")      #'my/cfw-details)
+  (local-set-key (kbd "TAB")       #'my/cfw-next-item)
+  (local-set-key (kbd "<backtab>") #'my/cfw-prev-item))
+(add-hook 'cfw:calendar-mode-hook #'my/cfw-local-keys)
