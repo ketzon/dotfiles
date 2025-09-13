@@ -9,8 +9,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("k.plugins")
 
-vim.o.background = "dark"
-pcall(vim.cmd, "colorscheme gruvbox") 
+vim.o.background = "light"
+-- pcall(vim.cmd, "colorscheme gruvbox") 
 
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.number = true
