@@ -23,10 +23,14 @@ vim.opt.hidden = true
 vim.opt.hlsearch = false
 vim.o.autowrite = true
 
-vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
-  pattern = "*",
-  command = "silent! write"
-})
+-- vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
+--   pattern = "*",
+--   callback = function()
+--     if vim.bo.buftype == "" and vim.bo.modifiable and vim.fn.expand("%") ~= "" then
+--       vim.cmd("silent! update")
+--     end
+--   end,
+-- })
 
 vim.api.nvim_set_keymap('n', '<C-U>', '<C-U>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-D>', '<C-D>zz', { noremap = true })
