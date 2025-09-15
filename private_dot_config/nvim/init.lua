@@ -32,6 +32,10 @@ vim.o.autowrite = true
 --   end,
 -- })
 
+-- ouvre infos lsp
+vim.keymap.set('n', '<S-k>', vim.lsp.buf.hover)
+
+-- recentre l'ecran
 vim.api.nvim_set_keymap('n', '<C-U>', '<C-U>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-D>', '<C-D>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-]>', '<C-]>zz', { noremap = true })
