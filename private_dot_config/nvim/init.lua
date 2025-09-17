@@ -72,6 +72,7 @@ if ok_telescope then
   vim.keymap.set('n', '<leader>fS', '<cmd>Telescope lsp_workspace_symbols<CR>', { noremap = true, silent = true })
 end
 
+-- html filetype
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "html",
   callback = function()
@@ -80,3 +81,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.indentexpr = ""
   end
 })
+
+-- python filetype
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "python",
+  command = "setlocal makeprg=python3\\ %"
+})
+
