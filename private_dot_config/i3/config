@@ -248,7 +248,7 @@ mode "$mode_gaps_outer" {
 
 bindsym $mod+z exec rofi -show run -lines 20 -eh 1.3 -opacity "85" -bw 0 -font "System San Francisco Display 10"
 
-exec_always feh --bg-scale /home/florian/Images/japan-shop.jpg
+exec_always feh --bg-scale /home/florian/Images/chinese.png
 
 
 # Sreen brightness controls

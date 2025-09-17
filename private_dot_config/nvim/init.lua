@@ -35,6 +35,10 @@ vim.o.autowrite = true
 -- ouvre infos lsp
 vim.keymap.set('n', '<S-k>', vim.lsp.buf.hover)
 
+--speed key
+vim.keymap.set('n', '<leader>r', ':update<CR> :make<CR>')
+vim.keymap.set('n', '<leader>w', ':write<CR>')
+
 -- recentre l'ecran
 vim.api.nvim_set_keymap('n', '<C-U>', '<C-U>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-D>', '<C-D>zz', { noremap = true })
