@@ -1,4 +1,3 @@
--- lua/k/plugins/catppuccin.lua
 return {
   {
     "catppuccin/nvim",
