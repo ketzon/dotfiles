@@ -248,7 +248,7 @@ mode "$mode_gaps_outer" {
 
 bindsym $mod+z exec rofi -show run -lines 20 -eh 1.3 -opacity "85" -bw 0 -font "System San Francisco Display 10"
 
-exec_always feh --bg-scale /home/florian/Images/wallpapers/block.png
+exec_always feh --bg-scale /home/florian/Images/wallpapers/cat.png
 
 
 # Sreen brightness controls
@@ -307,4 +307,5 @@ bindsym $mod+Shift+m exec sudo systemctl hibernate
 exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 300.00
 
 
-
+# conky
+exec_always --no-startup-id conky -c ~/.config/conky/routine.conky
