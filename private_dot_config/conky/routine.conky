@@ -1,24 +1,22 @@
 conky.config = {
-  update_interval = 60,
-  own_window = true,
-  own_window_type = 'override',
-  own_window_argb_visual = true,
-  own_window_argb_value = 0,         -- 0=transparent
-  double_buffer = true,
-  draw_shades = false,
-  draw_borders = false,
-  default_color = '#ddd',
-  alignment = 'top_right',
-  gap_x = 30,
-  gap_y = 40,
-  minimum_width = 260, maximum_width = 260,
-  minimum_height = 200,
-
-  draw_graph_borders = false,
-  lua_load = '',
-  use_xft = true,
-};
+own_window = true,
+own_window_type = 'override',
+own_window_transparent = true,
+own_window_argb_visual = false,
+own_window_colour = '#000000',
+double_buffer = true,
+draw_shades = false,
+draw_borders = false,
+use_xft = true,
+font = 'JetBrains Mono:size=15',
+default_color = '#eaeaea',
+alignment = 'middle_left',
+gap_x = 0,
+gap_y = 0,
+minimum_width = 400,
+maximum_width = 1200,
+}
 
 conky.text = [[
-${voffset 0}${execpi 60 ~/.config/routine/conky_routine.sh}
-]];
+${execpi 60 ~/.config/routine/conky_routine.sh}
+]]

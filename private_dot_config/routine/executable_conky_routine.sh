@@ -23,14 +23,14 @@ for i in "${!today[@]}"; do
   if (( now >= ts )); then current_idx=$i; fi
 done
 
-echo "\${voffset 6}\${font Sans:bold:size=10}Routine du jour\${font}"
+echo "\${voffset 6}\${font Sans:bold:size=40}Daily Routine\${font}"
 echo "\${voffset 4}\${hr 2}"
 for i in "${!today[@]}"; do
   rest="${today[$i]#*|}"; time="${rest%%|*}"; label="${rest#*|}"
   if (( i == current_idx )); then
-    echo "\${color #ffffff}\${font Sans:bold:size=10}▶ $time  $label\${font}\${color}"
+    echo "\${color #ffffff}\${font Sans:bold:size=45}▶ $time  $label\${font}\${color}"
   else
-    echo "\${color #aab}\${font Sans:size=9}$time  $label\${font}\${color}"
+    echo "\${color #8fd}\${font Sans:size=44}$time  $label\${font}\${color}"
   fi
 done
 
@@ -43,4 +43,4 @@ if (( current_idx + 1 < ${#today[@]} )); then
   next_msg="Dans ~${mins} min → $nlabel"
 fi
 echo "\${voffset 4}\${hr 1}"
-[[ -n "$next_msg" ]] && echo "\${color #8fd}\${font Sans:italic:size=8}$next_msg\${font}\${color}"
+[[ -n "$next_msg" ]] && echo "\${color #aab}\${font Sans:italic:size=40}$next_msg\${font}\${color}"
