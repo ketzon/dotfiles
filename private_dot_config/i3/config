@@ -309,3 +309,10 @@ exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 300.00
 
 # conky
 exec_always --no-startup-id conky -c ~/.config/conky/routine.conky
+
+# jap
+exec --no-startup-id ibus-daemon -drx
+exec --no-startup-id fcitx5
+
+bindsym $mod+i exec "ibus engine mozc-jp"
+bindsym $mod+u exec "ibus engine xkb:us::eng"
