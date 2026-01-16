@@ -187,7 +187,7 @@ bar {
 }
 # Screenshots
 exec --no-startup-id flameshot
-bindsym Print exec "flameshot gui"
+bindsym --release $mod+Shift+p exec --no-startup-id flameshot gui
 
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
