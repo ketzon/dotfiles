@@ -5,5 +5,4 @@ return {
   'tpope/vim-unimpaired',
   'tpope/vim-surround',
   'romainl/vim-qf',
-  'ludovicchabant/vim-gutentags'
 }
