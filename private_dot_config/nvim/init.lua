@@ -62,6 +62,12 @@ if ok_mark and ok_ui then
   vim.keymap.set('n', '<leader>4', function() ui.nav_file(4) end)
 end
 
+vim.g.loaded_gutentags = 1
+vim.g.gutentags_enabled = 0
+vim.g.loaded_vim_tags = 1
+vim.g.loaded_autotag = 1
+vim.opt.tags = { vim.fn.stdpath("cache") .. "/tags" }
+
 local ok_telescope, builtin = pcall(require, 'telescope.builtin')
 if ok_telescope then
   vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
