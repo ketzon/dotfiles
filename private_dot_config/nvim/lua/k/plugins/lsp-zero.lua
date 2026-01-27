@@ -56,31 +56,59 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = { 'hrsh7th/cmp-nvim-lsp' },
     config = function()
-      local lsp_zero = require('lsp-zero')
-      lsp_zero.on_attach(function(_, bufnr)
-        lsp_zero.default_keymaps({ buffer = bufnr })
-      end)
+      -- Keymaps LSP
+      vim.api.nvim_create_autocmd('LspAttach', {
+        callback = function(event)
+          local opts = { buffer = event.buf }
+          vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+          vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+          vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+          vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+          vim.keymap.set('n', 'go', vim.lsp.buf.type_definition, opts)
+          vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+          vim.keymap.set('n', 'gs', vim.lsp.buf.signature_help, opts)
+          vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, opts)
+          vim.keymap.set({ 'n', 'x' }, '<F3>', vim.lsp.buf.format, opts)
+          vim.keymap.set('n', '<F4>', vim.lsp.buf.code_action, opts)
+        end,
+      })
 
-      local lspconfig    = require('lspconfig')
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       -- lua
-      local lua_opts = lsp_zero.nvim_lua_ls()
-      lua_opts.capabilities = capabilities
-      lspconfig.lua_ls.setup(lua_opts)
+      vim.lsp.config.lua_ls = {
+        capabilities = capabilities,
+        settings = {
+          Lua = {
+            runtime = { version = 'LuaJIT' },
+            workspace = {
+              checkThirdParty = false,
+              library = { vim.env.VIMRUNTIME }
+            },
+            diagnostics = { globals = { 'vim' } },
+            telemetry = { enable = false },
+          },
+        },
+      }
+      vim.lsp.enable('lua_ls')
 
       -- web
-      lspconfig.html.setup({ capabilities = capabilities })
-      lspconfig.cssls.setup({ capabilities = capabilities })
-      lspconfig.emmet_ls.setup({ capabilities = capabilities })
-      lspconfig.tailwindcss.setup({ capabilities = capabilities })
+      vim.lsp.config.html = { capabilities = capabilities }
+      vim.lsp.enable('html')
+      vim.lsp.config.cssls = { capabilities = capabilities }
+      vim.lsp.enable('cssls')
+      vim.lsp.config.emmet_ls = { capabilities = capabilities }
+      vim.lsp.enable('emmet_ls')
+      vim.lsp.config.tailwindcss = { capabilities = capabilities }
+      vim.lsp.enable('tailwindcss')
 
       -- typescript/javascript
-      local ts_name = lspconfig.ts_ls and 'ts_ls' or (lspconfig.tsserver and 'tsserver' or nil)
-      if ts_name then lspconfig[ts_name].setup({ capabilities = capabilities }) end
+      vim.lsp.config.ts_ls = { capabilities = capabilities }
+      vim.lsp.enable('ts_ls')
 
       -- php 
-      lspconfig.intelephense.setup({ capabilities = capabilities })
+      vim.lsp.config.intelephense = { capabilities = capabilities }
+      vim.lsp.enable('intelephense')
     end,
   },
 }
