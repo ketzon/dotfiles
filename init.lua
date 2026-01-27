@@ -94,3 +94,27 @@ vim.api.nvim_create_autocmd("FileType", {
   command = "setlocal makeprg=python3\\ %"
 })
 
+local map = vim.keymap.set
+
+map({ "n" }, "<leader>g", builtin.live_grep)
+map({ "n" }, "<leader>sg", builtin.git_files)
+map({ "n" }, "<leader>sb", builtin.buffers)
+map({ "n" }, "<leader>si", builtin.grep_string)
+map({ "n" }, "<leader>so", builtin.oldfiles)
+map({ "n" }, "<leader>sh", builtin.help_tags)
+map({ "n" }, "<leader>sm", builtin.man_pages)
+map({ "n" }, "<leader>sr", builtin.lsp_references)
+map({ "n" }, "<leader>sd", builtin.diagnostics)
+map({ "n" }, "<leader>sT", builtin.lsp_type_definitions)
+map({ "n" }, "<leader>ss", builtin.current_buffer_fuzzy_find)
+map({ "n" }, "<leader>st", builtin.builtin)
+map({ "n" }, "<leader>sc", builtin.git_bcommits)
+map({ "n" }, "<leader>sk", builtin.keymaps)
+map({ "n" }, "<leader>se", "<cmd>Telescope env<cr>")
+map({ "n" }, "<leader>sa", require("actions-preview").code_actions)
+map({ "n" }, "<M-n>", "<cmd>resize +2<CR>")
+map({ "n" }, "<M-e>", "<cmd>resize -2<CR>")
+map({ "n" }, "<M-i>", "<cmd>vertical resize +5<CR>")
+map({ "n" }, "<M-m>", "<cmd>vertical resize -5<CR>")
+map({ "n" }, "<leader>c", "1z=")
+map({ "n" }, "<C-q>", ":copen<CR>", { silent = true })
