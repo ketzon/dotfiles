@@ -10,7 +10,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("k.plugins")
 
 vim.o.background = "light"
-pcall(vim.cmd, "colorscheme gruvbox") 
+pcall(vim.cmd, "colorscheme gruvbox")
 
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.number = true
@@ -22,6 +22,7 @@ vim.opt.expandtab = true
 vim.opt.hidden = true
 vim.opt.hlsearch = false
 vim.o.autowrite = true
+vim.o.winborder = "rounded"
 
 -- vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
 --   pattern = "*",
@@ -78,6 +79,22 @@ if ok_telescope then
   vim.keymap.set('n', '<leader>fS', '<cmd>Telescope lsp_workspace_symbols<CR>', { noremap = true, silent = true })
 end
 
+
+vim.api.nvim_create_autocmd('LspAttach', {
+	group = vim.api.nvim_create_augroup('my.lsp', {}),
+	callback = function(args)
+		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+		if client:supports_method('textDocument/completion') then
+			-- Optional: trigger autocompletion on EVERY keypress. May be slow!
+			local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
+			client.server_capabilities.completionProvider.triggerCharacters = chars
+			vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
+		end
+	end,
+})
+
+vim.cmd [[set completeopt+=menuone,noselect,popup]]
+
 -- html filetype
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "html",
@@ -122,3 +139,22 @@ map({ "n" }, "<M-i>", "<cmd>vertical resize +5<CR>")
 map({ "n" }, "<M-m>", "<cmd>vertical resize -5<CR>")
 map({ "n" }, "<leader>c", "1z=")
 map({ "n" }, "<C-q>", ":copen<CR>", { silent = true })
+
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
+
+-- Ou pour une version plus détaillée avec toutes les infos :
+vim.keymap.set('n', '<leader>d', function()
+  vim.diagnostic.open_float(nil, {
+    focusable = false,
+    close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+    border = 'rounded',
+    source = 'always',
+    prefix = ' ',
+    scope = 'cursor',
+  })
+end, { desc = 'Show diagnostic float' })
+
+vim.keymap.set('n', 'n', 'nzzzv')  -- Recherche toujours centrée
+vim.keymap.set('n', 'N', 'Nzzzv')
+vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')  -- Copie vers clipboard système
+vim.keymap.set("n", "<leader>a", ":edit #<CR>")  -- Retour au buffer précédent
