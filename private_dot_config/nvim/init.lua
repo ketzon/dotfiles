@@ -158,3 +158,23 @@ vim.keymap.set('n', 'n', 'nzzzv')  -- Recherche toujours centrée
 vim.keymap.set('n', 'N', 'Nzzzv')
 vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')  -- Copie vers clipboard système
 vim.keymap.set("n", "<leader>a", ":edit #<CR>")  -- Retour au buffer précédent
+vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {
+  noremap = true,
+  silent = true,
+})
+local actions = require("telescope.actions")
+
+require("telescope").setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<C-p>"] = actions.move_selection_previous,
+        ["<C-n>"] = actions.move_selection_next,
+      },
+      n = {
+        ["<C-p>"] = actions.move_selection_previous,
+        ["<C-n>"] = actions.move_selection_next,
+      },
+    },
+  },
+})
