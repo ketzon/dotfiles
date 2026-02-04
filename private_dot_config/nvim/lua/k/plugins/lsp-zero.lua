@@ -9,6 +9,13 @@ return {
       vim.g.lsp_zero_extend_lspconfig = 0
     end,
   },
+  {
+    'williamboman/mason-lspconfig.nvim',
+    dependencies = {
+      'williamboman/mason.nvim',
+      'neovim/nvim-lspconfig',
+    },
+  },
 
   { 'williamboman/mason.nvim', lazy = false, opts = {} },
 
@@ -40,7 +47,6 @@ return {
           ['<C-Space>'] = cmp.mapping.complete(),
           ['<C-u>']     = cmp.mapping.scroll_docs(-4),
           ['<C-d>']     = cmp.mapping.scroll_docs(4),
-          -- Optionnel: si <C-f>/<C-b> te gênent ailleurs, remplace par <Tab>/<S-Tab>
           ['<C-f>']     = cmp_action.luasnip_jump_forward(),
           ['<C-b>']     = cmp_action.luasnip_jump_backward(),
         }),
@@ -56,6 +62,18 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = { 'hrsh7th/cmp-nvim-lsp' },
     config = function()
+      require('mason-lspconfig').setup({
+        ensure_installed = {
+          'lua_ls',
+          'html',
+          'cssls',
+          'emmet_ls',
+          'tailwindcss',
+          'ts_ls',
+          'intelephense',
+        },
+      })
+
       -- Keymaps LSP
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(event)
@@ -74,9 +92,11 @@ return {
       })
 
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local mason_bin = vim.fn.stdpath("data") .. "/mason/bin"
 
       -- lua
       vim.lsp.config.lua_ls = {
+        cmd = { mason_bin .. "/lua-language-server" },
         capabilities = capabilities,
         settings = {
           Lua = {
@@ -93,21 +113,42 @@ return {
       vim.lsp.enable('lua_ls')
 
       -- web
-      vim.lsp.config.html = { capabilities = capabilities }
+      vim.lsp.config.html = {
+        cmd = { mason_bin .. "/vscode-html-language-server", "--stdio" },
+        capabilities = capabilities
+      }
       vim.lsp.enable('html')
-      vim.lsp.config.cssls = { capabilities = capabilities }
+
+      vim.lsp.config.cssls = {
+        cmd = { mason_bin .. "/vscode-css-language-server", "--stdio" },
+        capabilities = capabilities
+      }
       vim.lsp.enable('cssls')
-      vim.lsp.config.emmet_ls = { capabilities = capabilities }
+
+      vim.lsp.config.emmet_ls = {
+        cmd = { mason_bin .. "/emmet-ls", "--stdio" },
+        capabilities = capabilities
+      }
       vim.lsp.enable('emmet_ls')
-      vim.lsp.config.tailwindcss = { capabilities = capabilities }
+
+      vim.lsp.config.tailwindcss = {
+        cmd = { mason_bin .. "/tailwindcss-language-server", "--stdio" },
+        capabilities = capabilities
+      }
       vim.lsp.enable('tailwindcss')
 
       -- typescript/javascript
-      vim.lsp.config.ts_ls = { capabilities = capabilities }
+      vim.lsp.config.ts_ls = {
+        cmd = { mason_bin .. "/typescript-language-server", "--stdio" },
+        capabilities = capabilities
+      }
       vim.lsp.enable('ts_ls')
 
-      -- php 
-      vim.lsp.config.intelephense = { capabilities = capabilities }
+      -- php
+      vim.lsp.config.intelephense = {
+        cmd = { mason_bin .. "/intelephense", "--stdio" },
+        capabilities = capabilities
+      }
       vim.lsp.enable('intelephense')
     end,
   },
