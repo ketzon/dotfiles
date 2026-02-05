@@ -37,6 +37,8 @@
 1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes.1.nodes
 2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.focus
 2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
+actions-preview.nvim	private_dot_config/nvim/lazy-lock.json	/^  "actions-preview.nvim": { "branch": "master", "commit": "cb938c25edaac38d362555f19244a9cb85d56/;"	o
+alpha-nvim	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },$/;"	o
 border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
 border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
 border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
@@ -54,19 +56,75 @@ border	private_dot_config/i3/sessions/default_layout.json	/^{"id":11031186268812
 bottom	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
 bottom	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
 bottom	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+branch	private_dot_config/nvim/lazy-lock.json	/^  "actions-preview.nvim": { "branch": "master", "commit": "cb938c25edaac38d362555f19244a9cb85d56/;"	s	object:actions-preview.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },$/;"	s	object:alpha-nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "catppuccin": { "branch": "main", "commit": "beaf41a30c26fd7d6c386d383155cbd65dd554cd" },$/;"	s	object:catppuccin
+branch	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b" },$/;"	s	object:gruvbox.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },$/;"	s	object:lazy.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "47f91c416daef12db467145e16bed5bbfe00add8" },$/;"	s	object:lualine.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "c953789db7fd28eafe5eb5659846d34b5024b3c/;"	s	object:mason-lspconfig.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },$/;"	s	object:mason.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "mini.icons": { "branch": "main", "commit": "efc85e42262cd0c9e1fdbf806c25cb0be6de115c" },$/;"	s	object:mini.icons
+branch	private_dot_config/nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "408fc04013a95da8f217cb0958a06b6a77c01743" },$/;"	s	object:neorg
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },$/;"	s	object:nui.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "338409dd8a6ed74767bad3eb5269f1b903ffb3c/;"	s	object:nvim-colorizer.lua
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3" }/;"	s	object:nvim-lspconfig
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	s	object:nvim-nio
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" /;"	s	object:nvim-treesitter
+branch	private_dot_config/nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "746ffbb17975ebd6c40142362eee1b0249969c5c/;"	s	object:nvim-web-devicons
+branch	private_dot_config/nvim/lazy-lock.json	/^  "oil.nvim": { "branch": "master", "commit": "f55b25e493a7df76371cfadd0ded5004cb9cd48a" },$/;"	s	object:oil.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	s	object:pathlib.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },$/;"	s	object:plenary.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	s	object:telescope.nvim
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	s	object:vim-commentary
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "7cafff6a9e0a1b54364b26a87f1efe749f8fb96b" },$/;"	s	object:vim-qf
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },$/;"	s	object:vim-repeat
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	s	object:vim-surround
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "db65482581a28e4ccf355be297f1864a4e66985c" }/;"	s	object:vim-unimpaired
+branch	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	s	object:vim-vinegar
+branch	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }$/;"	s	object:which-key.nvim
+callback	private_dot_config/nvim/init.lua	/^	callback = function(args)$/;"	f
 callback	private_dot_config/nvim/init.lua	/^  callback = function()$/;"	f
+callback	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^        callback = function(event)$/;"	f
+catppuccin	private_dot_config/nvim/lazy-lock.json	/^  "catppuccin": { "branch": "main", "commit": "beaf41a30c26fd7d6c386d383155cbd65dd554cd" },$/;"	o
 class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
 class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
 class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
 class	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0.window_properties
+commit	private_dot_config/nvim/lazy-lock.json	/^  "actions-preview.nvim": { "branch": "master", "commit": "cb938c25edaac38d362555f19244a9cb85d56/;"	s	object:actions-preview.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },$/;"	s	object:alpha-nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "catppuccin": { "branch": "main", "commit": "beaf41a30c26fd7d6c386d383155cbd65dd554cd" },$/;"	s	object:catppuccin
+commit	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b" },$/;"	s	object:gruvbox.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },$/;"	s	object:lazy.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "47f91c416daef12db467145e16bed5bbfe00add8" },$/;"	s	object:lualine.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "c953789db7fd28eafe5eb5659846d34b5024b3c/;"	s	object:mason-lspconfig.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },$/;"	s	object:mason.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "mini.icons": { "branch": "main", "commit": "efc85e42262cd0c9e1fdbf806c25cb0be6de115c" },$/;"	s	object:mini.icons
+commit	private_dot_config/nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "408fc04013a95da8f217cb0958a06b6a77c01743" },$/;"	s	object:neorg
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },$/;"	s	object:nui.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "338409dd8a6ed74767bad3eb5269f1b903ffb3c/;"	s	object:nvim-colorizer.lua
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3" }/;"	s	object:nvim-lspconfig
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	s	object:nvim-nio
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" /;"	s	object:nvim-treesitter
+commit	private_dot_config/nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "746ffbb17975ebd6c40142362eee1b0249969c5c/;"	s	object:nvim-web-devicons
+commit	private_dot_config/nvim/lazy-lock.json	/^  "oil.nvim": { "branch": "master", "commit": "f55b25e493a7df76371cfadd0ded5004cb9cd48a" },$/;"	s	object:oil.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	s	object:pathlib.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },$/;"	s	object:plenary.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	s	object:telescope.nvim
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	s	object:vim-commentary
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "7cafff6a9e0a1b54364b26a87f1efe749f8fb96b" },$/;"	s	object:vim-qf
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },$/;"	s	object:vim-repeat
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	s	object:vim-surround
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "db65482581a28e4ccf355be297f1864a4e66985c" }/;"	s	object:vim-unimpaired
+commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	s	object:vim-vinegar
+commit	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }$/;"	s	object:which-key.nvim
+config	private_dot_config/nvim/lua/k/plugins/actions-preview.lua	/^  config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/alpha.lua	/^    config = function ()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/catppuccin.lua	/^    config = function(_, opts)$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^  config = function()$/;"	f
-config	private_dot_config/nvim/lua/k/plugins/harpoon.lua	/^  config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^    config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/lualine.lua	/^  config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/neorg.lua	/^  config = function()$/;"	f
-config	private_dot_config/nvim/lua/k/plugins/nvim-tree.lua	/^	config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/nvim-treesitter.lua	/^	config = function () $/;"	f
 css_fn	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn$/;"	f
 current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n
@@ -99,7 +157,6 @@ deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":11031186268
 deco_rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
 dock	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.0.swallows.0
 dock	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.swallows.0
-expand	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^          expand = function(args) require('luasnip').lsp_expand(args.body) end,$/;"	f
 floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
 floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
 floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
@@ -187,6 +244,7 @@ geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688
 geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
 geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2
 geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+gruvbox.nvim	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b" },$/;"	o
 height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
 height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
 height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.deco_rect
@@ -258,7 +316,6 @@ id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"t
 id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.nodes.1
 id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2
 id	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.nodes.0
-init	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^    init = function()$/;"	f
 init	private_dot_config/nvim/lua/k/plugins/which-key.lua	/^  init = function()$/;"	f
 inner	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
 inner	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
@@ -297,9 +354,11 @@ layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":11031186268812
 layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
 layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
 layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+lazy.nvim	private_dot_config/nvim/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },$/;"	o
 left	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0.gaps
 left	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.gaps
 left	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1.gaps
+lualine.nvim	private_dot_config/nvim/lazy-lock.json	/^  "lualine.nvim": { "branch": "master", "commit": "47f91c416daef12db467145e16bed5bbfe00add8" },$/;"	o
 machine	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
 machine	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
 machine	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
@@ -317,6 +376,14 @@ marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128
 marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
 marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
 marks	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+mason-lspconfig.nvim	private_dot_config/nvim/lazy-lock.json	/^  "mason-lspconfig.nvim": { "branch": "main", "commit": "c953789db7fd28eafe5eb5659846d34b5024b3c/;"	o
+mason.nvim	private_dot_config/nvim/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },$/;"	o
+mini.icons	private_dot_config/nvim/lazy-lock.json	/^  "mini.icons": { "branch": "main", "commit": "efc85e42262cd0c9e1fdbf806c25cb0be6de115c" },$/;"	o
+mode	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Se/;"	f
+mode	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Tre/;"	f
+mode	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash/;"	f
+mode	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },$/;"	f
+mode	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },$/;"	f
 my/cfw--call	private_dot_config/doom/config.el	/^(defun my\/cfw--call (sym)$/;"	f
 my/cfw--get-marker-at	private_dot_config/doom/config.el	/^(defun my\/cfw--get-marker-at (pos)$/;"	f
 my/cfw-change-view	private_dot_config/doom/config.el	/^(defun my\/cfw-change-view (view)$/;"	f
@@ -346,6 +413,7 @@ name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,
 name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
 name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
 name	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+neorg	private_dot_config/nvim/lazy-lock.json	/^  "neorg": { "branch": "main", "commit": "408fc04013a95da8f217cb0958a06b6a77c01743" },$/;"	o
 nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a
 nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0
 nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.0.nodes.0
@@ -360,9 +428,16 @@ nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128
 nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
 nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
 nodes	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+nui.nvim	private_dot_config/nvim/lazy-lock.json	/^  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },$/;"	o
 num	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.nodes.0.nodes.0
 num	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0
 num	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.1
+nvim-colorizer.lua	private_dot_config/nvim/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "338409dd8a6ed74767bad3eb5269f1b903ffb3c/;"	o
+nvim-lspconfig	private_dot_config/nvim/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3" }/;"	o
+nvim-nio	private_dot_config/nvim/lazy-lock.json	/^  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },$/;"	o
+nvim-treesitter	private_dot_config/nvim/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" /;"	o
+nvim-web-devicons	private_dot_config/nvim/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "746ffbb17975ebd6c40142362eee1b0249969c5c/;"	o
+oil.nvim	private_dot_config/nvim/lazy-lock.json	/^  "oil.nvim": { "branch": "master", "commit": "f55b25e493a7df76371cfadd0ded5004cb9cd48a" },$/;"	o
 orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
 orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
 orientation	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
@@ -391,6 +466,7 @@ output	private_dot_config/i3/sessions/default_layout.json	/^{"id":11031186268812
 output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1
 output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2
 output	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0
+pathlib.nvim	private_dot_config/nvim/lazy-lock.json	/^  "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },$/;"	o
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.1.nodes.0.nodes.0
@@ -405,6 +481,7 @@ percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":1103118626881
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.0
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.2
+plenary.nvim	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },$/;"	o
 rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o
 rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0
 rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0
@@ -465,6 +542,7 @@ swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688
 swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.1.nodes.1.nodes.1
 swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2
 swallows	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	a	object:nodes.1.nodes.2.nodes.0
+telescope.nvim	private_dot_config/nvim/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }/;"	o
 title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.0.nodes.0.window_properties
 title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
 title	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
@@ -505,6 +583,13 @@ urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":11031186268812
 urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.1.nodes.1.nodes.1
 urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2
 urgent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	b	object:nodes.1.nodes.2.nodes.0
+vim-commentary	private_dot_config/nvim/lazy-lock.json	/^  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }/;"	o
+vim-qf	private_dot_config/nvim/lazy-lock.json	/^  "vim-qf": { "branch": "master", "commit": "7cafff6a9e0a1b54364b26a87f1efe749f8fb96b" },$/;"	o
+vim-repeat	private_dot_config/nvim/lazy-lock.json	/^  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },$/;"	o
+vim-surround	private_dot_config/nvim/lazy-lock.json	/^  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },$/;"	o
+vim-unimpaired	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": "master", "commit": "db65482581a28e4ccf355be297f1864a4e66985c" }/;"	o
+vim-vinegar	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	o
+which-key.nvim	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }$/;"	o
 width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
 width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
 width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0.deco_rect
