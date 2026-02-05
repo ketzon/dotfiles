@@ -25,9 +25,12 @@ vim.o.winborder = "rounded"
 vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.wrap = false
+vim.opt.cursorline = true
 vim.opt.cursorcolumn = false
 vim.opt.ignorecase = true
+vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.cindent = false
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 
@@ -51,6 +54,9 @@ vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set({ "n", "v", "x" }, ";", ":", { desc = "Enter command mode" })
 vim.keymap.set({ "n", "v", "x" }, ":", ";", { desc = "Repeat f/t motion" })
 
+-- Remap ' pour jump exact (position exacte au lieu de début de ligne)
+vim.keymap.set("n", "'", "`", { desc = "Jump to mark exact position" })
+
 -- Insert date/time en mode insert
 vim.cmd([[
   noremap! <c-r><c-d> <c-r>=strftime('%F')<cr>
@@ -69,16 +75,7 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
 
-local ok_mark, mark = pcall(require, 'harpoon.mark')
-local ok_ui, ui = pcall(require, 'harpoon.ui')
-if ok_mark and ok_ui then
-  vim.keymap.set('n', '<leader>m', mark.add_file)
-  vim.keymap.set('n', '<leader>h', ui.toggle_quick_menu)
-  vim.keymap.set('n', '<leader>1', function() ui.nav_file(1) end)
-  vim.keymap.set('n', '<leader>2', function() ui.nav_file(2) end)
-  vim.keymap.set('n', '<leader>3', function() ui.nav_file(3) end)
-  vim.keymap.set('n', '<leader>4', function() ui.nav_file(4) end)
-end
+
 
 
 
@@ -93,20 +90,18 @@ if ok_telescope then
 end
 
 
+-- Native completion (Neovim 0.11+)
 vim.api.nvim_create_autocmd('LspAttach', {
-	group = vim.api.nvim_create_augroup('my.lsp', {}),
+	group = vim.api.nvim_create_augroup('native_completion', {}),
 	callback = function(args)
 		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
 		if client:supports_method('textDocument/completion') then
-			-- Optional: trigger autocompletion on EVERY keypress. May be slow!
-			local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
-			client.server_capabilities.completionProvider.triggerCharacters = chars
 			vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
 		end
 	end,
 })
 
-vim.cmd [[set completeopt+=menuone,noselect,popup]]
+vim.cmd [[set completeopt=menu,menuone,noselect]]
 
 -- html filetype
 vim.api.nvim_create_autocmd("FileType", {
@@ -122,6 +117,14 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "python",
   command = "setlocal makeprg=python3\\ %"
+})
+
+-- Fix indentation pour TypeScript/React avec Treesitter
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+  callback = function()
+    vim.opt_local.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+  end
 })
 
 local map = vim.keymap.set
