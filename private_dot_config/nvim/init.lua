@@ -83,12 +83,31 @@ vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true 
 
 local ok_telescope, builtin = pcall(require, 'telescope.builtin')
 if ok_telescope then
+  -- Files & Navigation
   vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-  vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+  vim.keymap.set('n', '<leader>fo', builtin.oldfiles, {})
   vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-  vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+  vim.keymap.set('n', '<leader>fG', builtin.git_files, {})
+  
+  -- Search
+  vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+  vim.keymap.set('n', '<leader>fi', builtin.grep_string, {})
+  vim.keymap.set('n', '<leader>f/', builtin.current_buffer_fuzzy_find, {})
+  
+  -- LSP
+  vim.keymap.set('n', '<leader>fr', builtin.lsp_references, {})
   vim.keymap.set('n', '<leader>fs', '<cmd>Telescope lsp_document_symbols<CR>', { noremap = true, silent = true })
   vim.keymap.set('n', '<leader>fS', '<cmd>Telescope lsp_workspace_symbols<CR>', { noremap = true, silent = true })
+  vim.keymap.set('n', '<leader>ft', builtin.lsp_type_definitions, {})
+  vim.keymap.set('n', '<leader>fw', builtin.diagnostics, {})
+  
+  -- Utilities
+  vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+  vim.keymap.set('n', '<leader>fk', builtin.keymaps, {})
+  vim.keymap.set('n', '<leader>fm', builtin.man_pages, {})
+  vim.keymap.set('n', '<leader>fe', '<cmd>Telescope env<cr>', {})
+  vim.keymap.set('n', '<leader>fc', builtin.git_bcommits, {})
+  vim.keymap.set('n', '<leader>fT', builtin.builtin, {})
 end
 
 
@@ -134,24 +153,10 @@ vim.api.nvim_create_autocmd("FileType", {
 
 local map = vim.keymap.set
 
-if ok_telescope then
-  map({ "n" }, "<leader>sg", builtin.git_files)
-  map({ "n" }, "<leader>si", builtin.grep_string)
-  map({ "n" }, "<leader>so", builtin.oldfiles)
-  map({ "n" }, "<leader>sm", builtin.man_pages)
-  map({ "n" }, "<leader>sr", builtin.lsp_references)
-  map({ "n" }, "<leader>sd", builtin.diagnostics)
-  map({ "n" }, "<leader>sT", builtin.lsp_type_definitions)
-  map({ "n" }, "<leader>ss", builtin.current_buffer_fuzzy_find)
-  map({ "n" }, "<leader>st", builtin.builtin)
-  map({ "n" }, "<leader>sc", builtin.git_bcommits)
-  map({ "n" }, "<leader>sk", builtin.keymaps)
-  map({ "n" }, "<leader>se", "<cmd>Telescope env<cr>")
-end
-
+-- Code actions
 local ok_actions_preview, actions_preview = pcall(require, "actions-preview")
 if ok_actions_preview then
-  map({ "n" }, "<leader>sa", actions_preview.code_actions)
+  map({ "n" }, "<leader>fa", actions_preview.code_actions)
 end
 
 map({ "n" }, "<M-n>", "<cmd>resize +2<CR>")
