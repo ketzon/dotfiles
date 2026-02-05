@@ -47,6 +47,16 @@ vim.keymap.set('n', '<S-k>', vim.lsp.buf.hover)
 vim.keymap.set('n', '<leader>r', ':update<CR> :make<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 
+-- Swap ; et : pour éviter le Shift (plus ergonomique)
+vim.keymap.set({ "n", "v", "x" }, ";", ":", { desc = "Enter command mode" })
+vim.keymap.set({ "n", "v", "x" }, ":", ";", { desc = "Repeat f/t motion" })
+
+-- Insert date/time en mode insert
+vim.cmd([[
+  noremap! <c-r><c-d> <c-r>=strftime('%F')<cr>
+  noremap! <c-r><c-t> <c-r>=strftime('%T')<cr>
+]])
+
 -- recentre l'ecran
 vim.api.nvim_set_keymap('n', '<C-U>', '<C-U>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-D>', '<C-D>zz', { noremap = true })
@@ -54,7 +64,7 @@ vim.api.nvim_set_keymap('n', '<C-]>', '<C-]>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-o>', '<C-o>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-i>', '<C-i>zz', { noremap = true })
 
-vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', ':Oil<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
@@ -70,11 +80,7 @@ if ok_mark and ok_ui then
   vim.keymap.set('n', '<leader>4', function() ui.nav_file(4) end)
 end
 
-vim.g.loaded_gutentags = 1
-vim.g.gutentags_enabled = 0
-vim.g.loaded_vim_tags = 1
-vim.g.loaded_autotag = 1
-vim.opt.tags = { vim.fn.stdpath("cache") .. "/tags" }
+
 
 local ok_telescope, builtin = pcall(require, 'telescope.builtin')
 if ok_telescope then
@@ -165,23 +171,44 @@ vim.keymap.set('n', 'n', 'nzzzv')  -- Recherche toujours centrée
 vim.keymap.set('n', 'N', 'Nzzzv')
 vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')  -- Copie vers clipboard système
 vim.keymap.set("n", "<leader>a", ":edit #<CR>")  -- Retour au buffer précédent
-vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {
-  noremap = true,
-  silent = true,
-})
-local actions = require("telescope.actions")
 
-require("telescope").setup({
+-- Gestion des tabs
+vim.keymap.set({ "n", "t" }, "<Leader>t", "<Cmd>tabnew<CR>", { desc = "New tab" })
+vim.keymap.set({ "n", "t" }, "<Leader>x", "<Cmd>tabclose<CR>", { desc = "Close tab" })
+
+-- Navigation rapide entre tabs (1-8)
+for i = 1, 8 do
+  vim.keymap.set({ "n", "t" }, "<Leader>" .. i, "<Cmd>tabnext " .. i .. "<CR>", { desc = "Go to tab " .. i })
+end
+-- Configuration Telescope
+local telescope = require('telescope')
+local actions = require('telescope.actions')
+
+telescope.setup({
   defaults = {
     mappings = {
       i = {
-        ["<C-p>"] = actions.move_selection_previous,
-        ["<C-n>"] = actions.move_selection_next,
+        ['<C-j>'] = actions.move_selection_next,
+        ['<C-k>'] = actions.move_selection_previous,
+        ['<C-n>'] = actions.move_selection_next,
+        ['<C-e>'] = actions.move_selection_previous,
       },
       n = {
-        ["<C-p>"] = actions.move_selection_previous,
-        ["<C-n>"] = actions.move_selection_next,
+        ['<C-j>'] = actions.move_selection_next,
+        ['<C-k>'] = actions.move_selection_previous,
       },
     },
   },
+  extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {}
+    }
+  }
+})
+telescope.load_extension('ui-select')
+
+vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {
+  noremap = true,
+  silent = true,
+  desc = "Find files"
 })
