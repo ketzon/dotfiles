@@ -16,13 +16,20 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.hidden = true
-vim.opt.hlsearch = false
 vim.o.autowrite = true
 vim.o.winborder = "rounded"
+vim.opt.showtabline = 2
+vim.opt.signcolumn = "yes"
+vim.opt.wrap = false
+vim.opt.cursorcolumn = false
+vim.opt.ignorecase = true
+vim.opt.smartindent = true
+vim.opt.termguicolors = true
+vim.opt.undofile = true
 
 -- vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
 --   pattern = "*",
