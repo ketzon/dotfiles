@@ -31,6 +31,8 @@ vim.opt.ignorecase = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.cindent = false
+vim.opt.preserveindent = true
+vim.opt.copyindent = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 
@@ -119,11 +121,14 @@ vim.api.nvim_create_autocmd("FileType", {
   command = "setlocal makeprg=python3\\ %"
 })
 
--- Fix indentation pour TypeScript/React avec Treesitter
+-- Fix indentation pour TypeScript/React (ne pas utiliser Treesitter indent, il est buggé)
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
   callback = function()
-    vim.opt_local.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    -- Utiliser smartindent au lieu de Treesitter indentexpr
+    vim.opt_local.indentexpr = ""
+    vim.opt_local.smartindent = true
+    vim.opt_local.cindent = false
   end
 })
 
