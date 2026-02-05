@@ -187,24 +187,12 @@ vim.keymap.set({ "n", "t" }, "<Leader>x", "<Cmd>tabclose<CR>", { desc = "Close t
 for i = 1, 8 do
   vim.keymap.set({ "n", "t" }, "<Leader>" .. i, "<Cmd>tabnext " .. i .. "<CR>", { desc = "Go to tab " .. i })
 end
--- Configuration Telescope
+-- Configuration Telescope (utiliser les mappings par défaut)
 local telescope = require('telescope')
-local actions = require('telescope.actions')
 
 telescope.setup({
   defaults = {
-    mappings = {
-      i = {
-        ['<C-j>'] = actions.move_selection_next,
-        ['<C-k>'] = actions.move_selection_previous,
-        ['<C-n>'] = actions.move_selection_next,
-        ['<C-e>'] = actions.move_selection_previous,
-      },
-      n = {
-        ['<C-j>'] = actions.move_selection_next,
-        ['<C-k>'] = actions.move_selection_previous,
-      },
-    },
+    -- Pas de mappings custom, on utilise les defaults de Telescope
   },
   extensions = {
     ["ui-select"] = {
