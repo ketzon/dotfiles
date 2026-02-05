@@ -72,6 +72,7 @@ vim.api.nvim_set_keymap('n', '<C-]>', '<C-]>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-o>', '<C-o>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-i>', '<C-i>zz', { noremap = true })
 
+vim.api.nvim_set_keymap('n', '<leader>e', ':Oil<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
@@ -160,9 +161,7 @@ map({ "n" }, "<M-m>", "<cmd>vertical resize -5<CR>")
 map({ "n" }, "<leader>c", "1z=")
 map({ "n" }, "<C-q>", ":copen<CR>", { silent = true })
 
-vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
 
--- Ou pour une version plus détaillée avec toutes les infos :
 vim.keymap.set('n', '<leader>d', function()
   vim.diagnostic.open_float(nil, {
     focusable = false,
@@ -187,12 +186,24 @@ vim.keymap.set({ "n", "t" }, "<Leader>x", "<Cmd>tabclose<CR>", { desc = "Close t
 for i = 1, 8 do
   vim.keymap.set({ "n", "t" }, "<Leader>" .. i, "<Cmd>tabnext " .. i .. "<CR>", { desc = "Go to tab " .. i })
 end
--- Configuration Telescope (utiliser les mappings par défaut)
+-- Configuration Telescope
 local telescope = require('telescope')
+local actions = require('telescope.actions')
 
 telescope.setup({
   defaults = {
-    -- Pas de mappings custom, on utilise les defaults de Telescope
+    mappings = {
+      i = {
+        ['<C-j>'] = actions.move_selection_next,
+        ['<C-k>'] = actions.move_selection_previous,
+        ['<C-n>'] = actions.move_selection_next,
+        ['<C-e>'] = actions.move_selection_previous,
+      },
+      n = {
+        ['<C-j>'] = actions.move_selection_next,
+        ['<C-k>'] = actions.move_selection_previous,
+      },
+    },
   },
   extensions = {
     ["ui-select"] = {
