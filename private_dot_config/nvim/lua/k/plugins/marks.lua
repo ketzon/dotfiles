@@ -41,8 +41,17 @@ return {
     for _, key in ipairs({"'", "`"}) do
       vim.keymap.set('n', key, function()
         local char = vim.fn.getcharstr()
-        vim.cmd('normal! ' .. key .. char .. 'zz')
-      end, { noremap = true, silent = true })
+        -- Utiliser feedkeys pour ne pas perdre le caractère
+        vim.api.nvim_feedkeys(
+          vim.api.nvim_replace_termcodes(key .. char, true, false, true), 
+          'n', 
+          false
+        )
+        -- Centrer après le jump (schedule évite race condition)
+        vim.schedule(function()
+          vim.cmd('normal! zz')
+        end)
+      end, { noremap = true, silent = true, desc = "Jump to mark (centered)" })
     end
   end
 }

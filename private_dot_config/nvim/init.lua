@@ -194,6 +194,21 @@ end, { desc = 'Show diagnostic float' })
 
 vim.keymap.set('n', 'n', 'nzzzv')  -- Recherche toujours centrée
 vim.keymap.set('n', 'N', 'Nzzzv')
+
+-- Centrage automatique après recherche / et ?
+vim.api.nvim_create_autocmd('CmdlineLeave', {
+  pattern = { '/', '\\?' },
+  callback = function()
+    vim.schedule(function()
+      -- Centrer seulement si recherche valide (pas annulée avec ESC)
+      if vim.v.hlsearch == 1 then
+        vim.cmd('normal! zz')
+      end
+    end)
+  end,
+  desc = "Center screen after search"
+})
+
 vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')  -- Copie vers clipboard système
 vim.keymap.set("n", "<leader>a", ":edit #<CR>")  -- Retour au buffer précédent
 
@@ -205,63 +220,3 @@ vim.keymap.set({ "n", "t" }, "<Leader>x", "<Cmd>tabclose<CR>", { desc = "Close t
 for i = 1, 8 do
   vim.keymap.set({ "n", "t" }, "<Leader>" .. i, "<Cmd>tabnext " .. i .. "<CR>", { desc = "Go to tab " .. i })
 end
--- Configuration Telescope
-local telescope = require('telescope')
-local actions = require('telescope.actions')
-
-telescope.setup({
-  defaults = {
-    preview = { treesitter = true },
-    color_devicons = true,
-    sorting_strategy = "ascending",
-    borderchars = {
-      "", -- top
-      "", -- right
-      "", -- bottom
-      "", -- left
-      "", -- top-left
-      "", -- top-right
-      "", -- bottom-right
-      "", -- bottom-left
-    },
-    path_display = { "smart" },
-    layout_config = {
-      height = 100,
-      width = 400,
-      prompt_position = "top",
-      preview_cutoff = 40,
-    },
-    mappings = {
-      i = {
-        -- Navigation dans la liste
-        ['<C-j>'] = actions.move_selection_next,
-        ['<C-k>'] = actions.move_selection_previous,
-        ['<C-n>'] = actions.move_selection_next,
-        ['<C-e>'] = actions.move_selection_previous,
-        -- Scroll vertical dans la preview
-        ['<C-u>'] = actions.preview_scrolling_up,
-        ['<C-d>'] = actions.preview_scrolling_down,
-      },
-      n = {
-        -- Navigation dans la liste
-        ['<C-j>'] = actions.move_selection_next,
-        ['<C-k>'] = actions.move_selection_previous,
-        -- Scroll vertical dans la preview
-        ['<C-u>'] = actions.preview_scrolling_up,
-        ['<C-d>'] = actions.preview_scrolling_down,
-      },
-    },
-  },
-  extensions = {
-    ["ui-select"] = {
-      require("telescope.themes").get_dropdown {}
-    }
-  }
-})
-telescope.load_extension('ui-select')
-
-vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {
-  noremap = true,
-  silent = true,
-  desc = "Find files"
-})
