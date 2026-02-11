@@ -28,25 +28,12 @@ vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = false
 vim.opt.ignorecase = true
-vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.cindent = false
-vim.opt.preserveindent = true
 vim.opt.copyindent = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 
--- vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
---   pattern = "*",
---   callback = function()
---     if vim.bo.buftype == "" and vim.bo.modifiable and vim.fn.expand("%") ~= "" then
---       vim.cmd("silent! update")
---     end
---   end,
--- })
-
--- ouvre infos lsp
-vim.keymap.set('n', '<S-k>', vim.lsp.buf.hover)
+-- ouvre infos lsp (K est défini dans lsp-zero.lua)
 
 --speed key
 vim.keymap.set('n', '<leader>r', ':update<CR> :make<CR>')
@@ -57,7 +44,7 @@ vim.keymap.set({ "n", "v", "x" }, ";", ":", { desc = "Enter command mode" })
 vim.keymap.set({ "n", "v", "x" }, ":", ";", { desc = "Repeat f/t motion" })
 
 -- Remap ' pour jump exact (position exacte au lieu de début de ligne)
-vim.keymap.set("n", "'", "`", { desc = "Jump to mark exact position" })
+vim.keymap.set("n", "<leader>m", "`", { desc = "Jump to mark exact position" })
 
 -- Insert date/time en mode insert
 vim.cmd([[
@@ -65,14 +52,41 @@ vim.cmd([[
   noremap! <c-r><c-t> <c-r>=strftime('%T')<cr>
 ]])
 
--- recentre l'ecran
-vim.api.nvim_set_keymap('n', '<C-U>', '<C-U>zz', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-D>', '<C-D>zz', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-]>', '<C-]>zz', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-o>', '<C-o>zz', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-i>', '<C-i>zz', { noremap = true })
+-- ═══════════════════════════════════════════════════════════
+-- AUTO-CENTRAGE UNIVERSEL après jumps/marks/recherches
+-- ═══════════════════════════════════════════════════════════
+local function jump_and_center(keys)
+  return function()
+    vim.cmd('normal! ' .. vim.api.nvim_replace_termcodes(keys, true, false, true) .. 'zz')
+  end
+end
 
-vim.api.nvim_set_keymap('n', '<leader>e', ':Oil<CR>', { noremap = true, silent = true })
+-- Jumps de base - tous centrés automatiquement
+local center_jumps = {
+  ['<C-d>'] = '<C-d>',  -- Half-page down
+  ['<C-u>'] = '<C-u>',  -- Half-page up
+  ['<C-f>'] = '<C-f>',  -- Full page down
+  ['<C-b>'] = '<C-b>',  -- Full page up
+  ['<C-o>'] = '<C-o>',  -- Jump list older
+  ['<C-i>'] = '<C-i>',  -- Jump list newer
+  ['<C-]>'] = '<C-]>',  -- Tag jump
+  ['{'] = '{',          -- Paragraphe précédent
+  ['}'] = '}',          -- Paragraphe suivant
+  ['[['] = '[[',        -- Section précédente
+  [']]'] = ']]',        -- Section suivante
+  ['[]'] = '[]',        -- Section end
+  [']['] = '][',        -- Section start
+  ['g;'] = 'g;',        -- Changelist older
+  ['g,'] = 'g,',        -- Changelist newer
+  ['%'] = '%',          -- Matching bracket
+}
+
+for key, motion in pairs(center_jumps) do
+  vim.keymap.set('n', key, jump_and_center(motion), { noremap = true, silent = true })
+end
+
+-- Oil file manager
+vim.api.nvim_set_keymap('n', '<leader>o', ':Oil<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
