@@ -37,6 +37,7 @@
 1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes.1.nodes
 2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.focus
 2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
+action	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    action = function(match, state)$/;"	f
 actions-preview.nvim	private_dot_config/nvim/lazy-lock.json	/^  "actions-preview.nvim": { "branch": "master", "commit": "cb938c25edaac38d362555f19244a9cb85d56/;"	o
 alpha-nvim	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },$/;"	o
 border	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
@@ -119,13 +120,14 @@ commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-unimpaired": { "branch": 
 commit	private_dot_config/nvim/lazy-lock.json	/^  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },$/;"	s	object:vim-vinegar
 commit	private_dot_config/nvim/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }$/;"	s	object:which-key.nvim
 config	private_dot_config/nvim/lua/k/plugins/actions-preview.lua	/^  config = function()$/;"	f
-config	private_dot_config/nvim/lua/k/plugins/alpha.lua	/^    config = function ()$/;"	f
-config	private_dot_config/nvim/lua/k/plugins/catppuccin.lua	/^    config = function(_, opts)$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/autopairs.lua	/^  config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/comment.lua	/^  config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/lsp-zero.lua	/^    config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/lualine.lua	/^  config = function()$/;"	f
-config	private_dot_config/nvim/lua/k/plugins/neorg.lua	/^  config = function()$/;"	f
+config	private_dot_config/nvim/lua/k/plugins/marks.lua	/^  config = function()$/;"	f
 config	private_dot_config/nvim/lua/k/plugins/nvim-treesitter.lua	/^	config = function () $/;"	f
+config	private_dot_config/nvim/lua/k/plugins/telescope.lua	/^  config = function()$/;"	f
 css_fn	private_dot_config/nvim/lua/k/plugins/colorizer.lua	/^        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn$/;"	f
 current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n
 current_border_width	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.0
@@ -326,6 +328,7 @@ instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688
 instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.0.window_properties
 instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.1.nodes.1.nodes.1.window_properties
 instance	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.1.nodes.2.nodes.0.window_properties
+jump_and_center	private_dot_config/nvim/init.lua	/^local function jump_and_center(keys)$/;"	f
 last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
 last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
 last_split_layout	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
@@ -482,6 +485,7 @@ percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":1103118626881
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.1.nodes.0
 percent	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	z	object:nodes.1.nodes.2
 plenary.nvim	private_dot_config/nvim/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },$/;"	o
+prepend_args	private_dot_config/nvim/lua/k/plugins/conform.lua	/^        prepend_args = function()$/;"	f
 rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o
 rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0
 rect	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.0.nodes.0
