@@ -41,7 +41,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#555555"
-bindkey '^ ' autosuggest-accept
+bindkey '^f' autosuggest-accept
 
 alias v='nvim'
 alias e='emacs -nw'
