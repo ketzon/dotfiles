@@ -35,27 +35,9 @@
 1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
 1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes
 1	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes.1.nodes.1.nodes
-1. **tmux.conf** ✅	IMPROVEMENTS.md	/^#### 1. **tmux.conf** ✅$/;"	t	subsection:Améliorations de l'environnement Chezmoi""🎯 Problème résolu : Fuzzy Find dans tmux""Solutions appliquées
 2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	array:nodes.1.focus
 2	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	array:nodes.1.nodes
-2. **Script tmux-session-dispensary** ✅	IMPROVEMENTS.md	/^#### 2. **Script tmux-session-dispensary** ✅$/;"	t	subsection:Améliorations de l'environnement Chezmoi""🎯 Problème résolu : Fuzzy Find dans tmux""Solutions appliquées
 256color	dot_tmux.conf	/^set -a terminal-features "tmux-256color:RGB"$/;"	k
-3. **zshrc amélioré** ✅	IMPROVEMENTS.md	/^#### 3. **zshrc amélioré** ✅$/;"	t	subsection:Améliorations de l'environnement Chezmoi""🎯 Problème résolu : Fuzzy Find dans tmux""Solutions appliquées
-Améliorations de l'environnement Chezmoi	IMPROVEMENTS.md	/^# Améliorations de l'environnement Chezmoi$/;"	c
-Appliquer les changements	IMPROVEMENTS.md	/^### Appliquer les changements$/;"	S	section:Améliorations de l'environnement Chezmoi""📝 Pour utiliser
-Cause	IMPROVEMENTS.md	/^### Cause$/;"	S	section:Améliorations de l'environnement Chezmoi""🎯 Problème résolu : Fuzzy Find dans tmux
-Configuration chezmoi.toml	IMPROVEMENTS.md	/^### Configuration chezmoi.toml$/;"	S	section:Améliorations de l'environnement Chezmoi""🚀 Améliorations chezmoi
-Dans le shell	IMPROVEMENTS.md	/^### Dans le shell$/;"	S	section:Améliorations de l'environnement Chezmoi""🎮 Utilisation
-Dans tmux	IMPROVEMENTS.md	/^### Dans tmux$/;"	S	section:Améliorations de l'environnement Chezmoi""🎮 Utilisation
-Fichiers ajoutés	IMPROVEMENTS.md	/^### Fichiers ajoutés$/;"	S	section:Améliorations de l'environnement Chezmoi""🚀 Améliorations chezmoi
-Installer sur nouvelle machine	IMPROVEMENTS.md	/^### Installer sur nouvelle machine$/;"	S	section:Améliorations de l'environnement Chezmoi""📝 Pour utiliser
-Pour recharger les configs	IMPROVEMENTS.md	/^### Pour recharger les configs$/;"	S	section:Améliorations de l'environnement Chezmoi""🎮 Utilisation
-Problème 1: Script tmux créait session isolée ❌ → Crée tab maintenant ✅	IMPROVEMENTS.md	/^### Problème 1: Script tmux créait session isolée ❌ → Crée tab maintenant ✅$/;"	S	section:Améliorations de l'environnement Chezmoi""🔧 Corrections appliquées suite aux retours
-Problème 2: FZF ne cherchait pas dans home ❌ → Cherche partout maintenant ✅	IMPROVEMENTS.md	/^### Problème 2: FZF ne cherchait pas dans home ❌ → Cherche partout maintenant ✅$/;"	S	section:Améliorations de l'environnement Chezmoi""🔧 Corrections appliquées suite aux retours
-Problème 3: Preview ls causait erreurs → Fallbacks ajoutés ✅	IMPROVEMENTS.md	/^### Problème 3: Preview ls causait erreurs → Fallbacks ajoutés ✅$/;"	S	section:Améliorations de l'environnement Chezmoi""🔧 Corrections appliquées suite aux retours
-Solutions appliquées	IMPROVEMENTS.md	/^### Solutions appliquées$/;"	S	section:Améliorations de l'environnement Chezmoi""🎯 Problème résolu : Fuzzy Find dans tmux
-Templates pour portabilité	IMPROVEMENTS.md	/^### Templates pour portabilité$/;"	S	section:Améliorations de l'environnement Chezmoi""🚀 Améliorations chezmoi
-Tester fzf dans tmux	IMPROVEMENTS.md	/^### Tester fzf dans tmux$/;"	S	section:Améliorations de l'environnement Chezmoi""📝 Pour utiliser
 action	private_dot_config/nvim/lua/k/plugins/flash.lua	/^    action = function(match, state)$/;"	f
 actions-preview.nvim	private_dot_config/nvim/lazy-lock.json	/^  "actions-preview.nvim": { "branch": "master", "commit": "cb938c25edaac38d362555f19244a9cb85d56/;"	o
 alpha-nvim	private_dot_config/nvim/lazy-lock.json	/^  "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },$/;"	o
@@ -861,12 +843,3 @@ y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"ty
 y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.window_rect
 y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:rect
 y	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:window_rect
-🎨 Améliorations futures possibles	IMPROVEMENTS.md	/^## 🎨 Améliorations futures possibles$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-🎮 Utilisation	IMPROVEMENTS.md	/^## 🎮 Utilisation$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-🎯 Problème résolu : Fuzzy Find dans tmux	IMPROVEMENTS.md	/^## 🎯 Problème résolu : Fuzzy Find dans tmux$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-📊 Statistiques	IMPROVEMENTS.md	/^## 📊 Statistiques$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-📝 Pour utiliser	IMPROVEMENTS.md	/^## 📝 Pour utiliser$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-📦 Packages recommandés	IMPROVEMENTS.md	/^## 📦 Packages recommandés$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-🔧 Corrections appliquées suite aux retours	IMPROVEMENTS.md	/^## 🔧 Corrections appliquées suite aux retours$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-🔧 Variables FZF configurées	IMPROVEMENTS.md	/^## 🔧 Variables FZF configurées$/;"	s	chapter:Améliorations de l'environnement Chezmoi
-🚀 Améliorations chezmoi	IMPROVEMENTS.md	/^## 🚀 Améliorations chezmoi$/;"	s	chapter:Améliorations de l'environnement Chezmoi
