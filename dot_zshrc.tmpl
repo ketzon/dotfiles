@@ -17,11 +17,12 @@ source <(fzf --zsh)
 
 # FZF configuration
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --border --margin=1 --padding=1"
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :500 {}' --preview-window=right:60%:wrap"
-export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
-export FZF_ALT_C_OPTS="--preview 'ls -la --color=always {}' --preview-window=right:60%:wrap"
+# Cherche depuis le home par défaut, ou depuis pwd si spécifié
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git . $HOME'
+export FZF_CTRL_T_COMMAND='fd --type f --hidden --follow --exclude .git . $HOME'
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :500 {} 2>/dev/null || cat {}' --preview-window=right:60%:wrap"
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git . $HOME'
+export FZF_ALT_C_OPTS="--preview 'tree -C -L 1 {} 2>/dev/null || find {} -maxdepth 1 2>/dev/null' --preview-window=right:60%:wrap"
 export FZF_TMUX=1
 export FZF_TMUX_OPTS="-p 80%,80%"
 
