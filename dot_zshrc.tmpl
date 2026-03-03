@@ -15,6 +15,16 @@ source $ZSH/oh-my-zsh.sh
 
 source <(fzf --zsh)
 
+# FZF configuration
+export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --border --margin=1 --padding=1"
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :500 {}' --preview-window=right:60%:wrap"
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+export FZF_ALT_C_OPTS="--preview 'ls -la --color=always {}' --preview-window=right:60%:wrap"
+export FZF_TMUX=1
+export FZF_TMUX_OPTS="-p 80%,80%"
+
 _comp_options+=(globdots)
 
 if [[ "$(uname)" == "Darwin" ]]; then
@@ -32,25 +42,43 @@ node() { lazy_load_nvm; node $@ }
 nvm() { lazy_load_nvm; nvm $@ }
 
 # bun completions
-[ -s "/home/florian/.bun/_bun" ] && source "/home/florian/.bun/_bun"
+[ -s "{{ .chezmoi.homeDir }}/.bun/_bun" ] && source "{{ .chezmoi.homeDir }}/.bun/_bun"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/opt/platform-tools"
-export PATH=/home/florian/.opencode/bin:$PATH
+export PATH={{ .chezmoi.homeDir }}/.opencode/bin:$PATH
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#555555"
 bindkey '^f' autosuggest-accept
 
+# Editor aliases
 alias v='nvim'
 alias e='emacs -nw'
+
+# Config aliases
 alias vconf='nvim ~/.config/nvim/'
-alias conf='cd /home/florian/.config/'
+alias conf='cd ~/.config/'
 alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
-alias dotf='cd /home/florian/dotfiles'
+alias tmuxconf='nvim ~/.tmux.conf'
+alias dotf='cd ~/.local/share/chezmoi'
+
+# Tool aliases
 alias tgpt='terminalgpt'
 alias tgpto='terminalgpt one-shot'
 alias tgptn='terminalgpt new'
 alias planning='v ~/.config/routine/routine.conf'
+
+# Git aliases
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph --decorate'
+
+# Utilities
+alias ls='ls --color=auto'
+alias ll='ls -lah'
+alias grep='grep --color=auto'

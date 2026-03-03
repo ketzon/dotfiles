@@ -1,0 +1,47 @@
+# Chezmoi ignore file
+# Files and directories to exclude from chezmoi management
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Version control
+.git/
+.gitignore
+
+# Cache and temporary files
+*.cache
+*.tmp
+*.log
+tags
+*.pyc
+__pycache__/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Sensitive files (examples - uncomment if needed)
+# .env
+# .env.local
+# credentials.json
+# secrets.yaml
+
+# Build artifacts
+node_modules/
+dist/
+build/
+
+# OS-specific (macOS)
+{{ if ne .chezmoi.os "darwin" }}
+.Trash/
+Library/
+{{ end }}
+
+# OS-specific (Linux)
+{{ if ne .chezmoi.os "linux" }}
+.local/share/applications/
+{{ end }}

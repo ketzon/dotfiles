@@ -1,0 +1,83 @@
+#!/bin/bash
+# Script to install essential packages
+# This runs only once when chezmoi is initialized
+
+set -e
+
+echo "🚀 Installing essential packages..."
+
+{{ if eq .chezmoi.os "linux" -}}
+# Linux (Ubuntu/Debian)
+if command -v apt &> /dev/null; then
+    echo "📦 Updating apt packages..."
+    sudo apt update
+    
+    # Essential tools
+    packages=(
+        "fzf"          # Fuzzy finder
+        "fd-find"      # Fast find alternative
+        "ripgrep"      # Fast grep alternative
+        "bat"          # Better cat
+        "zsh"          # Z shell
+        "tmux"         # Terminal multiplexer
+        "neovim"       # Text editor
+        "git"          # Version control
+        "curl"         # Download tool
+        "wget"         # Download tool
+        "build-essential" # Build tools
+    )
+    
+    for package in "${packages[@]}"; do
+        if ! dpkg -l | grep -q "^ii  $package "; then
+            echo "📥 Installing $package..."
+            sudo apt install -y "$package" || echo "⚠️  Failed to install $package"
+        else
+            echo "✅ $package already installed"
+        fi
+    done
+fi
+{{ else if eq .chezmoi.os "darwin" -}}
+# macOS
+if ! command -v brew &> /dev/null; then
+    echo "📦 Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+echo "📦 Installing packages via Homebrew..."
+brew install fzf fd ripgrep bat zsh tmux neovim git || true
+{{ end -}}
+
+# Install Oh My Zsh if not present
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo "📦 Installing Oh My Zsh..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+else
+    echo "✅ Oh My Zsh already installed"
+fi
+
+# Install zsh-autosuggestions plugin
+ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
+    echo "📦 Installing zsh-autosuggestions..."
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+else
+    echo "✅ zsh-autosuggestions already installed"
+fi
+
+# Setup fzf keybindings
+if command -v fzf &> /dev/null; then
+    echo "⚙️  Setting up fzf..."
+    {{ if eq .chezmoi.os "linux" -}}
+    # On Linux, fzf is usually installed via package manager
+    if [ ! -f "$HOME/.fzf.zsh" ]; then
+        echo "source /usr/share/doc/fzf/examples/key-bindings.zsh" > "$HOME/.fzf.zsh"
+        echo "source /usr/share/doc/fzf/examples/completion.zsh" >> "$HOME/.fzf.zsh"
+    fi
+    {{ else if eq .chezmoi.os "darwin" -}}
+    # On macOS with Homebrew
+    $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc || true
+    {{ end -}}
+fi
+
+echo "✨ Installation complete!"
+echo "🔄 Please restart your shell or run: source ~/.zshrc"

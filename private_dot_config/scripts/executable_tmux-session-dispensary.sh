@@ -18,9 +18,23 @@ fi
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
+    # Use fzf with preview (fallback to sk if fzf not available)
+    if command -v fzf &> /dev/null; then
+        FUZZY="fzf"
+        FUZZY_OPTS="--height 50% --layout=reverse --border --margin=1 \
+            --preview 'ls -la --color=always {}' \
+            --preview-window=right:50%:wrap"
+    elif command -v sk &> /dev/null; then
+        FUZZY="sk"
+        FUZZY_OPTS="--margin 10% --color=bw"
+    else
+        echo "Error: Neither fzf nor sk found. Please install one of them."
+        exit 1
+    fi
+    
     selected=$($FD . "${DIRS[@]}" --type=directory --max-depth=3 --full-path \
         | sed "s|^$HOME/||" \
-        | sk --margin 10% --color="bw")
+        | $FUZZY $FUZZY_OPTS)
     [[ $selected ]] && selected="$HOME/$selected"
 fi
 
