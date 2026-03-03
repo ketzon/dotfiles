@@ -164,6 +164,7 @@ dock	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,
 dock	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:nodes.1.nodes.2.swallows.0
 f	private_dot_config/nvim/snippets/typescript.lua	/^local f = ls.function_node$/;"	f
 fg	dot_tmux.conf	/^set -g window-status-current-style "fg=black bg=white  "$/;"	k
+find_git_repos	private_dot_config/scripts/executable_project-jumper.sh	/^find_git_repos() {$/;"	f
 floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s
 floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0
 floating	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	s	object:nodes.0.nodes.0
@@ -251,6 +252,7 @@ geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688
 geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.1.nodes.1.nodes.1
 geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2
 geometry	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	o	object:nodes.1.nodes.2.nodes.0
+get_git_info	private_dot_config/scripts/executable_project-jumper.sh	/^get_git_info() {$/;"	f
 gruvbox.nvim	private_dot_config/nvim/lazy-lock.json	/^  "gruvbox.nvim": { "branch": "main", "commit": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b" },$/;"	o
 height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:deco_rect
 height	private_dot_config/i3/sessions/default_layout.json	/^{"id":110311862688128,"type":"root","orientation":"horizontal","scratchpad_state":"none","percen/;"	n	object:geometry
