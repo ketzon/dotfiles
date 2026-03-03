@@ -123,3 +123,78 @@ brew install fzf fd ripgrep bat zsh tmux neovim git
 - [ ] Gestion secrets avec age encryption
 - [ ] Scripts post-install par type de machine (dev/perso)
 - [ ] Aliases git plus avancés (gco, gst, etc.)
+
+---
+
+## 🔧 Corrections appliquées suite aux retours
+
+### Problème 1: Script tmux créait session isolée ❌ → Crée tab maintenant ✅
+
+**Avant :** `Ctrl+Space f` créait une nouvelle session tmux isolée  
+**Maintenant :** Crée une nouvelle window (tab) dans votre session actuelle
+
+**Comportement :**
+- Si vous êtes **dans tmux** → Crée un nouveau tab
+- Si vous êtes **hors tmux** → Crée/attache à une session
+
+### Problème 2: FZF ne cherchait pas dans home ❌ → Cherche partout maintenant ✅
+
+**Avant :** `Ctrl+T` cherchait uniquement dans le répertoire courant  
+**Maintenant :** Cherche dans tout votre `$HOME` (~530k fichiers indexés)
+
+**Variables corrigées :**
+```bash
+FZF_CTRL_T_COMMAND='fd --type f --hidden --follow --exclude .git . $HOME'
+FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git . $HOME'
+```
+
+### Problème 3: Preview ls causait erreurs → Fallbacks ajoutés ✅
+
+**Preview fichiers :** `bat` (avec couleurs) ou `cat` (fallback)  
+**Preview répertoires :** `tree` (arborescence) ou `find` (fallback)
+
+---
+
+## 🎮 Utilisation
+
+### Dans le shell
+```bash
+# Fuzzy find fichiers dans tout le home
+Ctrl+T
+
+# Fuzzy find répertoires
+Alt+C
+
+# Historique des commandes
+Ctrl+R
+```
+
+### Dans tmux
+```bash
+# Ouvrir session dispensary (crée nouveau tab)
+Ctrl+Space puis f
+
+# Recharger config tmux
+Ctrl+Space puis r
+
+# Lister tous les tabs
+Ctrl+Space puis w
+```
+
+### Pour recharger les configs
+```bash
+# Recharger zsh (nouvelles variables FZF)
+source ~/.zshrc
+
+# Ou redémarrer le shell
+exec zsh
+```
+
+---
+
+## 📊 Statistiques
+
+- **Fichiers indexés dans home :** ~530,978 fichiers
+- **Vitesse de recherche :** Instantanée grâce à `fd`
+- **Preview :** Activé avec fallbacks multiples
+
