@@ -61,6 +61,8 @@ local function jump_and_center(keys)
   end
 end
 
+require("luasnip").setup({ enable_autosnippets = true })
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets/" })
 -- Jumps de base - tous centrés automatiquement
 local center_jumps = {
   ['<C-d>'] = '<C-d>',  -- Half-page down
