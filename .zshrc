@@ -128,6 +128,8 @@ alias dotf='cd /home/florian/dotfiles'
 export PATH="$PATH:/opt/platform-tools"
 
 alias tgpt='terminalgpt'
+alias lg='lazygit'
+alias ld='lazydocker'
 alias tgpto='terminalgpt one-shot'
 alias tgptn='terminalgpt new'
 alias planning='v ~/.config/routine/routine.conf'
