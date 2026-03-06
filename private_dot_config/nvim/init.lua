@@ -285,7 +285,7 @@ vim.opt.expandtab      = true
 vim.o.autowrite        = true
 vim.o.winborder        = "rounded"
 vim.opt.showtabline    = 2
-vim.opt.signcolumn     = "auto"
+vim.opt.signcolumn     = "yes"
 vim.opt.wrap           = false
 vim.opt.cursorline     = true
 vim.opt.cursorcolumn   = false
@@ -324,9 +324,14 @@ ls.setup({ enable_autosnippets = true })
 require("luasnip.loaders.from_lua").load({ paths = vim.fn.stdpath("config") .. "/snippets/" })
 
 vim.keymap.set({ "i", "s" }, "<Tab>", function()
-  if ls.expand_or_jumpable() then ls.expand_or_jump()
-  else vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false) end
-end, { silent = true })
+  if vim.fn.pumvisible() == 1 then
+    return vim.api.nvim_replace_termcodes("<C-n>", true, false, true)
+  elseif ls.expand_or_jumpable() then
+    ls.expand_or_jump()
+  else
+    return vim.api.nvim_replace_termcodes("<Tab>", true, false, true)
+  end
+end, { silent = true, expr = true })
 
 vim.keymap.set({ "i", "s" }, "<S-Tab>", function()
   if ls.jumpable(-1) then ls.jump(-1)
