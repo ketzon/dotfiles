@@ -27,6 +27,7 @@ return {
 
       -- Keymaps LSP
       vim.api.nvim_create_autocmd('LspAttach', {
+        group = vim.api.nvim_create_augroup('lsp_keymaps', { clear = true }),
         callback = function(event)
           local opts = { buffer = event.buf }
           vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)

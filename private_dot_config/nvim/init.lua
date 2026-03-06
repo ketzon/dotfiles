@@ -19,7 +19,6 @@ vim.opt.swapfile = false
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-vim.opt.hidden = true
 vim.o.autowrite = true
 vim.o.winborder = "rounded"
 vim.opt.showtabline = 2
@@ -30,7 +29,6 @@ vim.opt.cursorcolumn = false
 vim.opt.ignorecase = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.copyindent = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 
