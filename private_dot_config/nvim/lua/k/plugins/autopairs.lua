@@ -5,6 +5,9 @@ return {
     local npairs = require('nvim-autopairs')
     
     npairs.setup({
+      -- Enter dans {} [] () → expand avec indentation
+      map_cr = true,
+
       -- Intégration Treesitter pour contexte intelligent
       check_ts = true,
       ts_config = {
@@ -38,12 +41,14 @@ return {
     -- Règles custom pour JSX/TSX
     local Rule = require('nvim-autopairs.rule')
     local cond = require('nvim-autopairs.conds')
-    
+
     -- Auto-close JSX tags <>
     npairs.add_rules({
       Rule("<", ">", { "javascriptreact", "typescriptreact" })
         :with_pair(cond.before_regex("%a+", 1))  -- Seulement si lettre avant (tag JSX)
         :with_move(function(opts) return opts.char == ">" end)
     })
+
+
   end,
 }

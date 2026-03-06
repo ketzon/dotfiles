@@ -28,12 +28,12 @@ vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = false
 vim.opt.ignorecase = true
+vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.copyindent = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 
--- ouvre infos lsp (K est défini dans lsp-zero.lua)
 
 --speed key
 vim.keymap.set('n', '<leader>r', ':update<CR> :make<CR>')
@@ -144,8 +144,8 @@ vim.cmd [[set completeopt=menu,menuone,noselect]]
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "html",
   callback = function()
-    vim.opt_local.autoindent = false
-    vim.opt_local.smartindent = false
+    vim.opt_local.autoindent = true
+    vim.opt_local.smartindent = true
     vim.opt_local.indentexpr = ""
   end
 })
@@ -162,6 +162,7 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     -- Utiliser smartindent au lieu de Treesitter indentexpr
     vim.opt_local.indentexpr = ""
+    vim.opt_local.autoindent = true
     vim.opt_local.smartindent = true
     vim.opt_local.cindent = false
   end
