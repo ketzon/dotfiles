@@ -144,44 +144,7 @@ require("lazy").setup({
     end,
   },
 
-  {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = function()
-      local npairs = require("nvim-autopairs")
-      npairs.setup({
-        check_ts = true,
-        ts_config = {
-          lua = { "string" },
-          javascript = { "template_string" },
-          typescript = { "template_string" },
-          javascriptreact = { "template_string", "string" },
-          typescriptreact = { "template_string", "string" },
-        },
-        disable_filetype = { "TelescopePrompt", "vim" },
-        enable_check_bracket_line = true,
-        ignored_next_char = "[%w%.]",
-        fast_wrap = {
-          map = "<M-e>",
-          chars = { "{", "[", "(", '"', "'" },
-          pattern = [=[[%'%"%>%]%)%}%,]]=],
-          end_key = "$",
-          keys = "qwertyuiopzxcvbnmasdfghjkl",
-          check_comma = true,
-          highlight = "Search",
-          highlight_grey = "Comment",
-        },
-      })
 
-      local Rule = require("nvim-autopairs.rule")
-      local cond = require("nvim-autopairs.conds")
-      npairs.add_rules({
-        Rule("<", ">", { "javascriptreact", "typescriptreact" })
-          :with_pair(cond.before_regex("%a+", 1))
-          :with_move(function(opts) return opts.char == ">" end),
-      })
-    end,
-  },
 
   {
     "stevearc/conform.nvim",
@@ -301,7 +264,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
     if client:supports_method("textDocument/completion") then
-      local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
+      local chars = {}; for i = 33, 126 do table.insert(chars, string.char(i)) end
       client.server_capabilities.completionProvider.triggerCharacters = chars
       vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
     end
@@ -338,12 +301,6 @@ vim.keymap.set({ "i", "s" }, "<S-Tab>", function()
   else vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<S-Tab>", true, false, true), "n", false) end
 end, { silent = true })
 
-vim.keymap.set("i", "<CR>", function()
-  if vim.fn.pumvisible() == 1 then return "<C-y>" end
-  local ok, npairs = pcall(require, "nvim-autopairs")
-  if ok then return npairs.autopairs_cr() end
-  return "<CR>"
-end, { expr = true, noremap = true })
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "html",
@@ -437,6 +394,14 @@ vim.cmd([[
   nnoremap gK @='ddkPJ'<cr>
   xnoremap gK <esc><cmd>keeppatterns '<,'>-global/$/normal! ddpkJ<cr>
   xnoremap <expr> . "<esc><cmd>'<,'>normal! ".v:count1.'.<cr>'
+  inoremap { {}<Left>
+  inoremap ( ()<Left>
+  inoremap [ []<Left>
+  inoremap " ""<Left>
+  inoremap ' ''<Left>
+  inoremap {<CR> {<CR>}<Esc>O
+  inoremap (<CR> (<CR>)<Esc>O
+  inoremap [<CR> [<CR>]<Esc>O
 ]])
 
 local function jump_and_center(keys)
@@ -446,6 +411,7 @@ local function jump_and_center(keys)
   end
 end
 
+-- custom autopair
 for key, motion in pairs({
   ["<C-d>"] = "<C-d>", ["<C-u>"] = "<C-u>",
   ["<C-f>"] = "<C-f>", ["<C-b>"] = "<C-b>",
