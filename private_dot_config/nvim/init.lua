@@ -37,7 +37,9 @@ vim.opt.undofile = true
 
 --speed key
 vim.keymap.set('n', '<leader>r', ':update<CR> :make<CR>')
-vim.keymap.set('n', '<leader>w', ':write<CR>')
+vim.keymap.set('n', '<leader>w', '<Cmd>update<CR>', { desc = "Write" })
+vim.keymap.set('n', '<leader>q', '<Cmd>quit<CR>', { desc = "Quit" })
+vim.keymap.set('n', '<leader>Q', '<Cmd>wqa<CR>', { desc = "Write all + quit all" })
 
 -- Swap ; et : pour éviter le Shift (plus ergonomique)
 vim.keymap.set({ "n", "v", "x" }, ";", ":", { desc = "Enter command mode" })
@@ -46,10 +48,12 @@ vim.keymap.set({ "n", "v", "x" }, ":", ";", { desc = "Repeat f/t motion" })
 -- Remap ' pour jump exact (position exacte au lieu de début de ligne)
 vim.keymap.set("n", "<leader>m", "`", { desc = "Jump to mark exact position" })
 
--- Insert date/time en mode insert
+-- Insert date/time/filename/path en mode insert
 vim.cmd([[
   noremap! <c-r><c-d> <c-r>=strftime('%F')<cr>
   noremap! <c-r><c-t> <c-r>=strftime('%T')<cr>
+  noremap! <c-r><c-f> <c-r>=expand('%:t')<cr>
+  noremap! <c-r><c-p> <c-r>=expand('%:p')<cr>
 ]])
 
 -- ═══════════════════════════════════════════════════════════
@@ -129,10 +133,12 @@ end
 
 -- Native completion (Neovim 0.11+)
 vim.api.nvim_create_autocmd('LspAttach', {
-	group = vim.api.nvim_create_augroup('native_completion', {}),
+	group = vim.api.nvim_create_augroup('native_completion', { clear = true }),
 	callback = function(args)
 		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
 		if client:supports_method('textDocument/completion') then
+			local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
+			client.server_capabilities.completionProvider.triggerCharacters = chars
 			vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
 		end
 	end,
@@ -212,8 +218,10 @@ vim.api.nvim_create_autocmd('CmdlineLeave', {
   desc = "Center screen after search"
 })
 
-vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')  -- Copie vers clipboard système
-vim.keymap.set("n", "<leader>a", ":edit #<CR>")  -- Retour au buffer précédent
+vim.keymap.set({ "n", "x" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+vim.keymap.set("n", "<leader>a", ":edit #<CR>", { desc = "Alternate buffer" })
+vim.keymap.set({ "n", "v", "x" }, "<leader>n", ":norm ", { desc = "Run normal command on selection" })
+vim.keymap.set({ "v", "x" }, "<C-s>", [[:s/\V]], { desc = "Substitute in selection" })
 
 -- Gestion des tabs
 vim.keymap.set({ "n", "t" }, "<Leader>t", "<Cmd>tabnew<CR>", { desc = "New tab" })
