@@ -395,14 +395,6 @@ vim.cmd([[
   nnoremap gK @='ddkPJ'<cr>
   xnoremap gK <esc><cmd>keeppatterns '<,'>-global/$/normal! ddpkJ<cr>
   xnoremap <expr> . "<esc><cmd>'<,'>normal! ".v:count1.'.<cr>'
-  inoremap { {}<Left>
-  inoremap ( ()<Left>
-  inoremap [ []<Left>
-  inoremap " ""<Left>
-  inoremap ' ''<Left>
-  inoremap {<CR> {<CR>}<Esc>O
-  inoremap (<CR> (<CR>)<Esc>O
-  inoremap [<CR> [<CR>]<Esc>O
 ]])
 
 local function jump_and_center(keys)
@@ -412,20 +404,6 @@ local function jump_and_center(keys)
   end
 end
 
--- custom autopair
-for key, motion in pairs({
-  ["<C-d>"] = "<C-d>", ["<C-u>"] = "<C-u>",
-  ["<C-f>"] = "<C-f>", ["<C-b>"] = "<C-b>",
-  ["<C-o>"] = "<C-o>", ["<C-i>"] = "<C-i>",
-  ["<C-]>"] = "<C-]>",
-  ["{"] = "{", ["}"] = "}",
-  ["[["] = "[[", ["]]"] = "]]",
-  ["[]"] = "[]", ["]["] = "][",
-  ["g;"] = "g;", ["g,"] = "g,",
-  ["%"] = "%",
-}) do
-  map("n", key, jump_and_center(motion), { noremap = true, silent = true })
-end
 
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
