@@ -25,25 +25,6 @@
   (setq org-roam-dailies-directory "daily/")
   (org-roam-db-autosync-mode 1)
 
-  ;; template daily
-  (setq org-roam-dailies-capture-templates
-        '(("d" "default" entry "* TODO %?"
-           :target (file+head "%<%Y-%m-%d>.org"
-                              "#+title: %<%a %d %b %Y>\n#+filetags: :daily:\n\n* 🎯 priorités du jour\n\n* 📋 todos\n** à faire aujourd'hui\n** en cours\n\n* 📅 agenda\n\n* 📝 notes\n"))
-          ("t" "todo rapide" entry "* TODO %?"
-           :target (file+head "%<%Y-%m-%d>.org"
-                              "#+title: %<%Y-%m-%d>\n#+filetags: :daily:\n")
-           :prepend t)))
-
-  ;; todo function
-  (defun my/quick-daily-todo ()
-    "Ajoute un TODO à la note du jour."
-    (interactive)
-    (org-roam-dailies-goto-today)
-    (goto-char (point-max))
-    (insert "\n* TODO ")
-    (save-buffer)))
-
 ;; -------------------------------------------------------------------
 ;; org overall
 ;; -------------------------------------------------------------------

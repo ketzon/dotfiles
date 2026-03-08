@@ -331,6 +331,7 @@ local map = vim.keymap.set
 map("n", "<leader>w", "<Cmd>update<CR>",       { desc = "Write" })
 map("n", "<leader>q", "<Cmd>quit<CR>",          { desc = "Quit" })
 map("n", "<leader>Q", "<Cmd>wqa<CR>",           { desc = "Write all + quit all" })
+map("n", "<leader>cd", "<Cmd>cd %:p:h<CR>", { desc = "cd to current file dir" })
 map("n", "<leader>a", ":edit #<CR>",            { desc = "Alternate buffer" })
 map("n", "<leader>v", "<Cmd>edit $MYVIMRC<CR>", { desc = "Edit vimrc" })
 map("n", "<leader>r", ":update<CR> :make<CR>",  { desc = "Save + make" })
