@@ -5,8 +5,8 @@
 (package! org-roam-ui
   :recipe (:host github :repo "org-roam/org-roam-ui"))
 
-;; term
-(package! vterm)
+;;theme
+(package! org-modern)
 
 ;; advanced agenda + query
 (package! org-super-agenda)
@@ -14,10 +14,4 @@
 
 ;; calendar google
 (package! org-gcal)
-(package! calfw)
-(package! calfw-org)
-(package! calfw-ical)
 
-;; better calfw view
-(package! calfw-blocks
-  :recipe (:host github :repo "ml729/calfw-blocks"))
