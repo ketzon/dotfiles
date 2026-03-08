@@ -1,0 +1,83 @@
+;;; config.el -*- lexical-binding: t; -*-
+
+;; delete le putain de mode log
+(setq org-agenda-start-with-log-mode nil)
+(setq org-agenda-skip-deadline-if-done t
+      org-agenda-skip-scheduled-if-done t)
+
+(setq org-gcal-client-id "97146172973-noealff3kucah5oo7qbr6f19gsb0sbmm.apps.googleusercontent.com"
+      org-gcal-client-secret "{{ .org_gcal_client_secret }}"
+      org-gcal-fetch-file-alist '(("bessonflorian50@gmail.com" . "~/org/gcal.org")))
+
+;; theme
+(setq doom-theme 'doom-earl-grey)
+;; -------------------------------------------------------------------
+;; opti perf 
+;; -------------------------------------------------------------------
+(setq auto-save-timeout 3)                          
+(setq read-process-output-max (* 1024 1024))       
+(setq doom-modeline-persp-name nil)
+(setq doom-modeline-buffer-file-name-style 'truncate-except-project)
+(setq echo-keystrokes 0.02)
+
+;; -------------------------------------------------------------------
+;; orgmode + orgmode
+;; -------------------------------------------------------------------
+(after! org-roam
+  (setq org-roam-directory (expand-file-name "~/org-roam/"))
+  (setq org-roam-dailies-directory "daily/")
+  (org-roam-db-autosync-mode 1))
+
+;; -------------------------------------------------------------------
+;; org overall
+;; -------------------------------------------------------------------
+
+  ;; my file
+  (setq org-agenda-files
+        (append
+         (directory-files-recursively "~/org" "\\.org$")
+         (directory-files-recursively "~/notes/org" "\\.org$")
+         (directory-files-recursively "~/org-roam/daily" "\\.org$")))
+
+;;; ----------------- Keymaps dans le calendrier -----------------
+(with-eval-after-load 'calfw-blocks
+  (let ((m cfw:calendar-mode-map))
+    ;; vues
+    (define-key m (kbd "d") #'cfw:change-view-day)
+    (define-key m (kbd "w") #'cfw:change-view-week)
+    (define-key m (kbd "m") #'cfw:change-view-month)
+    (define-key m (kbd "b") (lambda () (interactive) (my/cfw-change-view 'block-week)))
+    (define-key m (kbd "3") (lambda () (interactive) (my/cfw-change-view 'block-3-day)))
+    (define-key m (kbd "5") (lambda () (interactive) (my/cfw-change-view 'block-5-day)))
+
+    ;; navigation (hjkl)
+    (define-key m (kbd "h") #'my/cfw-left)
+    (define-key m (kbd "l") #'my/cfw-right)
+    (define-key m (kbd "j") #'my/cfw-down)
+    (define-key m (kbd "k") #'my/cfw-up)
+
+    ;; actions
+    (define-key m (kbd "t") #'my/cfw-today)
+    (define-key m (kbd "q") (lambda () (interactive) (quit-window t)))
+    (define-key m (kbd "g") #'cfw:refresh-calendar-buffer)
+    (define-key m (kbd "r") #'cfw:refresh-calendar-buffer)
+
+    ;; détails + items
+    (define-key m (kbd "RET")      #'my/cfw-details)
+    (define-key m (kbd "<return>") #'my/cfw-details)
+    (define-key m (kbd "SPC")      #'my/cfw-details)
+    (define-key m (kbd "TAB")       #'my/cfw-next-item)
+    (define-key m (kbd "<backtab>") #'my/cfw-prev-item)
+
+    ;; delete (x / del / c-d)
+    (define-key m (kbd "x")        #'my/cfw-delete-entry)
+    (define-key m (kbd "<delete>") #'my/cfw-delete-entry)
+    (define-key m (kbd "C-d")      #'my/cfw-delete-entry)))
+
+(defun my/cfw-local-keys ()
+  (local-set-key (kbd "RET")      #'my/cfw-details)
+  (local-set-key (kbd "<return>") #'my/cfw-details)
+  (local-set-key (kbd "SPC")      #'my/cfw-details)
+  (local-set-key (kbd "TAB")       #'my/cfw-next-item)
+  (local-set-key (kbd "<backtab>") #'my/cfw-prev-item))
+(add-hook 'cfw:calendar-mode-hook #'my/cfw-local-keys)

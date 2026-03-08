@@ -13,6 +13,7 @@
 (package! org-ql)
 
 ;; calendar google
+(package! org-gcal)
 (package! calfw)
 (package! calfw-org)
 (package! calfw-ical)

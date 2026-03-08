@@ -1,5 +1,7 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
+;; avoid gauth prompt https://github.com/emacsmirror/org-gcal?tab=readme-ov-file#Installation
+(setq plstore-cache-passphrase-for-symmetric-encryption t)
 (doom! :input
 
        :completion
