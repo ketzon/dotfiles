@@ -233,6 +233,15 @@ require("lazy").setup({
   "tpope/vim-surround",
   "tpope/vim-unimpaired",
   "romainl/vim-qf",
+
+  {
+    "echasnovski/mini.pairs",
+    version = false,
+    event = "InsertEnter",
+    config = function()
+      require("mini.pairs").setup()
+    end,
+  },
 })
 
 vim.o.background      = "light"
