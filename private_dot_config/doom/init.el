@@ -8,6 +8,7 @@
        company
        vertico
 
+
        :ui
        doom
        doom-dashboard

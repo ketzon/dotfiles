@@ -49,10 +49,29 @@
 ;; org agenda
 ;; -------------------------------------------------------------------
 
-(setq org-agenda-span 21)
 (use-package! org-super-agenda
   :config
   (org-super-agenda-mode 1))
 
+;;activate mouse
 (xterm-mouse-mode 1)
 
+;; deadlines colors
+(custom-set-faces!
+  '(org-upcoming-deadline :foreground "#e8a045")
+  '(org-warning :foreground "#ff4444" :weight bold))
+
+;; instant agenda
+(map! :leader
+      :desc "Org agenda (direct)" "n A" #'org-agenda-list)
+
+
+;; habit tracking + agenda
+(after! org
+  (setq org-agenda-span 21)
+  (setq org-agenda-start-on-weekday t)
+  (setq org-agenda-show-all-dates t)
+  (add-to-list 'org-modules 'org-habit)
+  (setq org-habit-show-habits-only-for-today t)
+  (setq org-habit-precedind-days 21);;perfect timing for habitline
+  (setq org-habit-graph-column 60))
