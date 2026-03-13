@@ -154,7 +154,64 @@ Crée un lien [[id:...][titre]] dans la section choisie."
 
 (after! org
   (setq org-capture-templates
-        '(("d" "Daily Planner" plain
+        '(("w" "Weekly Review" plain
+           (file+olp+datetree "~/notes/org/weekly-review.org")
+           "
+GET CLEAN [/]
+=============
+Inbox zero
+- [ ] Mail
+- [ ] Achats/revente (Vinted/Leboncoin)
+- [ ] Paperasse
+- [ ] Supprimer tâches inutiles
+
+Clean environnement
+- [ ] Bureau
+- [ ] Chambre
+- [ ] Vitamines dans le pillulier
+- [ ] Declutter — mettre en TODO les choses à vendre
+- [ ] Mettre en TODO ce qui est invendable à donner
+- [ ] Se débarrasser des distractions
+- [ ] Timer 5min — brain dump
+
+CHECK CURRENT [/]
+=================
+Waiting
+- [ ] Check tâches en attente et changer le status si besoin
+- [ ] Décaler les reminders si encore en attente
+
+Delegated
+- [ ] Tâche terminée ? Marquer DONE
+- [ ] Ça traîne ? Scheduler une action pour aider
+
+Mon système
+- [ ] Review mes tâches — quelque chose de stuck ?
+- [ ] Passer les tâches en DONE ou CANCELLED
+- [ ] Regarder l'agenda 2 prochaines semaines et reschedule si besoin
+
+Performance, goals, energy
+- [ ] Regarder les daily plans de la semaine
+- [ ] Check les goals — bien aligné ?
+- [ ] Comment je me suis senti ? Comment améliorer ?
+- [ ] Journal — ce qui était bien / à améliorer
+
+FUTURE ACTIONS [/]
+==================
+- [ ] Nourriture de prête pour la semaine ?
+- [ ] Regarder les tâches SOMEDAY/MAYBE — mettre en action ou supprimer
+- [ ] Je suis aware de mon planning ?
+- [ ] Je connais mes heures de lever/coucher et j'ai un plan ?
+- [ ] Timer 5min — braindump et rêver
+- [ ] Résultats en Actions/Someday/Maybe
+
+WEEKLY SHUTDOWN [/]
+===================
+- [ ] Check logs des LOOP actions — réduire si besoin
+- [ ] Check tâches DONE — archiver ou supprimer
+"
+           :tree-type week
+           :immediate-finish t)
+          ("d" "Daily Planner" plain
            (function my/daily-planner-tree)
            " Urgent:
 
@@ -168,7 +225,8 @@ Crée un lien [[id:...][titre]] dans la section choisie."
            :immediate-finish t))))
 
 (map! :leader
-      :desc "Daily Planner" "d d" #'(lambda () (interactive) (org-capture nil "d")))
+      :desc "Daily Planner" "d d" #'(lambda () (interactive) (org-capture nil "d"))
+      :desc "Weekly Review" "d w" #'(lambda () (interactive) (org-capture nil "w")))
 
 ;; use D for sending task to the todo
 (map! :after evil-org-agenda
