@@ -52,12 +52,7 @@
 (use-package! org-super-agenda
   :config
   (org-super-agenda-mode 1)
-  (setq org-super-agenda-header-map (make-sparse-keymap)) ;;fix evil binding conflict with org-agenda
-  (setq org-super-agenda-groups
-        '((:name "commande"
-           :tag "commande")
-          (:name "Habits"
-           :file-path "habits"))))
+  (setq org-super-agenda-header-map (make-sparse-keymap)))
 
 
 ;;activate mouse
@@ -71,6 +66,7 @@
 ;; habit tracking + agenda
 (after! org
   (setq org-agenda-span 21)
+  (setq org-agenda-todo-ignore-scheduled 'all)
   (setq org-agenda-start-on-weekday t)
   (setq org-agenda-show-all-dates t)
   (add-to-list 'org-modules 'org-habit)
