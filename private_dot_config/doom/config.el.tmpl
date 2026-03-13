@@ -51,15 +51,17 @@
 
 (use-package! org-super-agenda
   :config
-  (org-super-agenda-mode 1))
+  (org-super-agenda-mode 1)
+  (setq org-super-agenda-header-map (make-sparse-keymap)) ;;fix evil binding conflict with org-agenda
+  (setq org-super-agenda-groups
+        '((:name "commande"
+           :tag "commande")
+          (:name "Habits"
+           :file-path "habits"))))
+
 
 ;;activate mouse
 (xterm-mouse-mode 1)
-
-;; deadlines colors
-(custom-set-faces!
-  '(org-upcoming-deadline :foreground "#e8a045")
-  '(org-warning :foreground "#ff4444" :weight bold))
 
 ;; instant agenda
 (map! :leader
@@ -75,3 +77,7 @@
   (setq org-habit-show-habits-only-for-today t)
   (setq org-habit-precedind-days 21);;perfect timing for habitline
   (setq org-habit-graph-column 60))
+
+
+;; font doom
+(setq doom-font (font-spec :size 20))
