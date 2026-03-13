@@ -78,6 +78,105 @@
   (setq org-habit-precedind-days 21);;perfect timing for habitline
   (setq org-habit-graph-column 60))
 
-
+(map! "C-c c" #'org-capture)
 ;; font doom
 (setq doom-font (font-spec :size 20))
+
+
+
+;; -------------------------------------------------------------------
+;; user org id sur le daily planner
+;; -------------------------------------------------------------------
+(after! org
+  (require 'org-id)
+  (setq org-id-link-to-org-use-id 'create-if-interactive-and-no-custom-id))
+
+;; -------------------------------------------------------------------
+;; send task to daily planner  with D
+;; -------------------------------------------------------------------
+
+(defun my/agenda-to-daily-planner ()
+  "Envoie la tâche sous le curseur vers le daily planner.
+Crée un lien [[id:...][titre]] dans la section choisie."
+  (interactive)
+  (let* ((hdm (org-get-at-bol 'org-hd-marker))
+         (_ (unless hdm (user-error "Pas de tâche sous le curseur")))
+         (title (org-with-point-at hdm (org-get-heading t t t t)))
+         (id    (org-with-point-at hdm
+                  (org-id-get-create)))
+         (section (completing-read
+                   "Section: "
+                   '(" Urgent"
+                     " Not urgent"
+                     " Delegate"
+                     " Delete")
+                   nil t nil nil " Urgent"))
+         (link    (format "- [ ] [[id:%s][%s]]" id title))
+         (today   (format-time-string "%Y-%m-%d"))
+         (planner "~/org/daily-planner.org"))
+
+    (with-current-buffer (find-file-noselect (expand-file-name planner))
+      (goto-char (point-min))
+      (if (re-search-forward (regexp-quote today) nil t)
+          (save-restriction
+            (org-narrow-to-subtree)
+            (goto-char (point-min))
+            (if (re-search-forward (regexp-quote section) nil t)
+                (progn
+                  (end-of-line)
+                  (insert "\n" link))
+              (goto-char (point-max))
+              (insert (format "\n%s\n%s" section link))))
+        (user-error "no entry for today, create a template with spc d d")))
+
+    (let ((buf (find-file-noselect (expand-file-name planner))))
+      (with-current-buffer buf (save-buffer)))
+    (message "✓ \"%s\" ajouté dans %s" title section)))
+
+
+
+;; org capture template Eisenhower method
+(defun my/daily-planner-tree ()
+  "Navigue ou crée la hiérarchie Année > Mois > Semaine > Jour dans daily-planner.org."
+  (let* ((year   (format-time-string "%Y"))
+         (month  (format-time-string "%Y-%m %B"))
+         (week   (format-time-string "Week %W"))
+         (day    (format-time-string "%Y-%m-%d %A")))
+    (find-file (expand-file-name "~/org/daily-planner.org"))
+    (goto-char (point-min))
+    (cl-flet ((find-or-create (level title)
+                (unless (re-search-forward
+                         (format "^%s %s" (make-string level ?*) (regexp-quote title))
+                         nil t)
+                  (goto-char (point-max))
+                  (unless (bolp) (newline))
+                  (insert (format "%s %s\n" (make-string level ?*) title)))))
+      (find-or-create 1 year)
+      (find-or-create 2 month)
+      (find-or-create 3 week)
+      (find-or-create 4 day))))
+
+(after! org
+  (setq org-capture-templates
+        '(("d" "Daily Planner" plain
+           (function my/daily-planner-tree)
+           " Urgent:
+
+ Not Urgent:
+
+ Delegate:
+
+ Delete:
+"
+           :empty-lines 1
+           :immediate-finish t))))
+
+(map! :leader
+      :desc "Daily Planner" "d d" #'(lambda () (interactive) (org-capture nil "d")))
+
+;; use D for sending task to the todo
+(map! :after evil-org-agenda
+      :map org-agenda-mode-map
+      :m "D" #'my/agenda-to-daily-planner)
+
+
