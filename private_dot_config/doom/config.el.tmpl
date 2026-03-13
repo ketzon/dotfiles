@@ -132,6 +132,41 @@ Crée un lien [[id:...][titre]] dans la section choisie."
 
 
 ;; org capture template Eisenhower method
+(defun my/org-capture-goal ()
+  "Capture un goal avec prompts SMART et l'insère dans goals.org."
+  (interactive)
+  (let* ((title      (read-string "Goal : "))
+         (sense      (read-string "Sense (pourquoi ?) : "))
+         (measurable (read-string "Measurable (comment mesurer ?) : "))
+         (actions    (read-string "Actions (quoi faire ?) : "))
+         (resources  (read-string "Resources (de quoi j'ai besoin ?) : "))
+         (timebox    (read-string "Timebox (combien de temps ?) : "))
+         (added      (format-time-string "[%Y-%m-%d %a %H:%M]"))
+         (entry      (format "* GOAL %s\nAdded on %s\n:SMART:\n:Sense:       %s\n:Measurable:  %s\n:Actions:     %s\n:Resources:   %s\n:Timebox:     %s\n:END:\n"
+                             title added sense measurable actions resources timebox))
+         (buf        (find-file-noselect (expand-file-name "~/notes/org/goals.org"))))
+    (with-current-buffer buf
+      (goto-char (point-max))
+      (unless (bolp) (newline))
+      (insert entry)
+      (save-buffer))
+    (switch-to-buffer-other-window buf)))
+
+(defun my/goal-update-review ()
+  "Met à jour ou ajoute 'Last reviewed on' sur le goal sous le curseur."
+  (interactive)
+  (save-excursion
+    (org-back-to-heading t)
+    (let* ((now    (format-time-string "[%Y-%m-%d %a %H:%M]"))
+           (end    (save-excursion (outline-next-heading) (point))))
+      (if (re-search-forward "Last reviewed on \\[.*\\]" end t)
+          (replace-match (format "Last reviewed on %s" now))
+        (re-search-forward ":END:" end t)
+        (end-of-line)
+        (newline)
+        (insert (format "Last reviewed on %s" now))))
+    (save-buffer)))
+
 (defun my/daily-planner-tree ()
   "Navigue ou crée la hiérarchie Année > Mois > Semaine > Jour dans daily-planner.org."
   (let* ((year   (format-time-string "%Y"))
@@ -226,7 +261,9 @@ WEEKLY SHUTDOWN [/]
 
 (map! :leader
       :desc "Daily Planner" "d d" #'(lambda () (interactive) (org-capture nil "d"))
-      :desc "Weekly Review" "d w" #'(lambda () (interactive) (org-capture nil "w")))
+      :desc "Weekly Review" "d w" #'(lambda () (interactive) (org-capture nil "w"))
+      :desc "New Goal" "d g" #'my/org-capture-goal
+      :desc "Review Goal" "d r" #'my/goal-update-review)
 
 ;; use D for sending task to the todo
 (map! :after evil-org-agenda
